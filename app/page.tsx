@@ -18,11 +18,11 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-background">
+      <section className="relative overflow-hidden">
         <div className="container mx-auto px-6 py-20 lg:py-32">
           <div className="text-center max-w-4xl mx-auto">
             {/* <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold mb-8">
@@ -44,7 +44,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <Button
                 size="lg"
-                className="bg-primary text-primary-foreground px-10 py-4 text-lg font-semibold shadow-lg"
+                className="text-primary-foreground px-10 py-2 text-lg font-semibold shadow-lg"
               >
                 Start Free
                 <ArrowRight className="ml-3 h-5 w-5" />
@@ -54,7 +54,7 @@ export default function Home() {
               </Button> */}
             </div>
 
-            <div className="text-sm text-muted-foreground">
+            <div className="text-muted-foreground">
               Free plan • No credit card required • Cancel anytime
             </div>
           </div>

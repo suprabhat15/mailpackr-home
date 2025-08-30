@@ -9,15 +9,18 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="sticky top-0 z-50 w-full border-b border-gray-200 text-primary-foreground bg-foreground">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+          <Link
+            href="/"
+            className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+          >
             {/* <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg">
               <Mail className="h-6 w-6 text-white" />
             </div> */}
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+            <span className="text-3xl font-bold bg-clip-text text-white">
               MailPackr
             </span>
           </Link>
@@ -26,25 +29,25 @@ export function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-gray-600 hover:text-blue-600 font-medium transition-colors"
+              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
             >
               Home
             </Link>
             <Link
               href="/contact"
-              className="text-gray-600 hover:text-blue-600 font-medium transition-colors"
+              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
             >
               Contact
             </Link>
             <Link
               href="/privacy"
-              className="text-gray-600 hover:text-blue-600 font-medium transition-colors"
+              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
             >
               Privacy
             </Link>
             <Link
               href="/terms"
-              className="text-gray-600 hover:text-blue-600 font-medium transition-colors"
+              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
             >
               Terms
             </Link>
@@ -52,7 +55,7 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <Button className="bg-primary text-primary-foreground px-10 py-4 text-lg font-semibold shadow-lg">
+            <Button className="bg-primary text-primary-foreground px-10 py-4 text-lg font-semibold">
               Sign In
             </Button>
           </div>
@@ -114,5 +117,5 @@ export function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }
