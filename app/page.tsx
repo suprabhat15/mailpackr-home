@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Header } from "@/components/layout/header"
@@ -488,6 +489,25 @@ export default function Home() {
       </section>
 
       <Footer />
+      
+      {/* Crisp Chat */}
+      <Script
+        id="crisp-chat"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.$crisp=[];
+            window.CRISP_WEBSITE_ID="ca46cb80-7108-4784-b9d2-8f5883d89aa7";
+            (function(){
+              d=document;
+              s=d.createElement("script");
+              s.src="https://client.crisp.chat/l.js";
+              s.async=1;
+              d.getElementsByTagName("head")[0].appendChild(s);
+            })();
+          `
+        }}
+      />
     </div>
   );
 }
