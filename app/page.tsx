@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-background">
         <div className="container mx-auto px-6 py-20 lg:py-32">
@@ -31,22 +31,23 @@ export default function Home() {
               <TrendingUp className="w-4 h-4 mr-2" />
               Trusted by 10,000+ businesses worldwide
             </div> */}
-            
+
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight tracking-tight">
               <span className="text-foreground">Ready to Cut Your Email</span>
               <br />
-              <span className="text-foreground">
-              Costs by 90%?
-              </span>
+              <span className="text-foreground">Costs by 90%?</span>
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              Stop paying premium prices for basic email services. Get enterprise-grade email sending, 
-              automation, and analytics at a fraction of the cost.
+              Get enterprise-grade email sending platform, automation, and
+              analytics at a fraction of the cost.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-              <Button size="lg" className="bg-primary text-primary-foreground px-10 py-4 text-lg font-semibold shadow-lg">
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground px-10 py-4 text-lg font-semibold shadow-lg"
+              >
                 Start Free
                 <ArrowRight className="ml-3 h-5 w-5" />
               </Button>
@@ -54,7 +55,7 @@ export default function Home() {
                 View Live Demo
               </Button> */}
             </div>
-            
+
             <div className="text-sm text-muted-foreground">
               Free plan • No credit card required • Cancel anytime
             </div>
@@ -70,33 +71,42 @@ export default function Home() {
               Tired of Expensive Email Architecture Tools?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Most email services charge premium prices for basic features. You shouldn't have to pay $99/month 
-              for what should cost $9. That's why we built MailPackr.
+              Why pay <strong>$99</strong> when <strong>MailPackr</strong> gives
+              it for less?
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="p-8 text-center border-border bg-card">
               <DollarSign className="w-12 h-12 text-foreground mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Overpriced Plans</h3>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                Overpriced Plans
+              </h3>
               <p className="text-muted-foreground">
-                Pay $99+/month for basic features that should cost a fraction of that price
+                Pay $99+/month for basic features that should cost a fraction of
+                that price
               </p>
             </Card>
-            
+
             <Card className="p-8 text-center border-border bg-card">
               <Clock className="w-12 h-12 text-foreground mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Complex Setup</h3>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                Complex Setup
+              </h3>
               <p className="text-muted-foreground">
-                Spend weeks learning complicated interfaces instead of focusing on your business
+                Spend weeks learning complicated interfaces instead of focusing
+                on your business
               </p>
             </Card>
-            
+
             <Card className="p-8 text-center border-border bg-card">
               <Globe className="w-12 h-12 text-foreground mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Poor Deliverability</h3>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                Poor Deliverability
+              </h3>
               <p className="text-muted-foreground">
-                Watch your emails end up in spam folders despite paying premium prices
+                Watch your emails end up in spam folders despite paying premium
+                prices
               </p>
             </Card>
           </div>
@@ -111,84 +121,102 @@ export default function Home() {
               MailPackr Changes Everything
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Get enterprise-grade email sending tools without the enterprise price tag. 
-              Simple, powerful, and affordable.
+              Get enterprise-grade email sending tools without the enterprise
+              price tag. Simple, powerful, and affordable.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
                 <Mail className="h-6 w-6 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Beautiful Templates</h3>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                Beautiful Templates
+              </h3>
               <p className="text-muted-foreground mb-4">
-                200+ professionally designed templates that convert. Drag-and-drop editor makes customization effortless.
+                Numerous professionally designed templates that convert.
+                Drag-and-drop editor makes customization effortless.
               </p>
               {/* <div className="text-sm font-semibold text-primary">
                 Save $50/month vs competitors
               </div> */}
             </Card>
-            
+
             <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
                 <BarChart3 className="h-6 w-6 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Advanced Analytics</h3>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                Advanced Analytics
+              </h3>
               <p className="text-muted-foreground mb-4">
-                Real-time reporting, A/B testing, and conversion tracking. Everything you need to optimize campaigns.
+                Real-time reporting, A/B testing, and conversion tracking.
+                Everything you need to optimize campaigns.
               </p>
               {/* <div className="text-sm font-semibold text-primary">
                 Included at every plan level
               </div> */}
             </Card>
-            
+
             <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
                 <Shield className="h-6 w-6 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">99.9% Deliverability</h3>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                High Deliverability
+              </h3>
               <p className="text-muted-foreground mb-4">
-                AWS SES-powered infrastructure with strict compliance ensures your emails reach the inbox. Permission-based sending only.
+                AWS SES-powered infrastructure with strict compliance ensures
+                your emails reach the inbox. Permission-based sending only.
               </p>
               {/* <div className="text-sm font-semibold text-primary">
                 Better than services 10x the price
               </div> */}
             </Card>
-            
+
             <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
                 <Zap className="h-6 w-6 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Smart Automation</h3>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                Smart Automation
+              </h3>
               <p className="text-muted-foreground mb-4">
-                Set up complex workflows in minutes. Welcome series, abandoned cart emails, and behavior triggers.
+                Set up complex workflows in minutes. Welcome series, abandoned
+                cart emails, and behavior triggers.
               </p>
               {/* <div className="text-sm font-semibold text-primary">
                 No per-automation fees
               </div> */}
             </Card>
-            
+
             <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
                 <Users className="h-6 w-6 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Contact Management</h3>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                Contact Management
+              </h3>
               <p className="text-muted-foreground mb-4">
-                Unlimited contacts, advanced segmentation, and custom fields. No contact limits, ever.
+                Unlimited contacts, advanced segmentation, and custom fields. No
+                contact limits.
               </p>
               {/* <div className="text-sm font-semibold text-primary">
                 Save hundreds on contact fees
               </div> */}
             </Card>
-            
+
             <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
                 <CheckCircle className="h-6 w-6 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Easy Integration</h3>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                Easy Integration
+              </h3>
               <p className="text-muted-foreground mb-4">
-                Connect with 500+ apps. WordPress, Shopify, WooCommerce, and more. API access included.
+                Connect with many apps. WordPress, Shopify, WooCommerce, and
+                more.
               </p>
               {/* <div className="text-sm font-semibold text-primary">
                 All integrations free
@@ -206,18 +234,24 @@ export default function Home() {
               Transparent, Fair Pricing
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              No hidden fees, no contact limits, no surprises. Pay only for what you use, 
-              starting completely free.
+              No hidden fees, no contact limits, no surprises. Pay only for what
+              you use, starting completely free.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Free Plan */}
             <Card className="p-8 border-2 border-gray-200">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-foreground mb-4">Free</h3>
-                <div className="text-4xl font-bold text-foreground mb-2">$0</div>
-                <p className="text-muted-foreground mb-8">Perfect for getting started</p>
+                <h3 className="text-2xl font-bold text-foreground mb-4">
+                  Free
+                </h3>
+                <div className="text-4xl font-bold text-foreground mb-2">
+                  $0
+                </div>
+                <p className="text-muted-foreground mb-8">
+                  Perfect for getting started
+                </p>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
@@ -256,8 +290,12 @@ export default function Home() {
                 Most Popular
               </div>
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-primary mb-4">Pay Per Send</h3>
-                <div className="text-4xl font-bold text-foreground mb-2">$0.001</div>
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  Pay Per Send
+                </h3>
+                <div className="text-4xl font-bold text-foreground mb-2">
+                  $0.001
+                </div>
                 <p className="text-muted-foreground mb-8">per email sent</p>
               </div>
               <ul className="space-y-4 mb-8">
@@ -294,9 +332,15 @@ export default function Home() {
             {/* Enterprise Plan */}
             <Card className="p-8 border-2 border-gray-200">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-foreground mb-4">Enterprise</h3>
-                <div className="text-4xl font-bold text-foreground mb-2">Custom</div>
-                <p className="text-muted-foreground mb-8">For high-volume senders</p>
+                <h3 className="text-2xl font-bold text-foreground mb-4">
+                  Enterprise
+                </h3>
+                <div className="text-4xl font-bold text-foreground mb-2">
+                  Custom
+                </div>
+                <p className="text-muted-foreground mb-8">
+                  For high-volume senders
+                </p>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
@@ -321,16 +365,15 @@ export default function Home() {
                 </li>
               </ul>
               <Button className="w-full" variant="outline" asChild>
-                <Link href="/contact">
-                  Contact Sales
-                </Link>
+                <Link href="/contact">Contact Sales</Link>
               </Button>
             </Card>
           </div>
 
           <div className="text-center mt-12">
             <p className="text-sm text-muted-foreground">
-              All plans include unlimited contacts, templates, and integrations. No setup fees or hidden costs.
+              All plans include unlimited contacts, templates, and integrations.
+              No setup fees or hidden costs.
             </p>
           </div>
         </div>
@@ -422,18 +465,25 @@ export default function Home() {
           </h2>
           {/* Join thousands of smart businesses who've already made the switch. */}
           <p className="text-xl text-primary-foreground mb-12 max-w-3xl mx-auto">
-            Start with our free plan today. <br/>
+            Start with our free plan today. <br />
             No Credit Card required.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="lg" variant="outline" className="bg-background text-primary hover:bg-secondary border-primary px-10 py-4 text-lg font-semibold">
+            <Button
+              size="lg"
+              variant="outline"
+              className="bg-background text-primary hover:bg-secondary border-primary px-10 py-4 text-lg font-semibold"
+            >
               Start Free
               <ArrowRight className="ml-3 h-5 w-5" />
             </Button>
-            <Button asChild variant="ghost" size="lg" className="text-primary-foreground hover:bg-background/20 px-10 py-4 text-lg font-semibold">
-              <Link href="/contact">
-                Schedule Demo
-              </Link>
+            <Button
+              asChild
+              variant="ghost"
+              size="lg"
+              className="text-primary-foreground hover:bg-background/20 px-10 py-4 text-lg font-semibold"
+            >
+              <Link href="/contact">Schedule Demo</Link>
             </Button>
           </div>
         </div>

@@ -113,7 +113,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="bg-primary text-primary-foreground py-16">
         <div className="container mx-auto px-4">
@@ -122,7 +122,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-xl text-primary-foreground mb-8">
-              Have questions about MailPackr? We're here to help you succeed with your email sending.
+              Have questions about MailPackr? <br /> We're here to help you.
             </p>
           </div>
         </div>
@@ -137,10 +137,10 @@ export default function Contact() {
                 Let's start a conversation
               </h2>
               <p className="text-muted-foreground mb-8">
-                Our team is ready to help you maximize your email sending potential. 
-                Reach out to us through any of the channels below.
+                Our team is ready to help you maximize your email sending
+                potential. Reach out to us through any of the channels below.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
@@ -149,10 +149,12 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-foreground">Email</h3>
                     {/* <p className="text-muted-foreground">hello@mailpackr.com</p> */}
-                    <p className="text-muted-foreground">support@mailpackr.com</p>
+                    <p className="text-muted-foreground">
+                      support@mailpackr.com
+                    </p>
                   </div>
                 </div>
-                
+
                 {/* <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
                     <Phone className="h-5 w-5 text-foreground" />
@@ -163,7 +165,7 @@ export default function Contact() {
                     <p className="text-sm text-muted-foreground">Mon-Fri, 9AM-6PM PST</p>
                   </div>
                 </div> */}
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
                     <MapPin className="h-5 w-5 text-foreground" />
@@ -173,15 +175,19 @@ export default function Contact() {
                     <p className="text-muted-foreground">New Delhi, India</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
                     <Clock className="h-5 w-5 text-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground">Response Time</h3>
+                    <h3 className="font-semibold text-foreground">
+                      Response Time
+                    </h3>
                     <p className="text-muted-foreground">Within 24 hours</p>
-                    <p className="text-sm text-muted-foreground">Usually much faster!</p>
+                    <p className="text-sm text-muted-foreground">
+                      Usually much faster!
+                    </p>
                   </div>
                 </div>
               </div>
@@ -197,14 +203,18 @@ export default function Contact() {
                   Send us a message
                 </CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  Fill out the form below and we'll get back to you as soon as
+                  possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-2">
+                      <label
+                        htmlFor="name"
+                        className="block text-sm font-medium text-muted-foreground mb-2"
+                      >
                         Full Name *
                       </label>
                       <Input
@@ -214,15 +224,24 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleInputChange}
                         placeholder="John Doe"
-                        className={errors.name ? 'border-destructive focus-visible:ring-destructive' : ''}
+                        className={
+                          errors.name
+                            ? "border-destructive focus-visible:ring-destructive"
+                            : ""
+                        }
                       />
                       {errors.name && (
-                        <p className="text-destructive text-sm mt-1">{errors.name}</p>
+                        <p className="text-destructive text-sm mt-1">
+                          {errors.name}
+                        </p>
                       )}
                     </div>
-                    
+
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-2">
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium text-muted-foreground mb-2"
+                      >
                         Email Address *
                       </label>
                       <Input
@@ -232,17 +251,26 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleInputChange}
                         placeholder="john@example.com"
-                        className={errors.email ? 'border-destructive focus-visible:ring-destructive' : ''}
+                        className={
+                          errors.email
+                            ? "border-destructive focus-visible:ring-destructive"
+                            : ""
+                        }
                       />
                       {errors.email && (
-                        <p className="text-destructive text-sm mt-1">{errors.email}</p>
+                        <p className="text-destructive text-sm mt-1">
+                          {errors.email}
+                        </p>
                       )}
                     </div>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-muted-foreground mb-2">
+                      <label
+                        htmlFor="company"
+                        className="block text-sm font-medium text-muted-foreground mb-2"
+                      >
                         Company (Optional)
                       </label>
                       <Input
@@ -254,9 +282,12 @@ export default function Contact() {
                         placeholder="MailPackr"
                       />
                     </div>
-                    
+
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-muted-foreground mb-2">
+                      <label
+                        htmlFor="subject"
+                        className="block text-sm font-medium text-muted-foreground mb-2"
+                      >
                         Subject *
                       </label>
                       <Input
@@ -266,16 +297,25 @@ export default function Contact() {
                         value={formData.subject}
                         onChange={handleInputChange}
                         placeholder="How can we help?"
-                        className={errors.subject ? 'border-destructive focus-visible:ring-destructive' : ''}
+                        className={
+                          errors.subject
+                            ? "border-destructive focus-visible:ring-destructive"
+                            : ""
+                        }
                       />
                       {errors.subject && (
-                        <p className="text-destructive text-sm mt-1">{errors.subject}</p>
+                        <p className="text-destructive text-sm mt-1">
+                          {errors.subject}
+                        </p>
                       )}
                     </div>
                   </div>
-                  
+
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-muted-foreground mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-muted-foreground mb-2"
+                    >
                       Message *
                     </label>
                     <Textarea
@@ -285,32 +325,45 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleInputChange}
                       placeholder="Tell us about your project or question..."
-                      className={errors.message ? 'border-destructive focus-visible:ring-destructive' : ''}
+                      className={
+                        errors.message
+                          ? "border-destructive focus-visible:ring-destructive"
+                          : ""
+                      }
                     />
                     {errors.message && (
-                      <p className="text-destructive text-sm mt-1">{errors.message}</p>
+                      <p className="text-destructive text-sm mt-1">
+                        {errors.message}
+                      </p>
                     )}
                   </div>
-                  
+
                   <div className="pt-4">
-                    <Button 
-                      type="submit" 
-                      size="lg" 
+                    <Button
+                      type="submit"
+                      size="lg"
                       className="w-full md:w-auto bg-primary text-primary-foreground px-8"
                     >
                       Send Message
                       <Mail className="ml-2 h-5 w-5" />
                     </Button>
-                    
+
                     <p className="text-sm text-muted-foreground mt-3">
                       By submitting this form, you agree to our{" "}
-                      <Link href="/privacy" className="text-primary hover:text-primary underline">
+                      <Link
+                        href="/privacy"
+                        className="text-primary hover:text-primary underline"
+                      >
                         privacy policy
                       </Link>{" "}
                       and{" "}
-                      <Link href="/terms" className="text-primary hover:text-primary underline">
+                      <Link
+                        href="/terms"
+                        className="text-primary hover:text-primary underline"
+                      >
                         terms of service
-                      </Link>.
+                      </Link>
+                      .
                     </p>
                   </div>
                 </form>
@@ -322,5 +375,5 @@ export default function Contact() {
 
       <Footer />
     </div>
-  )
+  );
 }
