@@ -9,16 +9,19 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'MailPackr - Email Architecture Made Simple',
-  description: 'Create, send, and track beautiful email campaigns that convert. Reliable, secure, and scalable email services for your business.',
-  keywords: 'email sending, email campaigns, email automation, email analytics, email templates',
-  authors: [{ name: 'MailPackr Team' }],
+  title: "MailPackr",
+  description:
+    "Create, send, and track beautiful email campaigns that convert. Reliable, secure, and scalable email services for your business.",
+  keywords:
+    "email sending, email campaigns, email automation, email analytics, email templates",
+  authors: [{ name: "MailPackr" }],
   openGraph: {
-    title: 'MailPackr - Email Architecture Made Simple',
-    description: 'Create, send, and track beautiful email campaigns that convert.',
-    type: 'website',
+    title: "MailPackr",
+    description:
+      "Create, send, and track beautiful email campaigns that convert.",
+    type: "website",
   },
-}
+};
 
 export default function RootLayout({
   children,
