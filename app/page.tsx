@@ -48,7 +48,7 @@ export default function Home() {
                 className="text-primary-foreground px-10 py-2 text-lg font-semibold shadow-lg"
                 asChild
               >
-                <Link href="https://app.mailpackr.com">
+                <Link href="https://app.mailpackr.com/auth">
                   Start Free
                   <ArrowRight className="ml-3 h-5 w-5" />
                 </Link>
@@ -282,9 +282,7 @@ export default function Home() {
                 </li>
               </ul>
               <Button className="w-full" variant="outline" asChild>
-                <Link href="https://app.mailpackr.com">
-                  Start Today
-                </Link>
+                <Link href="https://app.mailpackr.com/auth">Start Today</Link>
               </Button>
             </Card>
 
@@ -329,7 +327,7 @@ export default function Home() {
                 </li>
               </ul>
               <Button className="w-full bg-primary hover:bg-primary" asChild>
-                <Link href="https://app.mailpackr.com">
+                <Link href="https://app.mailpackr.com/auth">
                   Start Pay Per Send
                 </Link>
               </Button>
@@ -481,7 +479,7 @@ export default function Home() {
               className="bg-background text-primary hover:bg-secondary border-primary px-10 py-4 text-lg font-semibold"
               asChild
             >
-              <Link href="https://app.mailpackr.com">
+              <Link href="https://app.mailpackr.com/auth">
                 Start Free
                 <ArrowRight className="ml-3 h-5 w-5" />
               </Link>
@@ -499,7 +497,7 @@ export default function Home() {
       </section>
 
       <Footer />
-      
+
       {/* Crisp Chat */}
       <Script
         id="crisp-chat"
@@ -515,7 +513,7 @@ export default function Home() {
               s.async=1;
               d.getElementsByTagName("head")[0].appendChild(s);
             })();
-          `
+          `,
         }}
       />
     </div>
