@@ -46,9 +46,12 @@ export default function Home() {
               <Button
                 size="lg"
                 className="text-primary-foreground px-10 py-2 text-lg font-semibold shadow-lg"
+                asChild
               >
-                Start Free
-                <ArrowRight className="ml-3 h-5 w-5" />
+                <Link href="https://app.mailpackr.com">
+                  Start Free
+                  <ArrowRight className="ml-3 h-5 w-5" />
+                </Link>
               </Button>
               {/* <Button variant="outline" size="lg" className="px-10 py-4 text-lg font-semibold border-2">
                 View Live Demo
@@ -278,8 +281,10 @@ export default function Home() {
                   <span>Bring your own Domain</span>
                 </li>
               </ul>
-              <Button className="w-full" variant="outline">
-                Start Today
+              <Button className="w-full" variant="outline" asChild>
+                <Link href="https://app.mailpackr.com">
+                  Start Today
+                </Link>
               </Button>
             </Card>
 
@@ -323,8 +328,10 @@ export default function Home() {
                   <span>Bring your own Domain</span>
                 </li>
               </ul>
-              <Button className="w-full bg-primary hover:bg-primary">
-                Start Pay Per Send
+              <Button className="w-full bg-primary hover:bg-primary" asChild>
+                <Link href="https://app.mailpackr.com">
+                  Start Pay Per Send
+                </Link>
               </Button>
             </Card>
 
@@ -472,9 +479,12 @@ export default function Home() {
               size="lg"
               variant="outline"
               className="bg-background text-primary hover:bg-secondary border-primary px-10 py-4 text-lg font-semibold"
+              asChild
             >
-              Start Free
-              <ArrowRight className="ml-3 h-5 w-5" />
+              <Link href="https://app.mailpackr.com">
+                Start Free
+                <ArrowRight className="ml-3 h-5 w-5" />
+              </Link>
             </Button>
             <Button
               asChild

@@ -55,8 +55,10 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <Button className="bg-primary text-primary-foreground px-10 py-4 text-lg font-semibold">
-              Sign In
+            <Button className="bg-primary text-primary-foreground px-10 py-4 text-lg font-semibold" asChild>
+              <Link href="https://app.mailpackr.com">
+                Sign In
+              </Link>
             </Button>
           </div>
 
@@ -108,8 +110,10 @@ export function Header() {
                 Terms
               </Link>
               <div className="px-3 py-2">
-                <Button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white">
-                  Get Started
+                <Button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white" asChild>
+                  <Link href="https://app.mailpackr.com">
+                    Get Started
+                  </Link>
                 </Button>
               </div>
             </div>
