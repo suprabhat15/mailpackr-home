@@ -1,5 +1,5 @@
 {
   "name": "mailpackr-home",
   "compatibility_date": "2025-08-30",
-  "main": "app/page.tsx"
+  "pages_build_output_dir": "out"
 }

@@ -121,7 +121,7 @@ export default function TermsPage() {
                 <li><strong>Bounce & Complaint Handling:</strong> Promptly process bounce and complaint notifications</li>
                 <li><strong>Unsubscribe Compliance:</strong> Honor unsubscribe requests within 10 business days</li>
                 <li><strong>Legal Compliance:</strong> Follow GDPR, CAN-SPAM, and other applicable regulations</li>
-                <li><strong>Identity Verification:</strong> Verify all "From" addresses and sender domains</li>
+                <li><strong>Identity Verification:</strong> Verify all &quot;From&quot; addresses and sender domains</li>
               </ul>
             </div>
             

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card } from "@/components/ui/card"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { 
@@ -11,8 +11,6 @@ import {
   Users, 
   CheckCircle,
   ArrowRight,
-  Star,
-  TrendingUp,
   DollarSign,
   Clock,
   Globe

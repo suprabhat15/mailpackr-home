@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-import { Mail, Phone, MapPin, Clock, CheckCircle, MessageSquare, ArrowLeft } from "lucide-react"
+import { Mail, MapPin, Clock, CheckCircle, MessageSquare, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
 export default function Contact() {
@@ -122,7 +122,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-xl text-primary-foreground mb-8">
-              Have questions about MailPackr? <br /> We're here to help you.
+              Have questions about MailPackr? <br /> We&apos;re here to help you.
             </p>
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function Contact() {
           <div className="lg:col-span-1">
             <div className="sticky top-8">
               <h2 className="text-2xl font-bold text-foreground mb-6">
-                Let's start a conversation
+                Let&apos;s start a conversation
               </h2>
               <p className="text-muted-foreground mb-8">
                 Our team is ready to help you maximize your email sending
@@ -203,7 +203,7 @@ export default function Contact() {
                   Send us a message
                 </CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you as soon as
+                  Fill out the form below and we&apos;ll get back to you as soon as
                   possible.
                 </CardDescription>
               </CardHeader>

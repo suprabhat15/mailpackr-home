@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "export": "next build",
+    "deploy:pages": "npm run build && wrangler pages deploy out --project-name=mailpackr-home",
+    "preview": "npm run build && npx serve out"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
