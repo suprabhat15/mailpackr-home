@@ -1,0 +1,5 @@
+{
+  "name": "mailpackr-worker",
+  "compatibility_date": "2025-08-30",
+  "main": "app/page.tsx"
+}
