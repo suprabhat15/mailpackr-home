@@ -15,10 +15,10 @@ export function Footer() {
               <span className="text-2xl font-bold">MailPackr</span>
             </Link>
             <p className="text-gray-400 mb-4 max-w-md">
-              Reliable, secure, and scalable email services for your business. 
+              Reliable, secure, and scalable email services for your business.
               Manage campaigns, track analytics, and reach your audience easily.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
@@ -28,7 +28,7 @@ export function Footer() {
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -36,22 +36,34 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/privacy"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/terms"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Terms of Service
                 </Link>
               </li>
@@ -63,7 +75,10 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
               <li>
-                <a href="mailto:support@mailpackr.com" className="text-gray-400 hover:text-white transition-colors">
+                <a
+                  href="mailto:support@mailpackr.com"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   support@mailpackr.com
                 </a>
               </li>
@@ -83,5 +98,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

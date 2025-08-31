@@ -21,7 +21,7 @@ export function Header() {
             <Image
               src="/logo.svg"
               alt="MailPackr"
-              width={250}
+              width={300}
               height={100}
               className="h-16 w-auto"
               priority
