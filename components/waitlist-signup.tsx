@@ -38,6 +38,7 @@ export function WaitlistSignup() {
     } catch (error) {
       setStatus('error')
       setMessage("Network error. Please try again.")
+      console.log(error);
     }
   }
 
