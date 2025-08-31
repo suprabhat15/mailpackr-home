@@ -12,7 +12,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 text-primary-foreground bg-foreground">
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-18 items-center justify-between">
           {/* Logo */}
           <Link
             href="/"
@@ -23,7 +23,7 @@ export function Header() {
               alt="MailPackr"
               width={300}
               height={100}
-              className="h-16 w-auto"
+              className="pt-5 pb-5 mt-7 mb-7"
               priority
             />
           </Link>
