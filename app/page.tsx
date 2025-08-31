@@ -4,18 +4,19 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-import { 
-  Mail, 
-  BarChart3, 
-  Shield, 
-  Zap, 
-  Users, 
+import { WaitlistSignup } from "@/components/waitlist-signup";
+import {
+  Mail,
+  BarChart3,
+  Shield,
+  Zap,
+  Users,
   CheckCircle,
   ArrowRight,
   DollarSign,
   Clock,
-  Globe
-} from "lucide-react"
+  Globe,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -58,7 +59,9 @@ export default function Home() {
               </Button> */}
             </div>
 
-            <div className="text-muted-foreground">
+            <WaitlistSignup />
+
+            <div className="text-muted-foreground mt-15">
               Free plan • No credit card required • Cancel anytime
             </div>
           </div>
