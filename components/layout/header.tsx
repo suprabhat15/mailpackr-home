@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
@@ -15,14 +16,16 @@ export function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+            className="flex items-center hover:opacity-80 transition-opacity"
           >
-            {/* <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg">
-              <Mail className="h-6 w-6 text-white" />
-            </div> */}
-            <span className="text-3xl font-bold bg-clip-text text-white">
-              MailPackr
-            </span>
+            <Image
+              src="/logo.svg"
+              alt="MailPackr"
+              width={200}
+              height={70}
+              className="h-16 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
