@@ -59,8 +59,11 @@ export function WaitlistSignup() {
           Join our waitlist for upcoming updates
         </span>
       </div>
-      
-      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+      >
         <Input
           type="email"
           placeholder="Enter your email address"
@@ -68,26 +71,26 @@ export function WaitlistSignup() {
           onChange={(e) => setEmail(e.target.value)}
           required
           className="flex-1"
-          disabled={status === 'loading'}
+          disabled={status === "loading"}
         />
-        <Button 
-          type="submit" 
-          disabled={status === 'loading' || !email}
-          className="px-6"
+        <Button
+          type="submit"
+          disabled={status === "loading" || !email}
+          className="px-6 bg-primary"
         >
-          {status === 'loading' ? 'Joining...' : 'Join Waitlist'}
+          {status === "loading" ? "Joining..." : "Join Waitlist"}
         </Button>
       </form>
-      
-      {status === 'error' && (
+
+      {status === "error" && (
         <p className="text-red-600 text-sm mt-2 text-center">{message}</p>
       )}
-      
+
       <p className="text-xs text-muted-foreground mt-3 text-center">
         You can{" "}
         <button
           type="button"
-          onClick={() => window.open('/api/unsubscribe', '_blank')}
+          onClick={() => window.open("/api/unsubscribe", "_blank")}
           className="underline hover:no-underline"
         >
           unsubscribe
@@ -95,5 +98,5 @@ export function WaitlistSignup() {
         at any time.
       </p>
     </div>
-  )
+  );
 }
