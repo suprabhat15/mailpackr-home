@@ -11,21 +11,20 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "MailPackr",
   description:
-    "Create, send, and track beautiful email campaigns that convert. Reliable, secure, and scalable email services for your business.",
+    "Drive engagement with every send. Reliable, secure, and scalable email services for your business.",
   keywords:
     "email sending, email campaigns, email automation, email analytics, email templates",
   authors: [{ name: "MailPackr" }],
   icons: {
-    icon: '/logo.svg',
-    shortcut: '/logo.svg',
-    apple: '/logo.svg'
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
   },
   openGraph: {
     title: "MailPackr",
-    description:
-      "Create, send, and track beautiful email campaigns that convert.",
+    description: "Drive engagement with every send",
     type: "website",
-    images: [{ url: '/logo.svg' }]
+    images: [{ url: "/logo.svg" }],
   },
 };
 
