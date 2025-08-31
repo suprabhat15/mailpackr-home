@@ -1,21 +1,30 @@
-import { NextRequest, NextResponse } from 'next/server'
+interface CloudflareContext {
+  request: Request;
+  env: Record<string, unknown>;
+}
 
-export async function POST(request: NextRequest) {
+export async function onRequestPost(context: CloudflareContext) {
   try {
-    const { email } = await request.json()
+    const { email } = await context.request.json()
 
     if (!email) {
-      return NextResponse.json({ error: 'Email is required' }, { status: 400 })
+      return new Response(JSON.stringify({ error: 'Email is required' }), { 
+        status: 400,
+        headers: { 'Content-Type': 'application/json' }
+      })
     }
 
     // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!emailRegex.test(email)) {
-      return NextResponse.json({ error: 'Invalid email format' }, { status: 400 })
+      return new Response(JSON.stringify({ error: 'Invalid email format' }), { 
+        status: 400,
+        headers: { 'Content-Type': 'application/json' }
+      })
     }
 
     // In a real implementation, you would:
-    // 1. Store the email in a database
+    // 1. Store the email in a database (like D1, KV, or external service)
     // 2. Send confirmation email using a service like SendGrid, Mailgun, or similar
     
     // For now, we'll simulate sending an email by logging it
@@ -35,21 +44,26 @@ export async function POST(request: NextRequest) {
         <hr>
         <p style="font-size: 12px; color: #666;">
           If you no longer wish to receive these updates, you can 
-          <a href="${process.env.NEXT_PUBLIC_BASE_URL}/api/unsubscribe?email=${encodeURIComponent(email)}">unsubscribe here</a>.
+          <a href="${context.env.DEPLOYMENT_URL}/api/unsubscribe?email=${encodeURIComponent(email)}">unsubscribe here</a>.
         </p>
       `
     })
     */
 
-    return NextResponse.json({ 
+    return new Response(JSON.stringify({ 
       success: true, 
       message: 'Successfully joined the waitlist!' 
+    }), {
+      headers: { 'Content-Type': 'application/json' }
     })
 
   } catch (error) {
     console.error('Waitlist signup error:', error)
-    return NextResponse.json({ 
+    return new Response(JSON.stringify({ 
       error: 'Internal server error' 
-    }, { status: 500 })
+    }), { 
+      status: 500,
+      headers: { 'Content-Type': 'application/json' }
+    })
   }
 }

@@ -1,11 +1,14 @@
-import { NextRequest, NextResponse } from 'next/server'
+interface CloudflareContext {
+  request: Request;
+  env: Record<string, unknown>;
+}
 
-export async function GET(request: NextRequest) {
-  const { searchParams } = new URL(request.url)
-  const email = searchParams.get('email')
+export async function onRequestGet(context: CloudflareContext) {
+  const url = new URL(context.request.url)
+  const email = url.searchParams.get('email')
 
   if (!email) {
-    return new NextResponse(
+    return new Response(
       `
       <!DOCTYPE html>
       <html>
@@ -54,7 +57,7 @@ export async function GET(request: NextRequest) {
   }
 
   // Process unsubscribe with email from URL
-  return new NextResponse(
+  return new Response(
     `
     <!DOCTYPE html>
     <html>
@@ -90,19 +93,22 @@ export async function GET(request: NextRequest) {
   )
 }
 
-export async function POST(request: NextRequest) {
+export async function onRequestPost(context: CloudflareContext) {
   try {
-    const formData = await request.formData()
+    const formData = await context.request.formData()
     const email = formData.get('email') as string
 
     if (!email) {
-      return NextResponse.json({ error: 'Email is required' }, { status: 400 })
+      return new Response(JSON.stringify({ error: 'Email is required' }), { 
+        status: 400,
+        headers: { 'Content-Type': 'application/json' }
+      })
     }
 
     // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!emailRegex.test(email)) {
-      return new NextResponse(
+      return new Response(
         `
         <!DOCTYPE html>
         <html>
@@ -137,7 +143,7 @@ export async function POST(request: NextRequest) {
     // In a real implementation, you would remove the email from your database
     console.log(`Unsubscribe request for: ${email}`)
 
-    return new NextResponse(
+    return new Response(
       `
       <!DOCTYPE html>
       <html>
@@ -174,7 +180,7 @@ export async function POST(request: NextRequest) {
 
   } catch (error) {
     console.error('Unsubscribe error:', error)
-    return new NextResponse(
+    return new Response(
       `
       <!DOCTYPE html>
       <html>
