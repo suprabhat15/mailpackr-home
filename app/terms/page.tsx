@@ -21,8 +21,8 @@ export default function TermsPage() {
               Terms of Service
             </h1>
             <p className="text-xl text-primary-foreground mb-8">
-              Clear, straightforward terms that protect both you and MailPackr.
-              No legal jargon, just honest policies.
+              Clear, straightforward terms for our educational platform.
+              Protecting both learners and educators with transparent policies.
             </p>
             <div className="text-sm text-primary-foreground">
               Last updated:{" "}
@@ -46,11 +46,10 @@ export default function TermsPage() {
               Quick Summary
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-0">
-              By using MailPackr, you agree to use our service responsibly,
-              respect other users, follow email sending best practices, and
-              comply with applicable laws. We provide the service &ldquo;as
-              is&rdquo; and aren&apos;t liable for indirect damages. Simple as
-              that.
+              By using MailPackr Education, you agree to use our learning platform responsibly,
+              respect other learners, follow course guidelines and ethical marketing practices,
+              and comply with applicable laws. We provide educational content &ldquo;as
+              is&rdquo; and aren&apos;t liable for indirect damages. Simple as that.
             </p>
           </div>
 
@@ -60,15 +59,14 @@ export default function TermsPage() {
               1. Acceptance of Terms
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              By accessing and using MailPackr (&ldquo;the Service&rdquo;), you
+              By accessing and using MailPackr Education (&ldquo;the Service&rdquo;), you
               accept and agree to be bound by these terms and conditions. If you
               don&apos;t agree with any part of these terms, you may not use our
-              service.
+              educational platform.
             </p>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              These terms apply to all visitors, users, and others who access or
-              use the service, whether you&apos;re using our free plan or a paid
-              subscription.
+              These terms apply to all visitors, students, and others who access or
+              use the service, whether you&apos;re accessing free resources or enrolled in paid courses.
             </p>
           </section>
 
@@ -78,21 +76,21 @@ export default function TermsPage() {
               2. Description of Service
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              MailPackr provides email sending services including:
+              MailPackr Education provides digital marketing education services including:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2 text-lg mb-4">
-              <li>Email campaign creation and management</li>
-              <li>Contact list management and segmentation</li>
-              <li>Email template design and customization</li>
-              <li>Analytics and reporting tools</li>
-              {/* <li>Automation workflows and triggers</li>
-              <li>API access and integrations</li> */}
+              <li>Digital marketing courses and training programs</li>
+              <li>Email marketing and automation education</li>
+              <li>Sales funnel and lead generation training</li>
+              <li>Marketing analytics and optimization courses</li>
+              <li>Certification programs and learning resources</li>
+              <li>Student progress tracking and support</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              We reserve the right to modify, suspend, or discontinue any part
-              of the service at any time. We&apos;ll provide reasonable notice
+              We reserve the right to modify, suspend, or discontinue any course
+              or educational content at any time. We&apos;ll provide reasonable notice
               when possible, but some changes may be implemented immediately for
-              security or legal reasons.
+              educational quality or legal reasons.
             </p>
           </section>
 
@@ -102,77 +100,76 @@ export default function TermsPage() {
             </h2>
             <div className="bg-secondary border border-border rounded-lg p-6 mb-6">
               <h3 className="text-xl font-semibold text-foreground mb-3">
-                Account Security
+                Student Account Security
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-0">
                 You&apos;re responsible for maintaining the security of your
-                account and password. MailPackr cannot and will not be liable
-                for any loss or damage from your failure to comply with this
+                student account and password. MailPackr Education cannot and will not be liable
+                for any loss of progress or access from your failure to comply with this
                 security obligation.
               </p>
             </div>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              You must provide accurate and complete information when creating
-              your account. You&apos;re responsible for all activities that
-              occur under your account.
+              You must provide accurate and complete information when enrolling in courses.
+              You&apos;re responsible for all learning activities that occur under your account.
             </p>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              You may not use another person&apos;s account without permission,
-              create false identities, or provide false information.
+              You may not share account access with others, create multiple accounts,
+              or provide false information that would affect course completion or certification.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
-              4. Acceptable Guidelines
+              4. Learning Guidelines & Code of Conduct
             </h2>
             <div className="bg-secondary border border-border rounded-lg p-6 mb-6">
               <h3 className="text-xl font-bold text-foreground mb-3">
-                What We Require
+                Learning Expectations
               </h3>
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
                 <li>
-                  <strong>Explicit Permission Only:</strong> Send email only to
-                  individuals who have explicitly requested it
+                  <strong>Respectful Learning:</strong> Maintain respectful communication
+                  in all course discussions and interactions
                 </li>
                 <li>
-                  <strong>Proper List Management:</strong> Maintain clean,
-                  verified email lists with documented consent
+                  <strong>Academic Integrity:</strong> Complete assignments and assessments
+                  honestly without unauthorized assistance
                 </li>
                 <li>
-                  <strong>Bounce & Complaint Handling:</strong> Promptly process
-                  bounce and complaint notifications
+                  <strong>Ethical Application:</strong> Use learned marketing strategies
+                  ethically and in compliance with applicable laws
                 </li>
                 <li>
-                  <strong>Unsubscribe Compliance:</strong> Honor unsubscribe
-                  requests immediately
+                  <strong>Course Participation:</strong> Engage constructively in
+                  course activities and community discussions
                 </li>
                 <li>
                   <strong>Legal Compliance:</strong> Follow GDPR, CAN-SPAM, and
-                  other applicable regulations
+                  other marketing regulations when applying course concepts
                 </li>
                 <li>
-                  <strong>Identity Verification:</strong> Verify all
-                  &quot;From&quot; addresses and sender domains
+                  <strong>Intellectual Property:</strong> Respect course materials
+                  and do not redistribute without permission
                 </li>
               </ul>
             </div>
 
             <div className="bg-secondary border border-border rounded-lg p-6">
               <h3 className="text-xl font-bold text-foreground mb-3">
-                Prohibited Uses
+                Prohibited Activities
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-3">
-                You may not use MailPackr for:
+                You may not use MailPackr Education for:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Sending spam or unsolicited bulk emails</li>
-                <li>Illegal activities or content</li>
-                <li>Harassment, abuse, or harmful content</li>
-                <li>Phishing or fraudulent activities</li>
-                <li>Violating others&apos; intellectual property rights</li>
-                <li>Bypassing rate limits or service restrictions</li>
-                <li>Selling or redistributing the service</li>
+                <li>Sharing or redistributing course materials without permission</li>
+                <li>Creating multiple accounts to access content inappropriately</li>
+                <li>Harassment of instructors or fellow students</li>
+                <li>Cheating on assessments or certifications</li>
+                <li>Using course content for illegal marketing activities</li>
+                <li>Reverse engineering or copying our educational platform</li>
+                <li>Reselling access to courses or certification programs</li>
               </ul>
             </div>
           </section>
@@ -182,22 +179,21 @@ export default function TermsPage() {
               5. Payment and Billing
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              Our free plan is free forever with the features and limits
-              described on our pricing page. Paid plans are billed monthly or
-              annually in advance.
+              Our free educational resources are available at no cost with the features
+              described on our courses page. Paid courses and certification programs are
+              billed as one-time payments or monthly subscriptions as specified.
             </p>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              For pay-per-send plans, you&apos;ll be charged based on actual
-              usage with a minimum monthly charge as specified on our pricing
-              page.
+              Course access and materials are provided immediately upon successful payment.
+              Subscription-based programs provide ongoing access as long as payments are current.
             </p>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              All fees are non-refundable except where required by law. You can
-              cancel your subscription at any time from your account dashboard.
+              Course fees are non-refundable after 7 days except where required by law.
+              You can cancel ongoing subscriptions at any time from your student dashboard.
             </p>
           </section>
 
-          <section className="mb-12">
+          {/* <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
               6. Email Sending Compliance
             </h2>
@@ -257,11 +253,11 @@ export default function TermsPage() {
                 </p>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
-              7. Privacy and Data
+              6. Privacy and Data
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
               We take your privacy seriously. Please review our{" "}
@@ -274,32 +270,31 @@ export default function TermsPage() {
               to understand how we collect, use, and protect your information.
             </p>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              You retain ownership of your content and subscriber data. We
-              won&apos;t sell, rent, or share your data with third parties
+              You retain ownership of your learning progress and any work created during courses.
+              We won&apos;t sell, rent, or share your student data with third parties
               except as described in our Privacy Policy.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
-              8. Limitation of Liability
+              7. Limitation of Liability
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              MailPackr provides the service &ldquo;as is&rdquo; without
-              warranties of any kind. We strive for 99.9% uptime but can&apos;t
-              guarantee uninterrupted service.
+              MailPackr Education provides educational content &ldquo;as is&rdquo; without
+              warranties of any kind. We strive for reliable access to courses but can&apos;t
+              guarantee uninterrupted service or specific learning outcomes.
             </p>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              To the maximum extent permitted by law, MailPackr shall not be
+              To the maximum extent permitted by law, MailPackr Education shall not be
               liable for any indirect, incidental, special, consequential, or
-              punitive damages, including loss of profits, data, or business
-              opportunities.
+              punitive damages, including loss of business opportunities, career advancement, or expected learning outcomes.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
-              9. Changes to Terms
+              8. Changes to Terms
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
               We may update these terms from time to time. We&apos;ll notify you
@@ -313,7 +308,7 @@ export default function TermsPage() {
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
-              10. Contact Us
+              9. Contact Us
             </h2>
             <div className="bg-secondary border border-border rounded-lg p-6">
               <p className="text-muted-foreground leading-relaxed mb-4">

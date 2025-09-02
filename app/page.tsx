@@ -13,9 +13,11 @@ import {
   Users,
   CheckCircle,
   ArrowRight,
-  DollarSign,
-  Clock,
-  Globe,
+  BookOpen,
+  GraduationCap,
+  Target,
+  TrendingUp,
+  Award,
 } from "lucide-react";
 
 export default function Home() {
@@ -32,357 +34,436 @@ export default function Home() {
               Trusted by 10,000+ businesses worldwide
             </div> */}
 
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-8">
+              <GraduationCap className="w-4 h-4 mr-2" />
+              Trusted by 19+ professionals worldwide
+            </div>
+
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight tracking-tight">
-              <span className="text-foreground">Ready to Cut Your Email</span>
+              <span className="text-foreground">Master Digital Marketing</span>
               <br />
-              <span className="text-foreground">Costs by 90%?</span>
+              <span className="text-primary">Through Expert Education</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              Get enterprise-grade email sending platform, automation, and
-              analytics at a fraction of the cost.
+              Learn email marketing, sales funnels, lead generation, and digital
+              marketing strategies from industry professionals. Master the
+              skills that turn prospects into customers.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <Button
                 size="lg"
-                className="text-primary-foreground px-10 py-2 text-lg font-semibold shadow-lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 text-lg font-semibold shadow-lg"
                 asChild
               >
-                <Link href="https://app.mailpackr.com/auth">
-                  Start Free
+                <Link href="https://app.mailpackr.com">
+                  Start Learning
                   <ArrowRight className="ml-3 h-5 w-5" />
                 </Link>
               </Button>
-              {/* <Button variant="outline" size="lg" className="px-10 py-4 text-lg font-semibold border-2">
-                View Live Demo
+              {/* <Button
+                variant="outline"
+                size="lg"
+                className="px-10 py-4 text-lg font-semibold border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                asChild
+              >
+                <Link href="#demo">
+                  <PlayCircle className="mr-3 h-5 w-5" />
+                  Watch Demo
+                </Link>
               </Button> */}
             </div>
 
             <WaitlistSignup />
 
             <div className="text-muted-foreground mt-15">
-              Free plan • No credit card required • Cancel anytime
+              Free educational resources • Industry case studies • Practical
+              tutorials
             </div>
           </div>
         </div>
       </section>
 
-      {/* Problem Section */}
+      {/* Why Choose Us Section */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Tired of Expensive Email Architecture Tools?
+              Why Choose MailPackr Education?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Why pay <strong>$99</strong> when <strong>MailPackr</strong> gives
-              it for less?
+              Learn from industry experts with proven track records in
+              <strong>
+                {" "}
+                digital marketing, sales, and lead generation success
+              </strong>
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="p-8 text-center border-border bg-card">
-              <DollarSign className="w-12 h-12 text-foreground mx-auto mb-4" />
+            <Card className="p-8 text-center border-border bg-card hover:shadow-lg transition-shadow">
+              <Award className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Overpriced Plans
+                Expert Instructors
               </h3>
               <p className="text-muted-foreground">
-                Pay $99+/month for basic features that should cost a fraction of
-                that price
+                Learn from professionals who have generated millions in revenue
+                through email marketing campaigns
               </p>
             </Card>
 
-            <Card className="p-8 text-center border-border bg-card">
-              <Clock className="w-12 h-12 text-foreground mx-auto mb-4" />
+            <Card className="p-8 text-center border-border bg-card hover:shadow-lg transition-shadow">
+              <Target className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Complex Setup
+                Practical Learning
               </h3>
               <p className="text-muted-foreground">
-                Spend weeks learning complicated interfaces instead of focusing
-                on your business
+                Hands-on projects and real-world case studies that you can
+                implement immediately in your business
               </p>
             </Card>
 
-            <Card className="p-8 text-center border-border bg-card">
-              <Globe className="w-12 h-12 text-foreground mx-auto mb-4" />
+            <Card className="p-8 text-center border-border bg-card hover:shadow-lg transition-shadow">
+              <TrendingUp className="w-12 h-12 text-green-500 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Poor Deliverability
+                Proven Results
               </h3>
               <p className="text-muted-foreground">
-                Watch your emails end up in spam folders despite paying premium
-                prices
+                Our students see average 40% increase in email open rates and
+                25% boost in conversions within 30 days
               </p>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Solution Section */}
-      <section className="py-20">
+      {/* Featured Courses Section */}
+      <section className="py-20" id="courses">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              MailPackr Changes Everything
+              Comprehensive Digital Marketing Education
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Get enterprise-grade email sending tools without the enterprise
-              price tag. Simple, powerful, and affordable.
+              Master every aspect of digital marketing, sales, and lead
+              generation with our comprehensive educational resources. From
+              beginner fundamentals to advanced strategies.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
-                <Mail className="h-6 w-6 text-primary-foreground" />
+            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
+              <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-6">
+                <BookOpen className="h-6 w-6 text-accent-foreground" />
+              </div>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-semibold">
+                  BEGINNER
+                </span>
+                <span className="text-accent font-semibold">$99</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Beautiful Templates
+                Digital Marketing Fundamentals
               </h3>
               <p className="text-muted-foreground mb-4">
-                Numerous professionally designed templates that convert.
-                Drag-and-drop editor makes customization effortless.
+                Master the basics of digital marketing. Learn email marketing,
+                list building, segmentation, and crafting compelling campaigns
+                that convert prospects into customers.
               </p>
-              {/* <div className="text-sm font-semibold text-primary">
-                Save $50/month vs competitors
-              </div> */}
-            </Card>
-
-            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
-                <BarChart3 className="h-6 w-6 text-primary-foreground" />
+              <div className="text-sm text-muted-foreground">
+                12 lessons • 8 hours • Certificate included
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Advanced Analytics
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                Real-time reporting, A/B testing, and conversion tracking.
-                Everything you need to optimize campaigns.
-              </p>
-              {/* <div className="text-sm font-semibold text-primary">
-                Included at every plan level
-              </div> */}
             </Card>
 
-            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
-                <Shield className="h-6 w-6 text-primary-foreground" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">
-                High Deliverability
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                AWS SES-powered infrastructure with strict compliance ensures
-                your emails reach the inbox. Permission-based sending only.
-              </p>
-              {/* <div className="text-sm font-semibold text-primary">
-                Better than services 10x the price
-              </div> */}
-            </Card>
-
-            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
+            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
                 <Zap className="h-6 w-6 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Smart Automation
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                Set up complex workflows in minutes. Welcome series, abandoned
-                cart emails, and behavior triggers.
-              </p>
-              {/* <div className="text-sm font-semibold text-primary">
-                No per-automation fees
-              </div> */}
-            </Card>
-
-            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
-                <Users className="h-6 w-6 text-primary-foreground" />
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold">
+                  INTERMEDIATE
+                </span>
+                <span className="text-accent font-semibold">$149</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Contact Management
+                Sales Funnel & Automation Mastery
               </h3>
               <p className="text-muted-foreground mb-4">
-                Unlimited contacts, advanced segmentation, and custom fields. No
-                contact limits.
+                Build sophisticated sales funnels and automated sequences.
+                Welcome series, nurture campaigns, abandoned cart recovery, and
+                behavioral trigger systems.
               </p>
-              {/* <div className="text-sm font-semibold text-primary">
-                Save hundreds on contact fees
-              </div> */}
+              <div className="text-sm text-muted-foreground">
+                18 lessons • 12 hours • Live Q&A sessions
+              </div>
             </Card>
 
-            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
-                <CheckCircle className="h-6 w-6 text-primary-foreground" />
+            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
+              <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-6">
+                <BarChart3 className="h-6 w-6 text-white" />
+              </div>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full font-semibold">
+                  ADVANCED
+                </span>
+                <span className="text-accent font-semibold">$199</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Easy Integration
+                Marketing Analytics & Optimization
               </h3>
               <p className="text-muted-foreground mb-4">
-                Connect with many apps. WordPress, Shopify, WooCommerce, and
-                more.
+                Deep-dive into marketing metrics, conversion tracking, A/B
+                testing strategies, and data-driven optimization techniques for
+                maximum ROI across all channels.
               </p>
-              {/* <div className="text-sm font-semibold text-primary">
-                All integrations free
-              </div> */}
+              <div className="text-sm text-muted-foreground">
+                15 lessons • 10 hours • Advanced tools access
+              </div>
+            </Card>
+
+            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
+              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-6">
+                <Shield className="h-6 w-6 text-white" />
+              </div>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-semibold">
+                  SPECIALIST
+                </span>
+                <span className="text-accent font-semibold">$129</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                Lead Generation Mastery
+              </h3>
+              <p className="text-muted-foreground mb-4">
+                Master lead generation strategies across multiple channels.
+                Learn opt-in optimization, landing page creation, and lead
+                nurturing techniques that convert.
+              </p>
+              <div className="text-sm text-muted-foreground">
+                10 lessons • 6 hours • Deliverability audit
+              </div>
+            </Card>
+
+            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
+              <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-6">
+                <Users className="h-6 w-6 text-white" />
+              </div>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full font-semibold">
+                  INTERMEDIATE
+                </span>
+                <span className="text-accent font-semibold">$119</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                Customer Journey & Sales Psychology
+              </h3>
+              <p className="text-muted-foreground mb-4">
+                Design compelling customer journeys that convert. Learn sales
+                psychology, lifecycle marketing, personalization, and retention
+                strategies.
+              </p>
+              <div className="text-sm text-muted-foreground">
+                14 lessons • 9 hours • Journey templates
+              </div>
+            </Card>
+
+            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
+              <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-6">
+                <Mail className="h-6 w-6 text-white" />
+              </div>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-semibold">
+                  CREATIVE
+                </span>
+                <span className="text-accent font-semibold">$89</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                Conversion Copywriting & Design
+              </h3>
+              <p className="text-muted-foreground mb-4">
+                Create compelling marketing materials that convert. Learn
+                persuasive copywriting, design principles, and psychology-driven
+                content creation.
+              </p>
+              <div className="text-sm text-muted-foreground">
+                16 lessons • 11 hours • Design templates
+              </div>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Pricing Section */}
+      {/* Learning Programs Section */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Transparent, Fair Pricing
+              Complete Digital Marketing Programs
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              No hidden fees, no contact limits, no surprises. Pay only for what
-              you use, starting completely free.
+              Structured learning paths designed for your skill level. From
+              beginner to expert, master digital marketing, sales, and lead
+              generation.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Free Plan */}
-            <Card className="p-8 border-2 border-gray-200">
+            {/* Beginner Program */}
+            <Card className="p-8 border-2 border-green-200 hover:shadow-lg transition-shadow">
               <div className="text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BookOpen className="w-8 h-8 text-green-600" />
+                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Free
+                  Beginner Path
                 </h3>
-                <div className="text-4xl font-bold text-foreground mb-2">
-                  $0
+                <div className="text-4xl font-bold text-green-600 mb-2">
+                  $199
                 </div>
                 <p className="text-muted-foreground mb-8">
-                  Perfect for getting started
+                  Perfect for digital marketing newcomers
                 </p>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>2,000 emails/month</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
+                  <span>3 Foundation courses</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Unlimited contacts</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
+                  <span>20+ hours of content</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Email templates</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
+                  <span>Course certificates</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Basic analytics</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
+                  <span>Marketing templates library</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>24/7 support</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
+                  <span>Community access</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Bring your own Domain</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
+                  <span>6 months access</span>
                 </li>
               </ul>
-              <Button className="w-full" variant="outline" asChild>
-                <Link href="https://app.mailpackr.com/auth">Start Today</Link>
+              <Button
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+                asChild
+              >
+                <Link href="https://app.mailpackr.com">Start Learning</Link>
               </Button>
             </Card>
 
-            {/* Pay Per Send Plan */}
-            <Card className="p-8 border-2 border-primary bg-secondary relative">
+            {/* Professional Program */}
+            <Card className="p-8 border-2 border-primary bg-card relative hover:shadow-xl transition-shadow">
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
                 Most Popular
               </div>
               <div className="text-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <GraduationCap className="w-8 h-8 text-primary" />
+                </div>
                 <h3 className="text-2xl font-bold text-primary mb-4">
-                  Pay Per Send
+                  Professional Path
                 </h3>
-                <div className="text-4xl font-bold text-foreground mb-2">
-                  $0.001
-                </div>
-                <p className="text-muted-foreground mb-8">per email sent</p>
-              </div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Unlimited contacts</span>
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Premium templates</span>
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Advanced analytics</span>
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Automation workflows</span>
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Priority support</span>
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Bring your own Domain</span>
-                </li>
-              </ul>
-              <Button className="w-full bg-primary hover:bg-primary" asChild>
-                <Link href="https://app.mailpackr.com/auth">
-                  Start Pay Per Send
-                </Link>
-              </Button>
-            </Card>
-
-            {/* Enterprise Plan */}
-            <Card className="p-8 border-2 border-gray-200">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Enterprise
-                </h3>
-                <div className="text-4xl font-bold text-foreground mb-2">
-                  Custom
-                </div>
+                <div className="text-4xl font-bold text-primary mb-2">$399</div>
                 <p className="text-muted-foreground mb-8">
-                  For high-volume senders
+                  Most comprehensive program
                 </p>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Volume discounts</span>
+                  <CheckCircle className="w-5 h-5 text-primary mr-3" />
+                  <span>6 Advanced courses</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Dedicated IP</span>
+                  <CheckCircle className="w-5 h-5 text-primary mr-3" />
+                  <span>40+ hours of content</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Custom integrations</span>
+                  <CheckCircle className="w-5 h-5 text-primary mr-3" />
+                  <span>Professional certificates</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>Account manager</span>
+                  <CheckCircle className="w-5 h-5 text-primary mr-3" />
+                  <span>1-on-1 mentorship sessions</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-foreground mr-3" />
-                  <span>SLA guarantee</span>
+                  <CheckCircle className="w-5 h-5 text-primary mr-3" />
+                  <span>Live workshops</span>
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-primary mr-3" />
+                  <span>Lifetime access</span>
                 </li>
               </ul>
-              <Button className="w-full" variant="outline" asChild>
-                <Link href="/contact">Contact Sales</Link>
+              <Button
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                asChild
+              >
+                <Link href="https://app.mailpackr.com">Enroll Now</Link>
+              </Button>
+            </Card>
+
+            {/* Corporate Training */}
+            <Card className="p-8 border-2 border-accent hover:shadow-lg transition-shadow">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-accent" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">
+                  Corporate Training
+                </h3>
+                <div className="text-4xl font-bold text-accent mb-2">
+                  Custom
+                </div>
+                <p className="text-muted-foreground mb-8">
+                  For teams and organizations
+                </p>
+              </div>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-accent mr-3" />
+                  <span>Custom curriculum design</span>
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-accent mr-3" />
+                  <span>On-site training available</span>
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-accent mr-3" />
+                  <span>Team progress tracking</span>
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-accent mr-3" />
+                  <span>Dedicated account manager</span>
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-accent mr-3" />
+                  <span>Volume pricing discounts</span>
+                </li>
+              </ul>
+              <Button
+                className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                variant="outline"
+                asChild
+              >
+                <Link href="/contact">Get Quote</Link>
               </Button>
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <p className="text-sm text-muted-foreground">
               All plans include unlimited contacts, templates, and integrations.
               No setup fees or hidden costs.
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -463,15 +544,15 @@ export default function Home() {
       </section> */}
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-primary">
+      {/* <section className="py-20 bg-primary">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
             <span className="text-background">Ready to Cut Your Email</span>
             <br />
             <span className="text-background"> Costs by 90%? </span>
-          </h2>
-          {/* Join thousands of smart businesses who've already made the switch. */}
-          <p className="text-xl text-primary-foreground mb-12 max-w-3xl mx-auto">
+          </h2> */}
+      {/* Join thousands of smart businesses who've already made the switch. */}
+      {/* <p className="text-xl text-primary-foreground mb-12 max-w-3xl mx-auto">
             Start with our free plan today. <br />
             No Credit Card required.
           </p>
@@ -482,8 +563,8 @@ export default function Home() {
               className="bg-background text-primary hover:bg-secondary border-primary px-10 py-4 text-lg font-semibold"
               asChild
             >
-              <Link href="https://app.mailpackr.com/auth">
-                Start Free
+              <Link href="https://app.mailpackr.com">
+                Start Learning
                 <ArrowRight className="ml-3 h-5 w-5" />
               </Link>
             </Button>
@@ -497,7 +578,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
 

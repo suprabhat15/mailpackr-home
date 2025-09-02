@@ -32,25 +32,37 @@ export function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
+              className="text-primary-foreground hover:text-accent font-medium transition-colors"
             >
               Home
             </Link>
             <Link
+              href="#courses"
+              className="text-primary-foreground hover:text-accent font-medium transition-colors"
+            >
+              Learning Resources
+            </Link>
+            <Link
+              href="#programs"
+              className="text-primary-foreground hover:text-accent font-medium transition-colors"
+            >
+              Training Programs
+            </Link>
+            <Link
               href="/contact"
-              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
+              className="text-primary-foreground hover:text-accent font-medium transition-colors"
             >
               Contact
             </Link>
             <Link
               href="/privacy"
-              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
+              className="text-primary-foreground hover:text-accent font-medium transition-colors"
             >
               Privacy
             </Link>
             <Link
               href="/terms"
-              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
+              className="text-primary-foreground hover:text-accent font-medium transition-colors"
             >
               Terms
             </Link>
@@ -59,10 +71,10 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden md:flex">
             <Button
-              className="bg-primary text-primary-foreground px-10 py-4 text-lg font-semibold"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 font-semibold shadow-lg"
               asChild
             >
-              <Link href="https://app.mailpackr.com/auth">Sign In</Link>
+              <Link href="https://app.mailpackr.com">Start Learning</Link>
             </Button>
           </div>
 
@@ -84,41 +96,55 @@ export function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-card border-t border-border">
               <Link
                 href="/"
-                className="block px-3 py-2 text-gray-600 hover:text-blue-600 font-medium transition-colors"
+                className="block px-3 py-2 text-foreground hover:text-accent font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
+                href="#courses"
+                className="block px-3 py-2 text-foreground hover:text-accent font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Learning Resources
+              </Link>
+              <Link
+                href="#programs"
+                className="block px-3 py-2 text-foreground hover:text-accent font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Training Programs
+              </Link>
+              <Link
                 href="/contact"
-                className="block px-3 py-2 text-gray-600 hover:text-blue-600 font-medium transition-colors"
+                className="block px-3 py-2 text-foreground hover:text-accent font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </Link>
               <Link
                 href="/privacy"
-                className="block px-3 py-2 text-gray-600 hover:text-blue-600 font-medium transition-colors"
+                className="block px-3 py-2 text-foreground hover:text-accent font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Privacy
               </Link>
               <Link
                 href="/terms"
-                className="block px-3 py-2 text-gray-600 hover:text-blue-600 font-medium transition-colors"
+                className="block px-3 py-2 text-foreground hover:text-accent font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Terms
               </Link>
               <div className="px-3 py-2">
                 <Button
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white"
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
                   asChild
                 >
-                  <Link href="https://app.mailpackr.com/auth">Get Started</Link>
+                  <Link href="https://app.mailpackr.com">Start Learning</Link>
                 </Button>
               </div>
             </div>

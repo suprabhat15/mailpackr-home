@@ -122,7 +122,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-xl text-primary-foreground mb-8">
-              Have questions about MailPackr? <br /> We&apos;re here to help you.
+              Have questions about our courses or training programs? <br /> We&apos;re here to help you succeed in digital marketing.
             </p>
           </div>
         </div>
@@ -134,11 +134,11 @@ export default function Contact() {
           <div className="lg:col-span-1">
             <div className="sticky top-8">
               <h2 className="text-2xl font-bold text-foreground mb-6">
-                Let&apos;s start a conversation
+                Let&apos;s start your learning journey
               </h2>
               <p className="text-muted-foreground mb-8">
-                Our team is ready to help you maximize your email sending
-                potential. Reach out to us through any of the channels below.
+                Our team is ready to help you master digital marketing, email marketing,
+                and lead generation. Reach out to us through any of the channels below.
               </p>
 
               <div className="space-y-6">
@@ -149,6 +149,9 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-foreground">Email</h3>
                     {/* <p className="text-muted-foreground">hello@mailpackr.com</p> */}
+                    <p className="text-muted-foreground">
+                      learn@mailpackr.com
+                    </p>
                     <p className="text-muted-foreground">
                       support@mailpackr.com
                     </p>
@@ -324,7 +327,7 @@ export default function Contact() {
                       rows={6}
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Tell us about your project or question..."
+                      placeholder="Tell us about your learning goals or questions about our courses..."
                       className={
                         errors.message
                           ? "border-destructive focus-visible:ring-destructive"

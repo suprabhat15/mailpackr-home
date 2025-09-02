@@ -13,10 +13,10 @@ export function Footer() {
               </div> */}
               <span className="text-2xl font-bold">MailPackr</span>
             </Link>
-            <p className="text-gray-400 mb-4 max-w-md">
+            {/* <p className="text-gray-400 mb-4 max-w-md">
               Reliable, secure, and scalable email services for your business.
               Manage campaigns, track analytics, and reach your audience easily.
-            </p>
+            </p> */}
             {/* <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Twitter className="h-5 w-5" />
@@ -40,6 +40,22 @@ export function Footer() {
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#courses"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Learning Resources
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#programs"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Training Programs
                 </Link>
               </li>
               <li>
@@ -69,23 +85,42 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Support */}
+          {/* Learning Resources */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Support</h3>
+            <h3 className="text-lg font-semibold mb-4">Educational Resources</h3>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="mailto:support@mailpackr.com"
+                  href="#courses"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  support@mailpackr.com
+                  Free Tutorials
                 </a>
               </li>
-              {/* <li>
-                <a href="mailto:hello@mailpackr.com" className="text-gray-400 hover:text-white transition-colors">
-                  hello@mailpackr.com
+              <li>
+                <a
+                  href="#courses"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Case Studies
                 </a>
-              </li> */}
+              </li>
+              <li>
+                <a
+                  href="#programs"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Certification Programs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:learn@mailpackr.com"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  learn@mailpackr.com
+                </a>
+              </li>
             </ul>
           </div>
         </div>

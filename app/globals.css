@@ -44,73 +44,75 @@
 
 :root {
   --radius: 0.625rem;
-  /* Light mode: white background, dark foreground */
+  /* Light mode: Educational theme - Navy blue primary, gold accent */
   --background: #ffffff;
-  --foreground: #101828;
+  --foreground: #1e293b;
   --card: #ffffff;
-  --card-foreground: #101828;
+  --card-foreground: #1e293b;
   --popover: #ffffff;
-  --popover-foreground: #101828;
-  --primary: #101828;
+  --popover-foreground: #1e293b;
+  --primary: #1e3a8a; /* Navy blue */
   --primary-foreground: #ffffff;
-  --secondary: #ffffff;
-  --secondary-foreground: #101828;
-  --muted: #ffffff;
-  --muted-foreground: #101828;
-  --accent: #ffffff;
-  --accent-foreground: #101828;
-  --destructive: #101828;
-  --border: #101828;
+  --secondary: #f8fafc; /* Light gray */
+  --secondary-foreground: #1e293b;
+  --muted: #f1f5f9; /* Very light gray */
+  --muted-foreground: #64748b; /* Medium gray */
+  --accent: #f59e0b; /* Gold/amber */
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0; /* Light border */
   --input: #ffffff;
-  --ring: #101828;
-  --chart-1: #101828;
-  --chart-2: #101828;
-  --chart-3: #101828;
-  --chart-4: #101828;
-  --chart-5: #101828;
+  --ring: #1e3a8a; /* Navy blue focus ring */
+  --chart-1: #1e3a8a;
+  --chart-2: #f59e0b;
+  --chart-3: #10b981;
+  --chart-4: #8b5cf6;
+  --chart-5: #f97316;
   --sidebar: #ffffff;
-  --sidebar-foreground: #101828;
-  --sidebar-primary: #101828;
+  --sidebar-foreground: #1e293b;
+  --sidebar-primary: #1e3a8a;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #ffffff;
-  --sidebar-accent-foreground: #101828;
-  --sidebar-border: #101828;
-  --sidebar-ring: #101828;
+  --sidebar-accent: #f8fafc;
+  --sidebar-accent-foreground: #1e293b;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #1e3a8a;
 }
 
 .dark {
-  /* Dark mode: dark background, white foreground */
-  --background: #101828;
-  --foreground: #ffffff;
-  --card: #101828;
-  --card-foreground: #ffffff;
-  --popover: #101828;
-  --popover-foreground: #ffffff;
-  --primary: #ffffff;
-  --primary-foreground: #101828;
-  --secondary: #101828;
-  --secondary-foreground: #ffffff;
-  --muted: #101828;
-  --muted-foreground: #ffffff;
-  --accent: #101828;
-  --accent-foreground: #ffffff;
-  --destructive: #ffffff;
-  --border: #ffffff;
-  --input: #101828;
-  --ring: #ffffff;
-  --chart-1: #ffffff;
-  --chart-2: #ffffff;
-  --chart-3: #ffffff;
-  --chart-4: #ffffff;
-  --chart-5: #ffffff;
-  --sidebar: #101828;
-  --sidebar-foreground: #ffffff;
-  --sidebar-primary: #ffffff;
-  --sidebar-primary-foreground: #101828;
-  --sidebar-accent: #101828;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #ffffff;
-  --sidebar-ring: #ffffff;
+  /* Dark mode: Educational theme - Dark navy background */
+  --background: #0f172a; /* Dark navy */
+  --foreground: #f8fafc;
+  --card: #1e293b; /* Darker navy */
+  --card-foreground: #f8fafc;
+  --popover: #1e293b;
+  --popover-foreground: #f8fafc;
+  --primary: #3b82f6; /* Bright blue for contrast */
+  --primary-foreground: #ffffff;
+  --secondary: #334155; /* Medium gray */
+  --secondary-foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8; /* Light gray */
+  --accent: #fbbf24; /* Bright gold/amber */
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #334155; /* Medium border */
+  --input: #1e293b;
+  --ring: #3b82f6; /* Bright blue focus ring */
+  --chart-1: #3b82f6;
+  --chart-2: #fbbf24;
+  --chart-3: #10b981;
+  --chart-4: #a855f7;
+  --chart-5: #f97316;
+  --sidebar: #0f172a;
+  --sidebar-foreground: #f8fafc;
+  --sidebar-primary: #3b82f6;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: #334155;
+  --sidebar-ring: #3b82f6;
 }
 
 @layer base {

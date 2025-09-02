@@ -9,20 +9,20 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "MailPackr",
+  title: "MailPackr - Digital Marketing Education & Training",
   description:
-    "Drive engagement with every send. Reliable, secure, and scalable email services for your business.",
+    "Master digital marketing, email marketing, sales funnels, and lead generation with expert-led courses and educational resources. Learn practical strategies that drive real business results.",
   keywords:
-    "email sending, email campaigns, email automation, email analytics, email templates",
-  authors: [{ name: "MailPackr" }],
+    "digital marketing education, email marketing courses, sales funnel training, lead generation, marketing automation, conversion optimization, marketing analytics, digital marketing certification",
+  authors: [{ name: "MailPackr Education" }],
   icons: {
     icon: "/logo.svg",
     shortcut: "/logo.svg",
     apple: "/logo.svg",
   },
   openGraph: {
-    title: "MailPackr",
-    description: "Drive engagement with every send",
+    title: "MailPackr - Digital Marketing Education & Training",
+    description: "Master digital marketing with expert-led educational courses and practical training programs",
     type: "website",
     images: [{ url: "/logo.svg" }],
   },

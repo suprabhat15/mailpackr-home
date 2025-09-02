@@ -17,8 +17,8 @@ export default function PrivacyPage() {
               Privacy Policy
             </h1>
             <p className="text-xl text-primary-foreground mb-8">
-              Your privacy is our priority. Learn how we protect and handle your
-              data.
+              Your privacy as a learner is our priority. Discover how we protect and handle your
+              educational data and learning progress.
             </p>
             <div className="flex items-center justify-center text-primary-foreground">
               <Clock className="h-5 w-5 mr-2" />
@@ -54,10 +54,10 @@ export default function PrivacyPage() {
                 Introduction & Organizational Info
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                We, at MailPackr, are dedicated to serving our customers and
-                contacts to the best of our abilities. Part of our commitment
-                involves the responsible management of personal information
-                collected through our website mailpackr.com, and any related
+                We, at MailPackr Education, are dedicated to serving our students and
+                learners to the best of our abilities. Part of our commitment
+                involves the responsible management of personal and educational information
+                collected through our learning platform mailpackr.com, and any related
                 interactions. Our primary goals in processing this information
                 include:
               </p>
@@ -65,29 +65,29 @@ export default function PrivacyPage() {
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
                   <p className="text-muted-foreground">
-                    Enhancing the user experience on our platform by
-                    understanding customer needs and preferences.
+                    Enhancing the learning experience by understanding student
+                    needs and educational preferences.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
                   <p className="text-muted-foreground">
-                    Providing timely support and responding to inquiries or
-                    service requests.
+                    Providing timely educational support and responding to
+                    student inquiries or course-related questions.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
                   <p className="text-muted-foreground">
-                    Improving our products and services to meet the evolving
-                    demands of our users.
+                    Improving our courses and educational content to meet the
+                    evolving needs of our students.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
                   <p className="text-muted-foreground">
-                    Conducting necessary business operations, such as billing
-                    and account management.
+                    Conducting necessary educational operations, such as course
+                    enrollment, progress tracking, and certification management.
                   </p>
                 </div>
               </div>
@@ -110,12 +110,12 @@ export default function PrivacyPage() {
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
                 Our privacy policy is designed to protect the personal
-                information of all our stakeholders, including website visitors,
-                registered users, and customers. Whether you are just browsing
-                our website mailpackr.com, using our services as a registered
-                user, or engaging with us as a valued customer, we ensure that
-                your personal data is processed with the highest standards of
-                privacy and security.
+                information of all our stakeholders, including prospective
+                students, enrolled learners, and website visitors. Whether you
+                are browsing our educational platform, enrolled in our courses,
+                or participating in our learning community, we ensure that your
+                personal data is processed with the highest standards of privacy
+                and security.
               </p>
             </section>
 
@@ -128,11 +128,11 @@ export default function PrivacyPage() {
               <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
                 Our commitment to transparency and data protection extends to
                 how we collect and use your personal information. We gather
-                personal data through various interactions, including when you
-                utilize our services such as MailPackr&apos;s email sending
-                services including email campaign creation and management,
-                contact list management and segmentation, email template design
-                and customization, and analytics and reporting tools.
+                personal data through various educational interactions,
+                including when you enroll in our courses, participate in
+                learning activities, access course materials, interact with
+                instructors, participate in community discussions, and utilize
+                our educational resources and tools.
               </p>
               <h3 className="text-xl font-semibold text-foreground mb-4">
                 Types of Personal Information We May Process:
@@ -140,10 +140,10 @@ export default function PrivacyPage() {
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 <div className="bg-secondary p-4 rounded-lg border border-border">
                   <h4 className="font-semibold text-foreground mb-2">
-                    Personal Details
+                    Student Information
                   </h4>
                   <p className="text-muted-foreground text-sm">
-                    First and Last Name, Email
+                    First and Last Name, Email, Educational Background
                   </p>
                 </div>
                 <div className="bg-secondary p-4 rounded-lg border border-border">
@@ -154,20 +154,21 @@ export default function PrivacyPage() {
                     Operating system, Device ID, IP Address, Browser Information
                   </p>
                 </div>
-                {/* <div className="bg-secondary p-4 rounded-lg border border-border">
+                <div className="bg-secondary p-4 rounded-lg border border-border">
+                  <h4 className="font-semibold text-foreground mb-2">
+                    Learning Progress
+                  </h4>
+                  <p className="text-muted-foreground text-sm">
+                    Course completion, quiz scores, assignment submissions, time
+                    spent
+                  </p>
+                </div>
+                <div className="bg-secondary p-4 rounded-lg border border-border">
                   <h4 className="font-semibold text-foreground mb-2">
                     Payment Information
                   </h4>
                   <p className="text-muted-foreground text-sm">
-                    Payment method, history, Credit Card Number, Bank Details
-                  </p>
-                </div> */}
-                <div className="bg-secondary p-4 rounded-lg border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Usage Data
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    Interaction logs, clicks, time spent on pages
+                    Course payments, enrollment history, billing details
                   </p>
                 </div>
               </div>
@@ -180,37 +181,37 @@ export default function PrivacyPage() {
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Authentication and Security
+                      Student Authentication and Security
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Content Delivery
+                      Course Content Delivery
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Communication Efforts
+                      Educational Communications
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Customer Support
+                      Student Support Services
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Fraud Prevention and Risk Management
+                      Learning Progress Tracking
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Bounce and Complaint Processing
+                      Certificate and Credential Management
                     </span>
                   </div>
                 </div>
@@ -218,31 +219,31 @@ export default function PrivacyPage() {
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      User Engagement and Retention
+                      Student Engagement and Learning Analytics
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      User Feedback and Satisfaction
+                      Educational Feedback and Course Improvement
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Customizing user experience
+                      Personalizing Learning Experience
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Compliance with Legal Obligations
+                      Compliance with Educational Regulations
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Analytics and Performance Tracking
+                      Learning Analytics and Course Effectiveness
                     </span>
                   </div>
                 </div>
@@ -326,7 +327,8 @@ export default function PrivacyPage() {
                 At MailPackr, we recognize and respect your rights regarding
                 your personal information, in accordance with the General Data
                 Protection Regulation (GDPR) and other applicable data
-                protection laws.
+                protection laws. As a student or prospective learner, you have
+                full control over your data.
               </p>
 
               <h3 className="text-xl font-semibold text-foreground mb-4">
@@ -586,9 +588,9 @@ export default function PrivacyPage() {
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary-foreground" />
                   <div>
-                    <strong className="block">Email Support:</strong>
+                    <strong className="block">Learning Support:</strong>
                     <span className="text-primary-foreground">
-                      support@mailpackr.com
+                      learn@mailpackr.com
                     </span>
                   </div>
                 </div>
