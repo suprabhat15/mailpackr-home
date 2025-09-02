@@ -29,11 +29,6 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="container mx-auto px-6 py-20 lg:py-32">
           <div className="text-center max-w-4xl mx-auto">
-            {/* <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold mb-8">
-              <TrendingUp className="w-4 h-4 mr-2" />
-              Trusted by 10,000+ businesses worldwide
-            </div> */}
-
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-8">
               <GraduationCap className="w-4 h-4 mr-2" />
               Trusted by 19+ professionals worldwide
