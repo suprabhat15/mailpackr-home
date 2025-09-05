@@ -29,9 +29,9 @@ export default function About() {
               About MailPackr
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Your trusted partner for SEO education and
-              optimization resources, empowering 19+ professionals worldwide to master the
-              art of search engine optimization.
+              Your trusted partner for SEO education and optimization resources,
+              empowering 19+ professionals worldwide to master the art of search
+              engine optimization.
             </p>
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">
               <GraduationCap className="w-4 h-4 mr-2" />
@@ -50,9 +50,9 @@ export default function About() {
                 Our Mission
               </h2>
               <p className="text-lg text-muted-foreground">
-                To democratize SEO education and provide
-                practical, results-driven learning experiences that transform
-                organic visibility and drive sustainable growth.
+                To democratize SEO education and provide practical,
+                results-driven learning experiences that transform organic
+                visibility and drive sustainable growth.
               </p>
             </div>
 
@@ -85,8 +85,9 @@ export default function About() {
                   Proven Results
                 </h3>
                 <p className="text-muted-foreground">
-                  Our students see average 150% increase in organic traffic and
-                  80% improvement in search rankings within 90 days.
+                  Our students gain the knowledge and strategies to
+                  significantly grow their organic traffic and achieve higher
+                  search rankings within a short time frame.
                 </p>
               </Card>
             </div>
@@ -103,8 +104,7 @@ export default function About() {
                 What We Offer
               </h2>
               <p className="text-lg text-muted-foreground">
-                Comprehensive SEO education designed for every
-                skill level
+                Comprehensive SEO education designed for every skill level
               </p>
             </div>
 
@@ -117,8 +117,8 @@ export default function About() {
                   SEO Fundamentals
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  Master keyword research, on-page optimization, technical SEO, and
-                  content strategy from the ground up.
+                  Master keyword research, on-page optimization, technical SEO,
+                  and content strategy from the ground up.
                 </p>
               </Card>
 
@@ -130,8 +130,8 @@ export default function About() {
                   Technical SEO & Site Speed
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  Build optimized website architecture, improve crawling efficiency, and
-                  implement advanced technical SEO strategies.
+                  Build optimized website architecture, improve crawling
+                  efficiency, and implement advanced technical SEO strategies.
                 </p>
               </Card>
 
@@ -143,8 +143,8 @@ export default function About() {
                   SEO Analytics & Tracking
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  Deep-dive into search console metrics, ranking tracking, and data-driven
-                  optimization for maximum organic visibility.
+                  Deep-dive into search console metrics, ranking tracking, and
+                  data-driven optimization for maximum organic visibility.
                 </p>
               </Card>
 
@@ -156,8 +156,8 @@ export default function About() {
                   Content SEO & Strategy
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  Learn content optimization, topic clustering, and
-                  search intent targeting strategies.
+                  Learn content optimization, topic clustering, and search
+                  intent targeting strategies.
                 </p>
               </Card>
 
@@ -169,8 +169,8 @@ export default function About() {
                   Link Building & Authority
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  Create powerful backlink strategies with effective
-                  outreach and relationship building techniques.
+                  Create powerful backlink strategies with effective outreach
+                  and relationship building techniques.
                 </p>
               </Card>
 

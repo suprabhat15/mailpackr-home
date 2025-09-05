@@ -35,53 +35,66 @@ export default function FAQ() {
   const faqData = [
     {
       question: "What is MailPackr and what SEO services do you offer?",
-      answer: "MailPackr is your trusted partner for SEO education and optimization resources. We provide comprehensive courses, training programs, and educational resources to help you master search engine optimization, keyword research, technical SEO, content optimization, and link building strategies."
+      answer:
+        "MailPackr is your trusted partner for SEO education and optimization resources. We provide comprehensive courses, training programs, and educational resources to help you master search engine optimization, keyword research, technical SEO, content optimization, and link building strategies.",
     },
     {
       question: "Who are your SEO courses designed for?",
-      answer: "Our SEO courses are designed for beginners new to search engine optimization, intermediate marketers looking to advance their SEO skills, and professionals seeking specialized knowledge in technical SEO, content optimization, and advanced ranking strategies."
+      answer:
+        "Our SEO courses are designed for beginners new to search engine optimization, intermediate marketers looking to advance their SEO skills, and professionals seeking specialized knowledge in technical SEO, content optimization, and advanced ranking strategies.",
     },
     {
       question: "What SEO learning programs do you offer?",
-      answer: "We offer three main learning paths: Beginner Path ($199) with 3 foundation SEO courses and 20+ hours of content, Professional Path ($399) with 6 advanced SEO courses and 40+ hours of content including 1-on-1 mentorship, and Custom Corporate Training for teams and organizations."
+      answer:
+        "We offer three main learning paths: Beginner Path ($199) with 3 foundation SEO courses and 20+ hours of content, Professional Path ($399) with 6 advanced SEO courses and 40+ hours of content including 1-on-1 mentorship, and Custom Corporate Training for teams and organizations.",
     },
     {
       question: "What SEO topics are covered in your courses?",
-      answer: "Our comprehensive SEO curriculum covers SEO Fundamentals, Technical SEO & Site Optimization, SEO Analytics & Performance Optimization, Content SEO & User Experience, and Link Building & Authority Development. Each course includes practical projects and real-world SEO case studies."
+      answer:
+        "Our comprehensive SEO curriculum covers SEO Fundamentals, Technical SEO & Site Optimization, SEO Analytics & Performance Optimization, Content SEO & User Experience, and Link Building & Authority Development. Each course includes practical projects and real-world SEO case studies.",
     },
     {
       question: "Do you offer SEO certificates?",
-      answer: "Yes! All our SEO courses include certificates upon completion. Professional Path participants receive professional SEO certificates, while Beginner Path includes course certificates. These can help demonstrate your SEO expertise to employers or clients."
+      answer:
+        "Yes! All our SEO courses include certificates upon completion. Professional Path participants receive professional SEO certificates, while Beginner Path includes course certificates. These can help demonstrate your SEO expertise to employers or clients.",
     },
     {
       question: "What kind of SEO support do you provide?",
-      answer: "We provide comprehensive SEO support including community access, SEO templates library, and for Professional Path students, 1-on-1 SEO mentorship sessions and live workshops. Corporate training includes dedicated account managers for SEO implementation guidance."
+      answer:
+        "We provide comprehensive SEO support including community access, SEO templates library, and for Professional Path students, 1-on-1 SEO mentorship sessions and live workshops. Corporate training includes dedicated account managers for SEO implementation guidance.",
     },
     {
       question: "How long do I have access to the SEO content?",
-      answer: "Beginner Path includes 6 months of access to all SEO materials, while Professional Path includes lifetime access to all SEO content and updates. This means you can learn SEO at your own pace and revisit materials whenever needed."
+      answer:
+        "Beginner Path includes 6 months of access to all SEO materials, while Professional Path includes lifetime access to all SEO content and updates. This means you can learn SEO at your own pace and revisit materials whenever needed.",
     },
     {
       question: "What SEO results can I expect?",
-      answer: "Our SEO students typically see a 150% average increase in organic traffic and 80% improvement in search rankings within 90 days of completing our courses. However, SEO results depend on implementation, competition, and your specific business context."
+      answer:
+        "Our students gain the knowledge and strategies to significantly grow their organic traffic and achieve higher search rankings within a short time frame.",
     },
     {
       question: "Do you offer corporate SEO training?",
-      answer: "Yes! We offer custom corporate SEO training with curriculum design tailored to your team&apos;s SEO needs, on-site SEO training options, team progress tracking, dedicated SEO account managers, and volume pricing discounts. Contact us for a custom SEO training quote."
+      answer:
+        "Yes! We offer custom corporate SEO training with curriculum design tailored to your team&apos;s SEO needs, on-site SEO training options, team progress tracking, dedicated SEO account managers, and volume pricing discounts. Contact us for a custom SEO training quote.",
     },
     {
       question: "How do I get started with SEO learning?",
-      answer: "You can join our waitlist to be notified when SEO enrollment opens. We&apos;ll provide you with free SEO educational resources, industry case studies, and practical optimization tutorials while you wait. Simply sign up on our homepage to begin your SEO learning journey."
+      answer:
+        "You can join our waitlist to be notified when SEO enrollment opens. We&apos;ll provide you with free SEO educational resources, industry case studies, and practical optimization tutorials while you wait. Simply sign up on our homepage to begin your SEO learning journey.",
     },
     {
-      question: "What makes MailPackr different from other SEO education platforms?",
-      answer: "We focus on practical, results-driven SEO education taught by industry experts who have generated millions in organic traffic. Our SEO courses combine hands-on projects, real-world case studies, and proven optimization strategies that you can implement immediately to improve your search rankings."
+      question:
+        "What makes MailPackr different from other SEO education platforms?",
+      answer:
+        "We focus on practical, results-driven SEO education taught by industry experts who have generated millions in organic traffic. Our SEO courses combine hands-on projects, real-world case studies, and proven optimization strategies that you can implement immediately to improve your search rankings.",
     },
     {
       question: "Is there any free SEO content available?",
-      answer: "Yes! We provide free SEO educational resources, industry case studies, and practical optimization tutorials. These are available to help you start learning search engine optimization fundamentals before enrolling in our comprehensive SEO programs."
-    }
-  ]
+      answer:
+        "Yes! We provide free SEO educational resources, industry case studies, and practical optimization tutorials. These are available to help you start learning search engine optimization fundamentals before enrolling in our comprehensive SEO programs.",
+    },
+  ];
 
   return (
     <div className="min-h-screen">

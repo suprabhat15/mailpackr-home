@@ -40,8 +40,8 @@ export default function Home() {
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              Learn search engine optimization, keyword research, and technical SEO
-              strategies from industry professionals. Master the skills that
+              Learn search engine optimization, keyword research, and technical
+              SEO strategies from industry professionals. Master the skills that
               drive organic traffic and improve search rankings.
             </p>
 
@@ -99,8 +99,9 @@ export default function Home() {
                 Expert Instructors
               </h3>
               <p className="text-muted-foreground">
-                Learn from professionals who have generated millions in organic traffic
-                through proven SEO strategies and optimization techniques
+                Learn from professionals who have generated millions in organic
+                traffic through proven SEO strategies and optimization
+                techniques
               </p>
             </Card>
 
@@ -121,8 +122,9 @@ export default function Home() {
                 Proven Results
               </h3>
               <p className="text-muted-foreground">
-                Our students see average 150% increase in organic traffic and
-                80% improvement in search rankings within 90 days
+                Our students gain the knowledge and strategies to significantly
+                grow their organic traffic and achieve higher search rankings
+                within a short time frame.
               </p>
             </Card>
           </div>
@@ -158,9 +160,9 @@ export default function Home() {
                 SEO Fundamentals
               </h3>
               <p className="text-muted-foreground mb-4">
-                Master the basics of search engine optimization. Learn keyword research,
-                on-page SEO, meta optimization, and crafting content strategies
-                that rank higher in search results.
+                Master the basics of search engine optimization. Learn keyword
+                research, on-page SEO, meta optimization, and crafting content
+                strategies that rank higher in search results.
               </p>
               <div className="text-sm text-muted-foreground">
                 12 lessons • 8 hours • Certificate included
@@ -182,8 +184,8 @@ export default function Home() {
               </h3>
               <p className="text-muted-foreground mb-4">
                 Master technical SEO fundamentals and advanced optimization.
-                Site speed, crawling, indexing, schema markup, and
-                mobile optimization techniques.
+                Site speed, crawling, indexing, schema markup, and mobile
+                optimization techniques.
               </p>
               <div className="text-sm text-muted-foreground">
                 18 lessons • 12 hours • Live Q&A sessions
@@ -205,8 +207,8 @@ export default function Home() {
               </h3>
               <p className="text-muted-foreground mb-4">
                 Deep-dive into SEO metrics, ranking tracking, search console
-                optimization, and data-driven SEO techniques for
-                maximum organic visibility and traffic growth.
+                optimization, and data-driven SEO techniques for maximum organic
+                visibility and traffic growth.
               </p>
               <div className="text-sm text-muted-foreground">
                 15 lessons • 10 hours • Advanced tools access
@@ -250,9 +252,9 @@ export default function Home() {
                 Content SEO & User Experience
               </h3>
               <p className="text-muted-foreground mb-4">
-                Create SEO-optimized content that ranks and converts. Learn content
-                strategy, user intent optimization, content clustering, and
-                engagement optimization techniques.
+                Create SEO-optimized content that ranks and converts. Learn
+                content strategy, user intent optimization, content clustering,
+                and engagement optimization techniques.
               </p>
               <div className="text-sm text-muted-foreground">
                 14 lessons • 9 hours • Content templates
@@ -273,9 +275,9 @@ export default function Home() {
                 Link Building & Authority Development
               </h3>
               <p className="text-muted-foreground mb-4">
-                Master advanced link building strategies that build domain authority. Learn
-                outreach techniques, relationship building, and white-hat
-                link acquisition methods.
+                Master advanced link building strategies that build domain
+                authority. Learn outreach techniques, relationship building, and
+                white-hat link acquisition methods.
               </p>
               <div className="text-sm text-muted-foreground">
                 16 lessons • 11 hours • Outreach templates
