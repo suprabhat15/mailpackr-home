@@ -138,8 +138,8 @@ export default function Contact() {
                 Let&apos;s start your learning journey
               </h2>
               <p className="text-muted-foreground mb-8">
-                Our team is ready to help you master SEO optimization, email
-                marketing. Reach out to us through any of the channels below.
+                Our team is ready to help you master SEO optimization. Reach out
+                to us through any of the channels below.
               </p>
 
               <div className="space-y-6">
