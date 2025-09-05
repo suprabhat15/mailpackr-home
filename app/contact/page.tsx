@@ -175,17 +175,16 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-foreground">Office</h3>
                     <p className="text-muted-foreground">
-                      Phone: (+91)9700129000
-                    </p>
-                    <p className="text-muted-foreground">
-                      <strong>Support Hours:</strong> Mon-Fri, 10:00AM–6:00PM
-                      IST
-                    </p>
-                    <p className="text-muted-foreground">
                       E-516, Sector 7, Dwarka
                     </p>
                     <p className="text-muted-foreground">
                       New Delhi, 110077, India
+                    </p>
+                    <p className="text-muted-foreground">
+                      Phone: (+91) 9700129000
+                    </p>
+                    <p className="text-muted-foreground">
+                      Support Hours: <strong>Mon-Fri, 10:00AM–6:00PM</strong>
                     </p>
                   </div>
                 </div>
