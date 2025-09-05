@@ -184,7 +184,8 @@ export default function Contact() {
                       Phone: (+91) 9700129000
                     </p>
                     <p className="text-muted-foreground">
-                      Support Hours: <strong>Mon-Fri, 10:00AM–6:00PM</strong>
+                      Support Hours: <br />
+                      <strong>Mon-Fri, 10:00AM–6:00PM</strong>
                     </p>
                   </div>
                 </div>
