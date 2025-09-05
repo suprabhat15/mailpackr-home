@@ -122,7 +122,8 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-xl text-primary-foreground mb-8">
-              Have questions about our courses or training programs? <br /> We&apos;re here to help you succeed in digital marketing.
+              Have questions about our courses or training programs? <br />{" "}
+              We&apos;re here to help you succeed in digital marketing.
             </p>
           </div>
         </div>
@@ -137,8 +138,8 @@ export default function Contact() {
                 Let&apos;s start your learning journey
               </h2>
               <p className="text-muted-foreground mb-8">
-                Our team is ready to help you master digital marketing, email marketing,
-                and lead generation. Reach out to us through any of the channels below.
+                Our team is ready to help you master digital marketing, email
+                marketing. Reach out to us through any of the channels below.
               </p>
 
               <div className="space-y-6">
@@ -149,9 +150,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-foreground">Email</h3>
                     {/* <p className="text-muted-foreground">hello@mailpackr.com</p> */}
-                    <p className="text-muted-foreground">
-                      learn@mailpackr.com
-                    </p>
+                    <p className="text-muted-foreground">learn@mailpackr.com</p>
                     <p className="text-muted-foreground">
                       support@mailpackr.com
                     </p>
@@ -175,7 +174,19 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Office</h3>
-                    <p className="text-muted-foreground">New Delhi, India</p>
+                    <p className="text-muted-foreground">
+                      Phone: (+91)9700129000
+                    </p>
+                    <p className="text-muted-foreground">
+                      <strong>Support Hours:</strong> Mon-Fri, 10:00AM–6:00PM
+                      IST
+                    </p>
+                    <p className="text-muted-foreground">
+                      E-516, Sector 7, Dwarka
+                    </p>
+                    <p className="text-muted-foreground">
+                      New Delhi, 110077, India
+                    </p>
                   </div>
                 </div>
 
@@ -206,8 +217,8 @@ export default function Contact() {
                   Send us a message
                 </CardTitle>
                 <CardDescription>
-                  Fill out the form below and we&apos;ll get back to you as soon as
-                  possible.
+                  Fill out the form below and we&apos;ll get back to you as soon
+                  as possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>

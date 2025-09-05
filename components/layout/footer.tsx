@@ -13,10 +13,9 @@ export function Footer() {
               </div> */}
               <span className="text-2xl font-bold">MailPackr</span>
             </Link>
-            {/* <p className="text-gray-400 mb-4 max-w-md">
-              Reliable, secure, and scalable email services for your business.
-              Manage campaigns, track analytics, and reach your audience easily.
-            </p> */}
+            <p className="text-gray-400 mb-4 max-w-md">
+              Your Trusted Partner for Digital Marketing Education & Resources
+            </p>
             {/* <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Twitter className="h-5 w-5" />
@@ -87,7 +86,9 @@ export function Footer() {
 
           {/* Learning Resources */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Educational Resources</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              Educational Resources
+            </h3>
             <ul className="space-y-2">
               <li>
                 <a

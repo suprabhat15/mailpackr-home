@@ -17,8 +17,8 @@ export default function PrivacyPage() {
               Privacy Policy
             </h1>
             <p className="text-xl text-primary-foreground mb-8">
-              Your privacy as a learner is our priority. Discover how we protect and handle your
-              educational data and learning progress.
+              Your privacy as a learner is our priority. Discover how we protect
+              and handle your educational data and learning progress.
             </p>
             <div className="flex items-center justify-center text-primary-foreground">
               <Clock className="h-5 w-5 mr-2" />
@@ -54,12 +54,12 @@ export default function PrivacyPage() {
                 Introduction & Organizational Info
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                We, at MailPackr Education, are dedicated to serving our students and
-                learners to the best of our abilities. Part of our commitment
-                involves the responsible management of personal and educational information
-                collected through our learning platform mailpackr.com, and any related
-                interactions. Our primary goals in processing this information
-                include:
+                We, at MailPackr Education, are dedicated to serving our
+                students and learners to the best of our abilities. Part of our
+                commitment involves the responsible management of personal and
+                educational information collected through our learning platform
+                mailpackr.com, and any related interactions. Our primary goals
+                in processing this information include:
               </p>
               <div className="space-y-4 mb-6">
                 <div className="flex items-start space-x-3">
@@ -93,11 +93,12 @@ export default function PrivacyPage() {
               </div>
               <div className="bg-secondary border-l-4 border-primary p-6 mb-6 rounded-r-lg">
                 <p className="text-foreground">
-                  We do not have a designated Data Protection Officer (DPO) but
-                  remain fully committed to addressing your privacy concerns.
-                  Should you have any questions or require further information
-                  about how we manage personal information, please feel free to
-                  contact us at <strong>support@mailpackr.com</strong>.
+                  At present, we do not have an appointed Data Protection
+                  Officer (DPO), but we remain fully committed to addressing all
+                  privacy concerns promptly. Should you have any questions or
+                  require further information about how we manage personal
+                  information, please feel free to contact us at{" "}
+                  <strong>support@mailpackr.com</strong>.
                 </p>
               </div>
             </section>
@@ -262,7 +263,7 @@ export default function PrivacyPage() {
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Personal information is stored in secure servers located in
-                  the following locations: NA, AS, EU. For services that require
+                  the following locations: NA, AS. For services that require
                   international data transfer, we ensure that such transfers
                   comply with all applicable laws and maintain data protection
                   standards equivalent to those in our primary location.

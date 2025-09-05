@@ -47,7 +47,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-              <Button
+              {/* <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 text-lg font-semibold shadow-lg"
                 asChild
@@ -56,7 +56,7 @@ export default function Home() {
                   Start Learning
                   <ArrowRight className="ml-3 h-5 w-5" />
                 </Link>
-              </Button>
+              </Button> */}
               {/* <Button
                 variant="outline"
                 size="lg"
@@ -138,9 +138,9 @@ export default function Home() {
               Comprehensive Digital Marketing Education
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Master every aspect of digital marketing, sales, and lead
-              generation with our comprehensive educational resources. From
-              beginner fundamentals to advanced strategies.
+              Master every aspect of digital marketing, sales with our
+              comprehensive educational resources. From beginner fundamentals to
+              advanced strategies.
             </p>
           </div>
 
@@ -295,8 +295,7 @@ export default function Home() {
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Structured learning paths designed for your skill level. From
-              beginner to expert, master digital marketing, sales, and lead
-              generation.
+              beginner to expert, master digital marketing, sales.
             </p>
           </div>
 
@@ -343,12 +342,12 @@ export default function Home() {
                   <span>6 months access</span>
                 </li>
               </ul>
-              <Button
+              {/* <Button
                 className="w-full bg-green-600 hover:bg-green-700 text-white"
                 asChild
               >
                 <Link href="https://app.mailpackr.com">Start Learning</Link>
-              </Button>
+              </Button> */}
             </Card>
 
             {/* Professional Program */}
@@ -394,12 +393,12 @@ export default function Home() {
                   <span>Lifetime access</span>
                 </li>
               </ul>
-              <Button
+              {/* <Button
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 asChild
               >
                 <Link href="https://app.mailpackr.com">Enroll Now</Link>
-              </Button>
+              </Button> */}
             </Card>
 
             {/* Corporate Training */}
@@ -575,7 +574,7 @@ export default function Home() {
       <Footer />
 
       {/* Crisp Chat */}
-      <Script
+      {/* <Script
         id="crisp-chat"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -591,7 +590,7 @@ export default function Home() {
             })();
           `,
         }}
-      />
+      /> */}
     </div>
   );
 }
