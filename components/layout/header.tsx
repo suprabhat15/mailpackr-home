@@ -66,6 +66,12 @@ export function Header() {
             >
               Terms
             </Link>
+            <Link
+              href="/about"
+              className="text-primary-foreground hover:text-accent font-medium transition-colors"
+            >
+              About Us
+            </Link>
           </nav>
 
           {/* CTA Button */}
@@ -138,6 +144,13 @@ export function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Terms
+              </Link>
+              <Link
+                href="/about"
+                className="block px-3 py-2 text-foreground hover:text-accent font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About Us
               </Link>
               <div className="px-3 py-2">
                 <Button

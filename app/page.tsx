@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Header } from "@/components/layout/header"
@@ -8,11 +7,9 @@ import { WaitlistSignup } from "@/components/waitlist-signup";
 import {
   Mail,
   BarChart3,
-  Shield,
   Zap,
   Users,
   CheckCircle,
-  ArrowRight,
   BookOpen,
   GraduationCap,
   Target,
