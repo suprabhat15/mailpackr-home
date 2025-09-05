@@ -69,14 +69,14 @@ export function Header() {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:flex">
+          {/* <div className="hidden md:flex">
             <Button
               className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 font-semibold shadow-lg"
               asChild
             >
               <Link href="https://app.mailpackr.com">Start Learning</Link>
             </Button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <Button
