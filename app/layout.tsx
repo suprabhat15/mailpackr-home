@@ -11,9 +11,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "MailPackr - Digital Marketing Education & Training",
   description:
-    "Master digital marketing, email marketing, sales funnels, and lead generation with expert-led courses and educational resources. Learn practical strategies that drive real business results.",
+    "Master digital marketing, email marketing, sales funnels with expert-led courses and educational resources. Learn practical strategies that drive real business results.",
   keywords:
-    "digital marketing education, email marketing courses, sales funnel training, lead generation, marketing automation, conversion optimization, marketing analytics, digital marketing certification",
+    "digital marketing education, email marketing courses, sales funnel training, marketing automation, conversion optimization, marketing analytics, digital marketing certification",
   authors: [{ name: "MailPackr Education" }],
   icons: {
     icon: "/logo.svg",
@@ -22,7 +22,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "MailPackr - Digital Marketing Education & Training",
-    description: "Master digital marketing with expert-led educational courses and practical training programs",
+    description:
+      "Master digital marketing with expert-led educational courses and practical training programs",
     type: "website",
     images: [{ url: "/logo.svg" }],
   },

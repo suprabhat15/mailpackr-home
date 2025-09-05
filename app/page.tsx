@@ -41,9 +41,9 @@ export default function Home() {
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              Learn email marketing, sales funnels, lead generation, and digital
-              marketing strategies from industry professionals. Master the
-              skills that turn prospects into customers.
+              Learn email marketing, sales funnels, and digital marketing
+              strategies from industry professionals. Master the skills that
+              turn prospects into customers.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
@@ -89,10 +89,7 @@ export default function Home() {
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Learn from industry experts with proven track records in
-              <strong>
-                {" "}
-                digital marketing, sales, and lead generation success
-              </strong>
+              <strong> digital marketing, sales success</strong>
             </p>
           </div>
 
@@ -217,7 +214,7 @@ export default function Home() {
               </div>
             </Card>
 
-            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
+            {/* <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
               <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-6">
                 <Shield className="h-6 w-6 text-white" />
               </div>
@@ -238,7 +235,7 @@ export default function Home() {
               <div className="text-sm text-muted-foreground">
                 10 lessons • 6 hours • Deliverability audit
               </div>
-            </Card>
+            </Card> */}
 
             <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
               <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-6">
