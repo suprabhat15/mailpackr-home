@@ -151,9 +151,9 @@ export default function Home() {
                 <Search className="h-6 w-6 text-accent-foreground" />
               </div>
               <div className="flex items-center gap-2 mb-3">
-                {/* <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-semibold">
+                <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-semibold">
                   BEGINNER
-                </span> */}
+                </span>
                 <span className="text-accent font-semibold">$99</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
@@ -165,7 +165,7 @@ export default function Home() {
                 strategies that rank higher in search results.
               </p>
               <div className="text-sm text-muted-foreground">
-                12 lessons • 8 hours
+                12 lessons • 8 hours • Certificate included
               </div>
             </Card>
 
@@ -174,42 +174,21 @@ export default function Home() {
                 <Globe className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex items-center gap-2 mb-3">
-                {/* <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold">
+                <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold">
                   INTERMEDIATE
-                </span> */}
+                </span>
                 <span className="text-accent font-semibold">$149</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Corporate Training
+                Technical SEO & Site Optimization
               </h3>
               <p className="text-muted-foreground mb-4">
-                Custom curriculum design and on-site training for teams and
-                organizations.
+                Master technical SEO fundamentals and advanced optimization.
+                Site speed, crawling, indexing, schema markup, and mobile
+                optimization techniques.
               </p>
               <div className="text-sm text-muted-foreground">
-                10 lessons • 7 hours
-              </div>
-            </Card>
-
-            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
-              <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-6">
-                <BarChart3 className="h-6 w-6 text-white" />
-              </div>
-              <div className="flex items-center gap-2 mb-3">
-                {/* <span className="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full font-semibold">
-                  ADVANCED
-                </span> */}
-                <span className="text-accent font-semibold">$199</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Technical SEO & Site Speed
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                Build optimized website architecture, improve crawling
-                efficiency, and implement advanced technical SEO strategies.
-              </p>
-              <div className="text-sm text-muted-foreground">
-                15 lessons • 10 hours
+                18 lessons • 12 hours • Live Q&A sessions
               </div>
             </Card>
 
@@ -241,20 +220,44 @@ export default function Home() {
                 <Users className="h-6 w-6 text-white" />
               </div>
               <div className="flex items-center gap-2 mb-3">
-                {/* <span className="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full font-semibold">
-                  INTERMEDIATE
-                </span> */}
+                <span className="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full font-semibold">
+                  SPECIALIST
+                </span>
                 <span className="text-accent font-semibold">$119</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                SEO Analytics & Tracking
+                Content SEO & User Experience
               </h3>
               <p className="text-muted-foreground mb-4">
-                Deep-dive into search console metrics, ranking tracking, and
-                data-driven optimization for maximum organic visibility.
+                Create SEO-optimized content that ranks and converts. Learn
+                content strategy, user intent optimization, content clustering,
+                and engagement optimization techniques.
               </p>
               <div className="text-sm text-muted-foreground">
-                14 lessons • 9 hours
+                14 lessons • 9 hours • Content templates
+              </div>
+            </Card>
+
+            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
+              <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-6">
+                <BarChart3 className="h-6 w-6 text-white" />
+              </div>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full font-semibold">
+                  ADVANCED
+                </span>
+                <span className="text-accent font-semibold">$199</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                SEO Analytics & Performance Optimization
+              </h3>
+              <p className="text-muted-foreground mb-4">
+                Deep-dive into SEO metrics, ranking tracking, search console
+                optimization, and data-driven SEO techniques for maximum organic
+                visibility and traffic growth.
+              </p>
+              <div className="text-sm text-muted-foreground">
+                15 lessons • 10 hours • Advanced tools access
               </div>
             </Card>
 
@@ -263,42 +266,21 @@ export default function Home() {
                 <LinkIcon className="h-6 w-6 text-white" />
               </div>
               <div className="flex items-center gap-2 mb-3">
-                {/* <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-semibold">
+                <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-semibold">
                   CREATIVE
-                </span> */}
+                </span>
                 <span className="text-accent font-semibold">$119</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Content SEO & Strategy
+                Link Building & Authority Development
               </h3>
               <p className="text-muted-foreground mb-4">
-                Learn content optimization, topic clustering, and search intent
-                targeting strategies.
+                Master advanced link building strategies that build domain
+                authority. Learn outreach techniques, relationship building, and
+                white-hat link acquisition methods.
               </p>
               <div className="text-sm text-muted-foreground">
-                16 lessons • 11 hours
-              </div>
-            </Card>
-
-            <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
-              <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-6">
-                <LinkIcon className="h-6 w-6 text-white" />
-              </div>
-              <div className="flex items-center gap-2 mb-3">
-                {/* <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-semibold">
-                  CREATIVE
-                </span> */}
-                <span className="text-accent font-semibold">$119</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Link Building & Authority
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                Create powerful backlink strategies with effective outreach and
-                relationship building techniques.
-              </p>
-              <div className="text-sm text-muted-foreground">
-                16 lessons • 11 hours
+                16 lessons • 11 hours • Outreach templates
               </div>
             </Card>
           </div>

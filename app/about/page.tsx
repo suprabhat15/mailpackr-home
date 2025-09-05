@@ -192,7 +192,7 @@ export default function About() {
       </section>
 
       {/* Learning Paths Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
@@ -300,7 +300,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-primary">
@@ -326,7 +326,7 @@ export default function About() {
               </Button>
               <Button
                 size="lg"
-                variant="outline"
+                // variant="outline"
                 className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
                 asChild
               >

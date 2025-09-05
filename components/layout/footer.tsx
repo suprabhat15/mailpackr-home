@@ -31,7 +31,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Features</h3>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -57,6 +57,13 @@ export function Footer() {
                   SEO Programs
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Learning Resources */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
               <li>
                 <Link
                   href="/contact"
@@ -96,47 +103,6 @@ export function Footer() {
                 >
                   FAQ
                 </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Learning Resources */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">
-              SEO Resources
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="#courses"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Free SEO Tutorials
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#courses"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  SEO Case Studies
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#programs"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  SEO Certification Programs
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:learn@mailpackr.com"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  learn@mailpackr.com
-                </a>
               </li>
             </ul>
           </div>
