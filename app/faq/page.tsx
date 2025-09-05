@@ -34,52 +34,52 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 export default function FAQ() {
   const faqData = [
     {
-      question: "What is MailPackr and what do you offer?",
-      answer: "MailPackr is your trusted partner for digital marketing education and resources. We provide comprehensive courses, training programs, and educational resources to help you master email marketing, sales funnels, automation, analytics, and conversion optimization."
+      question: "What is MailPackr and what SEO services do you offer?",
+      answer: "MailPackr is your trusted partner for SEO education and optimization resources. We provide comprehensive courses, training programs, and educational resources to help you master search engine optimization, keyword research, technical SEO, content optimization, and link building strategies."
     },
     {
-      question: "Who are your courses designed for?",
-      answer: "Our courses are designed for digital marketing newcomers, intermediate marketers looking to advance their skills, and professionals seeking specialized knowledge. We offer beginner-friendly fundamentals as well as advanced strategies for experienced marketers."
+      question: "Who are your SEO courses designed for?",
+      answer: "Our SEO courses are designed for beginners new to search engine optimization, intermediate marketers looking to advance their SEO skills, and professionals seeking specialized knowledge in technical SEO, content optimization, and advanced ranking strategies."
     },
     {
-      question: "What learning programs do you offer?",
-      answer: "We offer three main learning paths: Beginner Path ($199) with 3 foundation courses and 20+ hours of content, Professional Path ($399) with 6 advanced courses and 40+ hours of content including 1-on-1 mentorship, and Custom Corporate Training for teams and organizations."
+      question: "What SEO learning programs do you offer?",
+      answer: "We offer three main learning paths: Beginner Path ($199) with 3 foundation SEO courses and 20+ hours of content, Professional Path ($399) with 6 advanced SEO courses and 40+ hours of content including 1-on-1 mentorship, and Custom Corporate Training for teams and organizations."
     },
     {
-      question: "What topics are covered in your courses?",
-      answer: "Our comprehensive curriculum covers Digital Marketing Fundamentals, Sales Funnel & Automation Mastery, Marketing Analytics & Optimization, Customer Journey & Sales Psychology, and Conversion Copywriting & Design. Each course includes practical projects and real-world case studies."
+      question: "What SEO topics are covered in your courses?",
+      answer: "Our comprehensive SEO curriculum covers SEO Fundamentals, Technical SEO & Site Optimization, SEO Analytics & Performance Optimization, Content SEO & User Experience, and Link Building & Authority Development. Each course includes practical projects and real-world SEO case studies."
     },
     {
-      question: "Do you offer certificates?",
-      answer: "Yes! All our courses include certificates upon completion. Professional Path participants receive professional certificates, while Beginner Path includes course certificates. These can help demonstrate your expertise to employers or clients."
+      question: "Do you offer SEO certificates?",
+      answer: "Yes! All our SEO courses include certificates upon completion. Professional Path participants receive professional SEO certificates, while Beginner Path includes course certificates. These can help demonstrate your SEO expertise to employers or clients."
     },
     {
-      question: "What kind of support do you provide?",
-      answer: "We provide comprehensive support including community access, marketing templates library, and for Professional Path students, 1-on-1 mentorship sessions and live workshops. Corporate training includes dedicated account managers."
+      question: "What kind of SEO support do you provide?",
+      answer: "We provide comprehensive SEO support including community access, SEO templates library, and for Professional Path students, 1-on-1 SEO mentorship sessions and live workshops. Corporate training includes dedicated account managers for SEO implementation guidance."
     },
     {
-      question: "How long do I have access to the content?",
-      answer: "Beginner Path includes 6 months of access, while Professional Path includes lifetime access to all content. This means you can learn at your own pace and revisit materials whenever needed."
+      question: "How long do I have access to the SEO content?",
+      answer: "Beginner Path includes 6 months of access to all SEO materials, while Professional Path includes lifetime access to all SEO content and updates. This means you can learn SEO at your own pace and revisit materials whenever needed."
     },
     {
-      question: "What results can I expect?",
-      answer: "Our students typically see a 40% average increase in email open rates and 25% boost in conversions within 30 days of completing our courses. However, results depend on implementation and your specific business context."
+      question: "What SEO results can I expect?",
+      answer: "Our SEO students typically see a 150% average increase in organic traffic and 80% improvement in search rankings within 90 days of completing our courses. However, SEO results depend on implementation, competition, and your specific business context."
     },
     {
-      question: "Do you offer corporate training?",
-      answer: "Yes! We offer custom corporate training with curriculum design tailored to your team's needs, on-site training options, team progress tracking, dedicated account managers, and volume pricing discounts. Contact us for a custom quote."
+      question: "Do you offer corporate SEO training?",
+      answer: "Yes! We offer custom corporate SEO training with curriculum design tailored to your team&apos;s SEO needs, on-site SEO training options, team progress tracking, dedicated SEO account managers, and volume pricing discounts. Contact us for a custom SEO training quote."
     },
     {
-      question: "How do I get started?",
-      answer: "You can join our waitlist to be notified when enrollment opens. We'll provide you with free educational resources, industry case studies, and practical tutorials while you wait. Simply sign up on our homepage to begin your learning journey."
+      question: "How do I get started with SEO learning?",
+      answer: "You can join our waitlist to be notified when SEO enrollment opens. We&apos;ll provide you with free SEO educational resources, industry case studies, and practical optimization tutorials while you wait. Simply sign up on our homepage to begin your SEO learning journey."
     },
     {
-      question: "What makes MailPackr different from other marketing education platforms?",
-      answer: "We focus on practical, results-driven education taught by industry experts who have generated millions in revenue. Our courses combine hands-on projects, real-world case studies, and proven strategies that you can implement immediately in your business."
+      question: "What makes MailPackr different from other SEO education platforms?",
+      answer: "We focus on practical, results-driven SEO education taught by industry experts who have generated millions in organic traffic. Our SEO courses combine hands-on projects, real-world case studies, and proven optimization strategies that you can implement immediately to improve your search rankings."
     },
     {
-      question: "Is there any free content available?",
-      answer: "Yes! We provide free educational resources, industry case studies, and practical tutorials. These are available to help you start learning digital marketing fundamentals before enrolling in our comprehensive programs."
+      question: "Is there any free SEO content available?",
+      answer: "Yes! We provide free SEO educational resources, industry case studies, and practical optimization tutorials. These are available to help you start learning search engine optimization fundamentals before enrolling in our comprehensive SEO programs."
     }
   ]
 
@@ -93,7 +93,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Find answers to common questions about our digital marketing courses, programs, and educational resources.
+            Find answers to common questions about our SEO optimization courses, programs, and educational resources.
           </p>
         </div>
 
@@ -109,7 +109,7 @@ export default function FAQ() {
               Still have questions?
             </h2>
             <p className="text-muted-foreground mb-6">
-              Can&apos;t find the answer you&apos;re looking for? We&apos;re here to help! Reach out to our team for personalized assistance.
+              Can&apos;t find the answer you&apos;re looking for? We&apos;re here to help! Reach out to our team for personalized SEO assistance.
             </p>
             <a
               href="/contact"

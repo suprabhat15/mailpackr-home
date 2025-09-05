@@ -5,7 +5,7 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { WaitlistSignup } from "@/components/waitlist-signup";
 import {
-  Mail,
+  Search,
   BarChart3,
   Zap,
   Users,
@@ -15,6 +15,8 @@ import {
   Target,
   TrendingUp,
   Award,
+  Globe,
+  LinkIcon,
 } from "lucide-react";
 
 export default function Home() {
@@ -28,19 +30,19 @@ export default function Home() {
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-8">
               <GraduationCap className="w-4 h-4 mr-2" />
-              Trusted by 19+ professionals worldwide
+              Trusted by 19+ professionals
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight tracking-tight">
-              <span className="text-foreground">Master Digital Marketing</span>
+              <span className="text-foreground">Master SEO Optimization</span>
               <br />
-              <span className="text-primary">Through Expert Education</span>
+              <span className="text-primary">Through Expert Training</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              Learn email marketing, sales funnels, and digital marketing
+              Learn search engine optimization, keyword research, and technical SEO
               strategies from industry professionals. Master the skills that
-              turn prospects into customers.
+              drive organic traffic and improve search rankings.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
@@ -70,8 +72,8 @@ export default function Home() {
             <WaitlistSignup />
 
             <div className="text-muted-foreground mt-15">
-              Free educational resources • Industry case studies • Practical
-              tutorials
+              Free SEO resources • Industry case studies • Practical
+              optimization guides
             </div>
           </div>
         </div>
@@ -82,11 +84,11 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Why Choose MailPackr Education?
+              Why Choose MailPackr SEO?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Learn from industry experts with proven track records in
-              <strong> digital marketing, sales success</strong>
+              <strong> SEO optimization, organic growth success</strong>
             </p>
           </div>
 
@@ -97,8 +99,8 @@ export default function Home() {
                 Expert Instructors
               </h3>
               <p className="text-muted-foreground">
-                Learn from professionals who have generated millions in revenue
-                through email marketing campaigns
+                Learn from professionals who have generated millions in organic traffic
+                through proven SEO strategies and optimization techniques
               </p>
             </Card>
 
@@ -119,8 +121,8 @@ export default function Home() {
                 Proven Results
               </h3>
               <p className="text-muted-foreground">
-                Our students see average 40% increase in email open rates and
-                25% boost in conversions within 30 days
+                Our students see average 150% increase in organic traffic and
+                80% improvement in search rankings within 90 days
               </p>
             </Card>
           </div>
@@ -132,19 +134,19 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Comprehensive Digital Marketing Education
+              Comprehensive SEO Education & Training
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Master every aspect of digital marketing, sales with our
+              Master every aspect of search engine optimization with our
               comprehensive educational resources. From beginner fundamentals to
-              advanced strategies.
+              advanced SEO strategies.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
               <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-6">
-                <BookOpen className="h-6 w-6 text-accent-foreground" />
+                <Search className="h-6 w-6 text-accent-foreground" />
               </div>
               <div className="flex items-center gap-2 mb-3">
                 <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-semibold">
@@ -153,12 +155,12 @@ export default function Home() {
                 <span className="text-accent font-semibold">$99</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Digital Marketing Fundamentals
+                SEO Fundamentals
               </h3>
               <p className="text-muted-foreground mb-4">
-                Master the basics of digital marketing. Learn email marketing,
-                list building, segmentation, and crafting compelling campaigns
-                that convert prospects into customers.
+                Master the basics of search engine optimization. Learn keyword research,
+                on-page SEO, meta optimization, and crafting content strategies
+                that rank higher in search results.
               </p>
               <div className="text-sm text-muted-foreground">
                 12 lessons • 8 hours • Certificate included
@@ -167,7 +169,7 @@ export default function Home() {
 
             <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
-                <Zap className="h-6 w-6 text-primary-foreground" />
+                <Globe className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex items-center gap-2 mb-3">
                 <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold">
@@ -176,12 +178,12 @@ export default function Home() {
                 <span className="text-accent font-semibold">$149</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Sales Funnel & Automation Mastery
+                Technical SEO & Site Optimization
               </h3>
               <p className="text-muted-foreground mb-4">
-                Build sophisticated sales funnels and automated sequences.
-                Welcome series, nurture campaigns, abandoned cart recovery, and
-                behavioral trigger systems.
+                Master technical SEO fundamentals and advanced optimization.
+                Site speed, crawling, indexing, schema markup, and
+                mobile optimization techniques.
               </p>
               <div className="text-sm text-muted-foreground">
                 18 lessons • 12 hours • Live Q&A sessions
@@ -199,12 +201,12 @@ export default function Home() {
                 <span className="text-accent font-semibold">$199</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Marketing Analytics & Optimization
+                SEO Analytics & Performance Optimization
               </h3>
               <p className="text-muted-foreground mb-4">
-                Deep-dive into marketing metrics, conversion tracking, A/B
-                testing strategies, and data-driven optimization techniques for
-                maximum ROI across all channels.
+                Deep-dive into SEO metrics, ranking tracking, search console
+                optimization, and data-driven SEO techniques for
+                maximum organic visibility and traffic growth.
               </p>
               <div className="text-sm text-muted-foreground">
                 15 lessons • 10 hours • Advanced tools access
@@ -245,21 +247,21 @@ export default function Home() {
                 <span className="text-accent font-semibold">$119</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Customer Journey & Sales Psychology
+                Content SEO & User Experience
               </h3>
               <p className="text-muted-foreground mb-4">
-                Design compelling customer journeys that convert. Learn sales
-                psychology, lifecycle marketing, personalization, and retention
-                strategies.
+                Create SEO-optimized content that ranks and converts. Learn content
+                strategy, user intent optimization, content clustering, and
+                engagement optimization techniques.
               </p>
               <div className="text-sm text-muted-foreground">
-                14 lessons • 9 hours • Journey templates
+                14 lessons • 9 hours • Content templates
               </div>
             </Card>
 
             <Card className="p-8 hover:shadow-lg transition-shadow border-0 shadow-md group">
               <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-6">
-                <Mail className="h-6 w-6 text-white" />
+                <LinkIcon className="h-6 w-6 text-white" />
               </div>
               <div className="flex items-center gap-2 mb-3">
                 <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-semibold">
@@ -268,15 +270,15 @@ export default function Home() {
                 <span className="text-accent font-semibold">$89</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
-                Conversion Copywriting & Design
+                Link Building & Authority Development
               </h3>
               <p className="text-muted-foreground mb-4">
-                Create compelling marketing materials that convert. Learn
-                persuasive copywriting, design principles, and psychology-driven
-                content creation.
+                Master advanced link building strategies that build domain authority. Learn
+                outreach techniques, relationship building, and white-hat
+                link acquisition methods.
               </p>
               <div className="text-sm text-muted-foreground">
-                16 lessons • 11 hours • Design templates
+                16 lessons • 11 hours • Outreach templates
               </div>
             </Card>
           </div>
@@ -288,11 +290,11 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Complete Digital Marketing Programs
+              Complete SEO Optimization Programs
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Structured learning paths designed for your skill level. From
-              beginner to expert, master digital marketing, sales.
+              beginner to expert, master search engine optimization.
             </p>
           </div>
 
@@ -310,7 +312,7 @@ export default function Home() {
                   $199
                 </div>
                 <p className="text-muted-foreground mb-8">
-                  Perfect for digital marketing newcomers
+                  Perfect for SEO newcomers
                 </p>
               </div>
               <ul className="space-y-4 mb-8">
@@ -328,7 +330,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
-                  <span>Marketing templates library</span>
+                  <span>SEO templates library</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
