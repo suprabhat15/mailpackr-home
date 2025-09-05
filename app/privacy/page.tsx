@@ -17,8 +17,8 @@ export default function PrivacyPage() {
               Privacy Policy
             </h1>
             <p className="text-xl text-primary-foreground mb-8">
-              Your privacy as a learner is our priority. Discover how we protect
-              and handle your educational data and learning progress.
+              Your privacy as an SEO learner is our priority. Discover how we protect
+              and handle your educational data and SEO learning progress.
             </p>
             <div className="flex items-center justify-center text-primary-foreground">
               <Clock className="h-5 w-5 mr-2" />
@@ -54,10 +54,10 @@ export default function PrivacyPage() {
                 Introduction & Organizational Info
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                We, at MailPackr Education, are dedicated to serving our
-                students and learners to the best of our abilities. Part of our
-                commitment involves the responsible management of personal and
-                educational information collected through our learning platform
+                We, at MailPackr, are dedicated to serving our SEO students and
+                learners to the best of our abilities. Part of our commitment
+                involves the responsible management of personal and SEO educational
+                information collected through our SEO learning platform
                 mailpackr.com, and any related interactions. Our primary goals
                 in processing this information include:
               </p>
@@ -65,29 +65,29 @@ export default function PrivacyPage() {
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
                   <p className="text-muted-foreground">
-                    Enhancing the learning experience by understanding student
-                    needs and educational preferences.
+                    Enhancing the SEO learning experience by understanding student
+                    needs and SEO educational preferences.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
                   <p className="text-muted-foreground">
-                    Providing timely educational support and responding to
-                    student inquiries or course-related questions.
+                    Providing timely SEO educational support and responding to
+                    student inquiries or SEO course-related questions.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
                   <p className="text-muted-foreground">
-                    Improving our courses and educational content to meet the
-                    evolving needs of our students.
+                    Improving our SEO courses and educational content to meet the
+                    evolving needs of our SEO students.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
                   <p className="text-muted-foreground">
-                    Conducting necessary educational operations, such as course
-                    enrollment, progress tracking, and certification management.
+                    Conducting necessary SEO educational operations, such as SEO course
+                    enrollment, progress tracking, and SEO certification management.
                   </p>
                 </div>
               </div>
@@ -112,9 +112,9 @@ export default function PrivacyPage() {
               <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
                 Our privacy policy is designed to protect the personal
                 information of all our stakeholders, including prospective
-                students, enrolled learners, and website visitors. Whether you
-                are browsing our educational platform, enrolled in our courses,
-                or participating in our learning community, we ensure that your
+                SEO students, enrolled learners, and website visitors. Whether you
+                are browsing our SEO educational platform, enrolled in our SEO courses,
+                or participating in our SEO learning community, we ensure that your
                 personal data is processed with the highest standards of privacy
                 and security.
               </p>
@@ -129,11 +129,11 @@ export default function PrivacyPage() {
               <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
                 Our commitment to transparency and data protection extends to
                 how we collect and use your personal information. We gather
-                personal data through various educational interactions,
-                including when you enroll in our courses, participate in
-                learning activities, access course materials, interact with
-                instructors, participate in community discussions, and utilize
-                our educational resources and tools.
+                personal data through various SEO educational interactions,
+                including when you enroll in our SEO courses, participate in
+                SEO learning activities, access SEO course materials, interact with
+                SEO instructors, participate in community discussions, and utilize
+                our SEO educational resources and tools.
               </p>
               <h3 className="text-xl font-semibold text-foreground mb-4">
                 Types of Personal Information We May Process:
@@ -141,10 +141,10 @@ export default function PrivacyPage() {
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 <div className="bg-secondary p-4 rounded-lg border border-border">
                   <h4 className="font-semibold text-foreground mb-2">
-                    Student Information
+                    SEO Student Information
                   </h4>
                   <p className="text-muted-foreground text-sm">
-                    First and Last Name, Email, Educational Background
+                    First and Last Name, Email, SEO Background & Experience
                   </p>
                 </div>
                 <div className="bg-secondary p-4 rounded-lg border border-border">
@@ -157,11 +157,11 @@ export default function PrivacyPage() {
                 </div>
                 <div className="bg-secondary p-4 rounded-lg border border-border">
                   <h4 className="font-semibold text-foreground mb-2">
-                    Learning Progress
+                    SEO Learning Progress
                   </h4>
                   <p className="text-muted-foreground text-sm">
-                    Course completion, quiz scores, assignment submissions, time
-                    spent
+                    SEO course completion, quiz scores, SEO assignment submissions, time
+                    spent learning
                   </p>
                 </div>
                 <div className="bg-secondary p-4 rounded-lg border border-border">
@@ -169,7 +169,7 @@ export default function PrivacyPage() {
                     Payment Information
                   </h4>
                   <p className="text-muted-foreground text-sm">
-                    Course payments, enrollment history, billing details
+                    SEO course payments, enrollment history, billing details
                   </p>
                 </div>
               </div>
@@ -182,37 +182,37 @@ export default function PrivacyPage() {
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Student Authentication and Security
+                      SEO Student Authentication and Security
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Course Content Delivery
+                      SEO Course Content Delivery
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Educational Communications
+                      SEO Educational Communications
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Student Support Services
+                      SEO Student Support Services
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Learning Progress Tracking
+                      SEO Learning Progress Tracking
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Certificate and Credential Management
+                      SEO Certificate and Credential Management
                     </span>
                   </div>
                 </div>
@@ -220,31 +220,31 @@ export default function PrivacyPage() {
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Student Engagement and Learning Analytics
+                      SEO Student Engagement and Learning Analytics
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Educational Feedback and Course Improvement
+                      SEO Educational Feedback and Course Improvement
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Personalizing Learning Experience
+                      Personalizing SEO Learning Experience
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Compliance with Educational Regulations
+                      Compliance with SEO Educational Regulations
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Learning Analytics and Course Effectiveness
+                      SEO Learning Analytics and Course Effectiveness
                     </span>
                   </div>
                 </div>
@@ -328,7 +328,7 @@ export default function PrivacyPage() {
                 At MailPackr, we recognize and respect your rights regarding
                 your personal information, in accordance with the General Data
                 Protection Regulation (GDPR) and other applicable data
-                protection laws. As a student or prospective learner, you have
+                protection laws. As an SEO student or prospective learner, you have
                 full control over your data.
               </p>
 
@@ -589,7 +589,7 @@ export default function PrivacyPage() {
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary-foreground" />
                   <div>
-                    <strong className="block">Learning Support:</strong>
+                    <strong className="block">SEO Learning Support:</strong>
                     <span className="text-primary-foreground">
                       learn@mailpackr.com
                     </span>

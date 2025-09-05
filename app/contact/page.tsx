@@ -123,7 +123,7 @@ export default function Contact() {
             </h1>
             <p className="text-xl text-primary-foreground mb-8">
               Have questions about our courses or training programs? <br />{" "}
-              We&apos;re here to help you succeed in digital marketing.
+              We&apos;re here to help you succeed in SEO optimization.
             </p>
           </div>
         </div>
@@ -138,7 +138,7 @@ export default function Contact() {
                 Let&apos;s start your learning journey
               </h2>
               <p className="text-muted-foreground mb-8">
-                Our team is ready to help you master digital marketing, email
+                Our team is ready to help you master SEO optimization, email
                 marketing. Reach out to us through any of the channels below.
               </p>
 
