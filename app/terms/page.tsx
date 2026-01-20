@@ -21,8 +21,8 @@ export default function TermsPage() {
               Terms of Service
             </h1>
             <p className="text-xl text-primary-foreground mb-8">
-              Clear, straightforward terms for our email deliverability platform.
-              Protecting your sender reputation and our network.
+              Clear, straightforward terms for our email deliverability
+              platform. Protecting your sender reputation and our network.
             </p>
             <div className="text-sm text-primary-foreground">
               Last updated:{" "}
@@ -46,10 +46,11 @@ export default function TermsPage() {
               Quick Summary
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-0">
-              By using MailPackr, you agree to use our email warming and deliverability tools
-              responsibly. You must own the domains you connect, strictly avoid sending spam,
-              and comply with all anti-spam laws (CAN-SPAM, GDPR, etc.). We provide tools to
-              help your reputation, but responsible sending is ultimately your responsibility.
+              By using MailPackr, you agree to use our email infrastructure
+              responsibly, own or control the domains you connect, strictly
+              avoid sending spam, and comply with all applicable laws. We
+              provide technical tools only. Legal compliance and recipient
+              consent are solely your responsibility.
             </p>
           </div>
 
@@ -60,9 +61,8 @@ export default function TermsPage() {
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
               By accessing and using MailPackr (&ldquo;the Service&rdquo;), you
-              accept and agree to be bound by these terms and conditions. If you
-              don&apos;t agree with any part of these terms, you may not use our
-              platform.
+              agree to be legally bound by these Terms. If you do not agree, you
+              must not use the Service.
             </p>
           </section>
 
@@ -72,139 +72,138 @@ export default function TermsPage() {
               2. Description of Service
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              MailPackr provides email infrastructure and deliverability services including:
+              MailPackr provides email sending infrastructure, queueing systems,
+              rate limiting, analytics, bounce handling, and related APIs.
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2 text-lg mb-4">
-              <li>Automated email warming and reputation management</li>
-              <li>Inbox placement testing and analytics</li>
-              <li>Blacklist monitoring and alerting</li>
-              <li>Email content analysis and optimization suggestions</li>
-              <li>SMTP/API email relay services</li>
+              <li>Email campaign delivery</li>
+              <li>Delivery monitoring and logs</li>
+              <li>Complaint and bounce handling</li>
+              <li>API and SMTP interfaces</li>
+              <li>Abuse detection and suppression systems</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              We reserve the right to modify, suspend, or discontinue any part of the Service
-              at any time. We&apos;ll provide reasonable notice when possible, especially for
-              changes that impact your active campaigns.
+              We may modify or discontinue features at any time without
+              liability.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
-              3. Account & Security
+              3. Account & Domain Responsibility
             </h2>
-            <div className="bg-secondary border border-border rounded-lg p-6 mb-6">
-              <h3 className="text-xl font-semibold text-foreground mb-3">
-                Account Responsibility
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-0">
-                You are responsible for maintaining the security of your
-                account credentials and API keys. You are also responsible for all
-                email activity that occurs under your account, including activity
-                by team members you authorize.
-              </p>
-            </div>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              You must provide accurate information when registering. You verify that
-              you own or have explicit permission to use any domain or email address
-              you add to the platform.
+              You are responsible for safeguarding credentials and API keys and
+              for all activity under your account. You must own or be authorized
+              to use all domains, sending identities, and email lists connected
+              to the Service.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
-              4. Acceptable Use Policy (Anti-Spam)
+              4. Acceptable Use & Anti-Spam Policy
             </h2>
             <div className="bg-secondary border border-border rounded-lg p-6 mb-6">
               <h3 className="text-xl font-bold text-foreground mb-3 flex items-center">
                 <Ban className="w-5 h-5 mr-2" />
-                Zero Tolerance for Spam
+                Zero Tolerance for Abuse
               </h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                MailPackr prohibits the use of our service for sending unsolicited
-                bulk email (spam). You agree to:
-              </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>
-                  <strong>Consent:</strong> Only email recipients who have opted in or
-                  with whom you have a prior business relationship.
-                </li>
-                <li>
-                  <strong>Compliance:</strong> Strictly adhere to CAN-SPAM Act, GDPR,
-                  CASL, and other applicable regional regulations.
-                </li>
-                <li>
-                  <strong>Content:</strong> Not send prohibited content (illegal goods,
-                  scams, malware, phishing, hate speech).
-                </li>
-                <li>
-                  <strong>Opt-Out:</strong> Include a functional unsubscribe link in
-                  marketing emails and process requests promptly.
-                </li>
+                <li>No purchased, scraped, or rented lists</li>
+                <li>Valid recipient consent where required</li>
+                <li>No deceptive, illegal, or harmful content</li>
+                <li>Functional unsubscribe mechanisms</li>
               </ul>
             </div>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Violation of this policy will result in immediate account suspension
-              without refund. We monitor sending patterns and abuse reports to maintain
-              network integrity.
+              We may immediately suspend accounts and cooperate with hosting
+              providers, ISPs, or law enforcement when abuse is detected.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
-              5. Payment and Billing
+              5. Payments and Refunds
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              Services are billed on a subscription basis (monthly or annually) or
-              via usage-based credits. Payments are non-refundable except where
-              required by law or specified in a service-level agreement.
-            </p>
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              You may cancel your subscription at any time. Access continues until
-              the end of the current billing period.
+              Fees are non-refundable except where required by law. Usage limits
+              and quotas may apply based on plan.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
-              6. Data Privacy
+              6. Data Roles and Compliance
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              We respect your data. We do not sell your recipient lists or email
-              content. We process data solely to provide the deliverability service
-              and generate analytics. Please review our{" "}
-              <Link
-                href="/privacy"
-                className="text-primary hover:text-muted-foreground underline"
-              >
-                Privacy Policy
-              </Link>{" "}
-              for full details.
+              Customers are data controllers for recipient data. MailPackr acts
+              solely as a processor and is not responsible for consent or data
+              legality.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
-              7. Limitation of Liability
+              7. No Guarantees and Third-Party Dependencies
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              While we strive to improve your email deliverability, many factors
-              depend on third-party mail providers (Google, Microsoft, Yahoo, etc.).
-              We cannot guarantee 100% inbox placement or specific open rates.
-            </p>
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              To the maximum extent permitted by law, MailPackr is not liable for
-              indirect damages, lost profits, or business interruption arising from
-              the use or inability to use the service.
+              Delivery depends on mailbox providers, DNS, reputation systems,
+              and network conditions beyond our control. We do not guarantee
+              uptime, inbox placement, or delivery rates.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-6">
-              9. Contact Us
+              8. Indemnification
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-lg mb-4">
+              You agree to indemnify and hold harmless MailPackr from claims,
+              fines, damages, or losses arising from your email content, lists,
+              campaigns, or legal violations.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-6">
+              9. Limitation of Liability
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-lg mb-4">
+              To the maximum extent permitted by law, MailPackr shall not be
+              liable for indirect, incidental, or consequential damages.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-6">
+              10. Force Majeure
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-lg mb-4">
+              We are not liable for service failures caused by events beyond
+              reasonable control including cloud outages, legal orders, or
+              infrastructure failures.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-6">
+              11. Governing Law and Jurisdiction
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-lg mb-4">
+              These Terms are governed by the laws of India. Courts located in
+              your registered business jurisdiction shall have exclusive
+              authority over disputes.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-6">
+              12. Contact
             </h2>
             <div className="bg-secondary border border-border rounded-lg p-6">
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Questions about these terms? We&apos;re here to help:
+                Questions about these terms?
               </p>
               <div className="space-y-2 text-muted-foreground">
                 <p>

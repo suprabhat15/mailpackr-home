@@ -23,7 +23,8 @@ export default function About() {
               About MailPackr
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We&apos;re on a mission to help creators and businesses build meaningful relationships with their audience through email.
+              We&apos;re on a mission to help creators and businesses build
+              meaningful relationships with their audience through email.
             </p>
           </div>
         </div>
@@ -38,38 +39,37 @@ export default function About() {
                 Our Mission
               </h2>
               <p className="text-lg text-muted-foreground">
-                Email marketing shouldn&apos;t be complicated. We built MailPackr to provide a powerful, intuitive, and affordable platform for everyone.
+                Email marketing shouldn&apos;t be complicated. We built
+                MailPackr to provide a powerful, intuitive, and affordable
+                platform for everyone.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="p-6 text-center border-border hover:shadow-lg transition-all">
                 <Award className="w-12 h-12 text-accent mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">
-                  Quality First
-                </h3>
+                <h3 className="text-xl font-semibold mb-3">Quality First</h3>
                 <p className="text-muted-foreground">
-                  We obsess over deliverability and design. Your emails should land in the inbox and look perfect every time.
+                  We obsess over deliverability and design. Your emails should
+                  land in the inbox and look perfect every time.
                 </p>
               </Card>
 
               <Card className="p-6 text-center border-border hover:shadow-lg transition-all">
                 <Target className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">
-                  Customer Focused
-                </h3>
+                <h3 className="text-xl font-semibold mb-3">Customer Focused</h3>
                 <p className="text-muted-foreground">
-                  We listen to our users. Our roadmap is driven by the features you need to grow your business.
+                  We listen to our users. Our roadmap is driven by the features
+                  you need to grow your business.
                 </p>
               </Card>
 
               <Card className="p-6 text-center border-border hover:shadow-lg transition-all">
                 <TrendingUp className="w-12 h-12 text-green-500 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">
-                  Growth Oriented
-                </h3>
+                <h3 className="text-xl font-semibold mb-3">Growth Oriented</h3>
                 <p className="text-muted-foreground">
-                  We succeed when you succeed. Our tools are designed to help you scale your audience and revenue.
+                  We succeed when you succeed. Our tools are designed to help
+                  you scale your audience and revenue.
                 </p>
               </Card>
             </div>
@@ -78,7 +78,7 @@ export default function About() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-secondary/30">
+      {/* <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
@@ -99,7 +99,7 @@ export default function About() {
                 </div>
             </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
