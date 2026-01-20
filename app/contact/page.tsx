@@ -168,7 +168,7 @@ export default function Contact() {
                   </div>
                 </div> */}
 
-                <div className="flex items-start space-x-4">
+                {/* <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
                     <MapPin className="h-5 w-5 text-foreground" />
                   </div>
@@ -188,7 +188,7 @@ export default function Contact() {
                       <strong>Mon-Fri, 10:00AM–6:00PM</strong>
                     </p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">

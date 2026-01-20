@@ -1,27 +1,34 @@
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import { Shield, ArrowLeft, Clock, CheckCircle, Mail, Globe } from "lucide-react";
+import {
+  Shield,
+  ArrowLeft,
+  Clock,
+  CheckCircle,
+  Mail,
+  Globe,
+} from "lucide-react";
 import Link from "next/link";
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="bg-background min-h-screen">
       <Header />
 
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="bg-primary text-primary-foreground py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <div className="mx-auto max-w-4xl text-center">
+            <h1 className="mb-6 text-4xl font-bold md:text-6xl">
               Privacy Policy
             </h1>
-            <p className="text-xl text-primary-foreground mb-8">
-              Your privacy as an SEO learner is our priority. Discover how we protect
-              and handle your educational data and SEO learning progress.
+            <p className="mb-8 text-xl text-primary-foreground">
+              How MailPackr collects, uses, and protects data while providing
+              email marketing and campaign delivery services.
             </p>
             <div className="flex items-center justify-center text-primary-foreground">
-              <Clock className="h-5 w-5 mr-2" />
+              <Clock className="mr-2 h-5 w-5" />
               <span>Effective Date: 30/08/2025</span>
             </div>
           </div>
@@ -29,16 +36,10 @@ export default function PrivacyPage() {
       </section>
 
       {/* Content */}
-      <main className="container mx-auto px-4 py-16 max-w-4xl">
-        <div className="bg-background rounded-2xl shadow-lg p-8 md:p-12 border border-border">
-          <div className="prose prose-gray max-w-none">
-            <div className="flex items-center justify-between mb-12">
-              {/* <div className="flex items-center space-x-4">
-                <div className="w-3 h-3 bg-foreground rounded-full"></div>
-                <span className="text-sm text-muted-foreground font-medium">
-                  This policy is effective and up to date
-                </span>
-              </div> */}
+      {/* <main className="container mx-auto max-w-4xl px-4 py-16">
+        <div className="rounded-2xl border border-border bg-background p-8 shadow-lg md:p-12">
+          <div className="prose max-w-none prose-gray">
+            <div className="mb-12 flex justify-end">
               <Button variant="outline" asChild size="sm">
                 <Link href="/">
                   <ArrowLeft className="mr-2 h-4 w-4" />
@@ -47,573 +48,478 @@ export default function PrivacyPage() {
               </Button>
             </div>
 
-            {/* Introduction */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
-                <CheckCircle className="h-8 w-8 mr-3 text-foreground" />
-                Introduction & Organizational Info
+            {/* Intro */}
+      {/* <section className="mb-12">
+              <h2 className="mb-6 flex items-center text-3xl font-bold text-foreground">
+                <CheckCircle className="mr-3 h-8 w-8" />
+                Introduction
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                We, at MailPackr, are dedicated to serving our SEO students and
-                learners to the best of our abilities. Part of our commitment
-                involves the responsible management of personal and SEO educational
-                information collected through our SEO learning platform
-                mailpackr.com, and any related interactions. Our primary goals
-                in processing this information include:
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                MailPackr (“we”, “our”, “us”) operates an email marketing and
+                campaign delivery platform available at mailpackr.com (the
+                “Service”). This Privacy Policy explains how we collect, use,
+                disclose, and protect personal data when you use the Service.
               </p>
-              <div className="space-y-4 mb-6">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
-                  <p className="text-muted-foreground">
-                    Enhancing the SEO learning experience by understanding student
-                    needs and SEO educational preferences.
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
-                  <p className="text-muted-foreground">
-                    Providing timely SEO educational support and responding to
-                    student inquiries or SEO course-related questions.
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
-                  <p className="text-muted-foreground">
-                    Improving our SEO courses and educational content to meet the
-                    evolving needs of our SEO students.
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-foreground rounded-full mt-3"></div>
-                  <p className="text-muted-foreground">
-                    Conducting necessary SEO educational operations, such as SEO course
-                    enrollment, progress tracking, and SEO certification management.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-secondary border-l-4 border-primary p-6 mb-6 rounded-r-lg">
-                <p className="text-foreground">
-                  At present, we do not have an appointed Data Protection
-                  Officer (DPO), but we remain fully committed to addressing all
-                  privacy concerns promptly. Should you have any questions or
-                  require further information about how we manage personal
-                  information, please feel free to contact us at{" "}
-                  <strong>support@mailpackr.com</strong>.
-                </p>
-              </div>
-            </section>
+              <p className="mt-4 text-muted-foreground">
+                By using MailPackr, you agree to the practices described in this
+                policy.
+              </p>
+            </section> */}
 
-            {/* Scope and Application */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
-                <Globe className="h-8 w-8 mr-3 text-foreground" />
-                Scope and Application
+      {/* Scope */}
+      {/* <section className="mb-12">
+              <h2 className="mb-6 flex items-center text-3xl font-bold text-foreground">
+                <Globe className="mr-3 h-8 w-8" />
+                Who This Policy Applies To
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                Our privacy policy is designed to protect the personal
-                information of all our stakeholders, including prospective
-                SEO students, enrolled learners, and website visitors. Whether you
-                are browsing our SEO educational platform, enrolled in our SEO courses,
-                or participating in our SEO learning community, we ensure that your
-                personal data is processed with the highest standards of privacy
-                and security.
-              </p>
-            </section>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Website visitors</li>
+                <li>• Registered users and customers</li>
+                <li>
+                  • Individuals whose data is processed in customer campaigns
+                  (“Recipients”)
+                </li>
+              </ul>
 
-            {/* Data Collection */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
-                <CheckCircle className="h-8 w-8 mr-3 text-foreground" />
-                Data Collection and Processing
-              </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                Our commitment to transparency and data protection extends to
-                how we collect and use your personal information. We gather
-                personal data through various SEO educational interactions,
-                including when you enroll in our SEO courses, participate in
-                SEO learning activities, access SEO course materials, interact with
-                SEO instructors, participate in community discussions, and utilize
-                our SEO educational resources and tools.
+              <p className="mt-4 text-muted-foreground">
+                For account data, MailPackr is the{" "}
+                <strong>Data Controller</strong>. For recipient data uploaded by
+                customers, MailPackr is the <strong>Data Processor</strong> and
+                the customer is the Data Controller.
               </p>
-              <h3 className="text-xl font-semibold text-foreground mb-4">
-                Types of Personal Information We May Process:
+
+              <p className="mt-2 text-muted-foreground">
+                Customers are responsible for ensuring they have lawful
+                permission to collect and contact recipients.
+              </p>
+            </section> */}
+
+      {/* Data Collected */}
+      {/* <section className="mb-12">
+              <h2 className="mb-6 flex items-center text-3xl font-bold text-foreground">
+                <CheckCircle className="mr-3 h-8 w-8" />
+                Information We Collect
+              </h2>
+
+              <h3 className="mb-3 text-xl font-semibold text-foreground">
+                Account Information
               </h3>
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="bg-secondary p-4 rounded-lg border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    SEO Student Information
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    First and Last Name, Email, SEO Background & Experience
-                  </p>
-                </div>
-                <div className="bg-secondary p-4 rounded-lg border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Technical Information
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    Operating system, Device ID, IP Address, Browser Information
-                  </p>
-                </div>
-                <div className="bg-secondary p-4 rounded-lg border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    SEO Learning Progress
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    SEO course completion, quiz scores, SEO assignment submissions, time
-                    spent learning
-                  </p>
-                </div>
-                <div className="bg-secondary p-4 rounded-lg border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Payment Information
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    SEO course payments, enrollment history, billing details
-                  </p>
-                </div>
-              </div>
+              <p className="text-muted-foreground">
+                Name, email address, password (hashed), company name (optional),
+                and support communications.
+              </p>
 
-              <h3 className="text-xl font-semibold text-foreground mb-4">
-                How We Use Your Information:
+              <h3 className="mt-6 mb-3 text-xl font-semibold text-foreground">
+                Campaign Data
               </h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
-                    <span className="text-muted-foreground">
-                      SEO Student Authentication and Security
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
-                    <span className="text-muted-foreground">
-                      SEO Course Content Delivery
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
-                    <span className="text-muted-foreground">
-                      SEO Educational Communications
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
-                    <span className="text-muted-foreground">
-                      SEO Student Support Services
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
-                    <span className="text-muted-foreground">
-                      SEO Learning Progress Tracking
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
-                    <span className="text-muted-foreground">
-                      SEO Certificate and Credential Management
-                    </span>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
-                    <span className="text-muted-foreground">
-                      SEO Student Engagement and Learning Analytics
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
-                    <span className="text-muted-foreground">
-                      SEO Educational Feedback and Course Improvement
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
-                    <span className="text-muted-foreground">
-                      Personalizing SEO Learning Experience
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
-                    <span className="text-muted-foreground">
-                      Compliance with SEO Educational Regulations
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground flex-shrink-0" />
-                    <span className="text-muted-foreground">
-                      SEO Learning Analytics and Course Effectiveness
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </section>
+              <p className="text-muted-foreground">
+                Recipient email addresses, email content, templates, delivery
+                status, bounce data, and timestamps.
+              </p>
 
-            {/* Data Storage and Protection */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
-                <Shield className="h-8 w-8 mr-3 text-foreground" />
-                Data Storage and Protection
-              </h2>
-              <div className="bg-secondary p-6 rounded-xl mb-6 border border-border">
-                <h3 className="text-xl font-semibold text-foreground mb-4">
-                  Data Storage:
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Personal information is stored in secure servers located in
-                  the following locations: NA, AS. For services that require
-                  international data transfer, we ensure that such transfers
-                  comply with all applicable laws and maintain data protection
-                  standards equivalent to those in our primary location.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  <strong>Data Hosting Partners:</strong> We partner with
-                  reputable data hosting providers committed to using
-                  state-of-the-art security measures. These partners are
-                  selected based on their adherence to stringent data protection
-                  standards.
-                </p>
-              </div>
-
-              <h3 className="text-xl font-semibold text-foreground mb-4">
-                Data Protection Measures:
+              <h3 className="mt-6 mb-3 text-xl font-semibold text-foreground">
+                Technical Data
               </h3>
-              <div className="grid md:grid-cols-3 gap-4">
-                <div className="text-center p-4">
-                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3 border border-border">
-                    <Shield className="h-6 w-6 text-foreground" />
-                  </div>
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Encryption
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    Data protected during transfer and at rest with robust
-                    encryption
-                  </p>
-                </div>
-                <div className="text-center p-4">
-                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3 border border-border">
-                    <CheckCircle className="h-6 w-6 text-foreground" />
-                  </div>
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Access Control
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    Strict access controls limited to authorized personnel
-                  </p>
-                </div>
-                <div className="text-center p-4">
-                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3 border border-border">
-                    <Globe className="h-6 w-6 text-foreground" />
-                  </div>
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Security Audits
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    Regular security audits and monitoring systems
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            {/* User Rights */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
-                <CheckCircle className="h-8 w-8 mr-3 text-foreground" />
-                User Rights and Choices
-              </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                At MailPackr, we recognize and respect your rights regarding
-                your personal information, in accordance with the General Data
-                Protection Regulation (GDPR) and other applicable data
-                protection laws. As an SEO student or prospective learner, you have
-                full control over your data.
+              <p className="text-muted-foreground">
+                IP address, browser type, operating system, logs, and API usage
+                metrics for security and performance.
               </p>
 
-              <h3 className="text-xl font-semibold text-foreground mb-4">
-                Your Rights Include:
+              <h3 className="mt-6 mb-3 text-xl font-semibold text-foreground">
+                Billing Data
               </h3>
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <div>
-                      <span className="font-semibold text-foreground">
-                        Right of Access
-                      </span>
-                      <p className="text-muted-foreground text-sm mt-1">
-                        Request access to personal information we hold about you
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <div>
-                      <span className="font-semibold text-foreground">
-                        Right to Rectification
-                      </span>
-                      <p className="text-muted-foreground text-sm mt-1">
-                        Request correction of incorrect or incomplete
-                        information
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <div>
-                      <span className="font-semibold text-foreground">
-                        Right to Erasure
-                      </span>
-                      <p className="text-muted-foreground text-sm mt-1">
-                        Request deletion of your personal information
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <div>
-                      <span className="font-semibold text-foreground">
-                        Right to Restriction
-                      </span>
-                      <p className="text-muted-foreground text-sm mt-1">
-                        Request restriction of processing under certain
-                        conditions
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <div>
-                      <span className="font-semibold text-foreground">
-                        Right to Data Portability
-                      </span>
-                      <p className="text-muted-foreground text-sm mt-1">
-                        Receive your data in a machine-readable format
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <div>
-                      <span className="font-semibold text-foreground">
-                        Right to Object
-                      </span>
-                      <p className="text-muted-foreground text-sm mt-1">
-                        Object to processing, including direct sending
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <div>
-                      <span className="font-semibold text-foreground">
-                        Right to Withdraw Consent
-                      </span>
-                      <p className="text-muted-foreground text-sm mt-1">
-                        Withdraw consent at any time without affecting
-                        lawfulness
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <div>
-                      <span className="font-semibold text-foreground">
-                        Right to Lodge a Complaint
-                      </span>
-                      <p className="text-muted-foreground text-sm mt-1">
-                        File a complaint with supervisory authorities
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+              <p className="text-muted-foreground">
+                Payment status, subscription plan, and transaction references
+                from third-party payment providers. We do not store card
+                details.
+              </p>
+            </section> */}
 
-            {/* US Privacy Laws */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
-                <Globe className="h-8 w-8 mr-3 text-foreground" />
-                US Privacy Laws Compliance
+      {/* Usage */}
+      {/* <section className="mb-12">
+              <h2 className="mb-6 flex items-center text-3xl font-bold text-foreground">
+                <CheckCircle className="mr-3 h-8 w-8" />
+                How We Use Information
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                For residents of the United States of America, the California
-                Consumer Privacy Act provides specific rights regarding personal
-                information:
-              </p>
-              <div className="space-y-4 mb-6">
-                <div className="border border-border p-4 rounded-lg">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Right to Know
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    Request disclosure of categories and specific pieces of
-                    personal information collected
-                  </p>
-                </div>
-                <div className="border border-border p-4 rounded-lg">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Right to Delete
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    Request deletion of personal information collected about you
-                  </p>
-                </div>
-                <div className="border border-border p-4 rounded-lg">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Right to Correct
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    Request correction of inaccurate information
-                  </p>
-                </div>
-                <div className="border border-border p-4 rounded-lg">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Right to Non-Discrimination
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    Protection from discrimination for exercising your rights
-                  </p>
-                </div>
-              </div>
-            </section>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Operate and maintain the Service</li>
+                <li>• Deliver campaigns and analytics</li>
+                <li>• Prevent fraud and abuse</li>
+                <li>• Provide customer support</li>
+                <li>• Improve reliability and performance</li>
+                <li>• Comply with legal obligations</li>
+              </ul>
+            </section> */}
 
-            {/* Children's Privacy */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
-                <Shield className="h-8 w-8 mr-3 text-foreground" />
-                Children&apos;s Privacy
+      {/* Storage & Security */}
+      {/* <section className="mb-12">
+              <h2 className="mb-6 flex items-center text-3xl font-bold text-foreground">
+                <Shield className="mr-3 h-8 w-8" />
+                Data Storage and Security
               </h2>
-              <div className="bg-secondary border-l-4 border-primary p-6 mb-6 rounded-r-lg">
-                <p className="text-foreground font-semibold mb-2">
-                  Age Requirements: Our services are not intended for children
-                  under the age of 18.
-                </p>
-                <p className="text-muted-foreground">
-                  We do not knowingly collect personal information from children
-                  under this age without verifiable parental consent. If you are
-                  under 18, please do not use our services or provide personal
-                  information to us.
-                </p>
-              </div>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                If we become aware that we have inadvertently collected personal
-                information from a child under 18 without verifiable parental
-                consent, we will take prompt steps to delete such information.
-                Parents have the right to review, update, or delete their
-                child&apos;s information.
+              <p className="text-muted-foreground">
+                Data is hosted using cloud service providers and may be
+                processed in multiple regions including the United States and
+                other locations where our providers operate.
               </p>
-            </section>
+              <p className="mt-3 text-muted-foreground">
+                We use encryption, access controls, monitoring, and regular
+                security updates to protect data.
+              </p>
+            </section> */}
 
-            {/* Data Breach Notification */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
-                <Shield className="h-8 w-8 mr-3 text-foreground" />
-                Data Breach Notification Procedures
+      {/* Rights */}
+      {/* <section className="mb-12">
+              <h2 className="mb-6 flex items-center text-3xl font-bold text-foreground">
+                <CheckCircle className="mr-3 h-8 w-8" />
+                Your Rights
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                We have established clear procedures for promptly identifying,
-                assessing, and mitigating data breaches that pose risks to your
-                privacy rights and freedoms.
+              <p className="text-muted-foreground">
+                Depending on your location, you may request access, correction,
+                deletion, or restriction of your personal data by contacting
+                support@mailpackr.com.
               </p>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-foreground">
-                    Detection and Assessment:
-                  </h3>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <p className="text-muted-foreground">
-                      Internal monitoring and security systems
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <p className="text-muted-foreground">
-                      Thorough impact assessment of breaches
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-foreground">
-                    Notification Timeline:
-                  </h3>
-                  <div className="flex items-start space-x-3">
-                    <Clock className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <p className="text-muted-foreground">
-                      Regulatory authorities notified within 30 days
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Clock className="h-5 w-5 text-foreground mt-1 flex-shrink-0" />
-                    <p className="text-muted-foreground">
-                      Affected individuals notified within 30 days
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
+              <p className="mt-3 text-muted-foreground">
+                Recipients should contact the sender of the email directly, as
+                MailPackr processes recipient data on behalf of customers.
+              </p>
+            </section> */}
 
-            {/* Policy Updates */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
-                <Clock className="h-8 w-8 mr-3 text-foreground" />
-                Policy Updates and Changes
+      {/* Breach */}
+      {/* <section className="mb-12">
+              <h2 className="mb-6 flex items-center text-3xl font-bold text-foreground">
+                <Shield className="mr-3 h-8 w-8" />
+                Data Breach Response
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                We may update this privacy policy from time to time to reflect
-                changes in legal requirements, industry standards, or our
-                business operations. We will provide notice through email,
-                website notifications, or other appropriate channels for
-                significant changes.
+              <p className="text-muted-foreground">
+                In case of a data breach, we will investigate, contain the
+                incident, and notify affected parties where required by law.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Your continued use of our services after any changes signifies
-                your acceptance of the updated terms. We encourage you to review
-                our privacy policy periodically to stay informed.
-              </p>
-            </section>
+            </section> */}
 
-            {/* Contact Section */}
-            <section className="bg-primary text-primary-foreground p-8 rounded-2xl">
-              <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-              <p className="mb-6 text-primary-foreground">
-                If you have any questions about this Privacy Policy or your
-                data, we&apos;re here to help.
+      {/* Updates */}
+      {/* <section className="mb-12">
+              <h2 className="mb-6 flex items-center text-3xl font-bold text-foreground">
+                <Clock className="mr-3 h-8 w-8" />
+                Policy Updates
+              </h2>
+              <p className="text-muted-foreground">
+                We may update this policy from time to time. Continued use of
+                the Service after updates means acceptance of the revised
+                policy.
               </p>
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-primary-foreground" />
-                  <div>
-                    <strong className="block">SEO Learning Support:</strong>
-                    <span className="text-primary-foreground">
-                      learn@mailpackr.com
-                    </span>
-                  </div>
-                </div>
-                {/* <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-primary-foreground" />
-                  <div>
-                    <strong className="block">Phone Support:</strong>
-                    <span className="text-primary-foreground">+91 9700129000</span>
-                  </div>
-                </div> */}
+            </section> */}
+
+      {/* Contact */}
+      {/* <section className="rounded-2xl bg-primary p-8 text-primary-foreground">
+              <h2 className="mb-4 text-2xl font-bold">Contact Us</h2>
+              <p className="mb-6">
+                If you have questions about this Privacy Policy or your data,
+                contact us at:
+              </p>
+              <div className="flex items-center space-x-3">
+                <Mail className="h-5 w-5" />
+                <span>support@mailpackr.com</span>
               </div>
-              <div className="mt-6">
-                <Button
-                  variant="outline"
-                  asChild
-                  className="bg-background text-primary hover:bg-secondary border-primary"
-                >
-                  <Link href="/contact">Get In Touch</Link>
-                </Button>
-              </div>
-            </section>
-          </div>
+            </section> */}
+      {/* </div>
+        </div>
+      </main> */}
+
+      <main className="container mx-auto max-w-4xl px-4 py-16">
+        {/* <h1 className="mb-4 text-4xl font-bold">Privacy Policy</h1>
+
+        <p className="mb-8 text-sm text-muted-foreground">
+          Effective Date: 30/08/2025
+        </p> */}
+        <div className="mb-12 flex items-center justify-between">
+          <Button variant="outline" asChild size="sm">
+            <Link href="/">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Home
+            </Link>
+          </Button>
+        </div>
+
+        <div className="rounded-2xl border border-border bg-background p-8 shadow-lg md:p-12">
+          <p className="mb-4">
+            MailPackr (“we”, “our”, “us”) operates an email marketing and
+            campaign delivery platform available at{" "}
+            <a
+              href="https://mailpackr.com"
+              className="text-primary underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://mailpackr.com
+            </a>{" "}
+            (the “Service”). This Privacy Policy explains how we collect, use,
+            disclose, and protect personal data when you use our Service.
+          </p>
+
+          <p className="mb-8">
+            By using MailPackr, you agree to the practices described in this
+            policy.
+          </p>
+
+          {/* 1 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">
+              1. Who This Policy Applies To
+            </h2>
+
+            <ul className="mb-4 list-disc pl-6 space-y-1">
+              <li>Visitors of our website</li>
+              <li>Registered users and customers of MailPackr</li>
+              <li>
+                Individuals whose personal data is processed through customer
+                email campaigns (“Recipients”)
+              </li>
+            </ul>
+
+            <p className="mb-2">
+              MailPackr acts in different legal roles depending on the data:
+            </p>
+
+            <ul className="mb-4 list-disc pl-6 space-y-1">
+              <li>
+                For customer account data, MailPackr is the{" "}
+                <strong>Data Controller</strong>
+              </li>
+              <li>
+                For recipient data uploaded by customers, MailPackr is the{" "}
+                <strong>Data Processor</strong>, and the customer is the Data
+                Controller
+              </li>
+            </ul>
+
+            <p>
+              Customers are responsible for ensuring they have lawful permission
+              to collect and contact recipients.
+            </p>
+          </section>
+
+          {/* 2 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">
+              2. Information We Collect
+            </h2>
+
+            <h3 className="mt-4 mb-2 font-semibold">
+              A. Information You Provide to Us
+            </h3>
+            <ul className="list-disc pl-6 space-y-1 mb-4">
+              <li>Name</li>
+              <li>Email address</li>
+              <li>Password (stored in encrypted or hashed form)</li>
+              <li>Company or organization name (optional)</li>
+              <li>Support communications</li>
+            </ul>
+
+            <h3 className="mt-4 mb-2 font-semibold">
+              B. Campaign and Messaging Data (Provided by Customers)
+            </h3>
+            <ul className="list-disc pl-6 space-y-1 mb-2">
+              <li>Recipient email addresses</li>
+              <li>Email content and templates</li>
+              <li>Campaign metadata (delivery status, bounces, timestamps)</li>
+            </ul>
+            <p className="mb-4">
+              This data is processed only to provide email delivery and
+              analytics services.
+            </p>
+
+            <h3 className="mt-4 mb-2 font-semibold">
+              C. Technical and Usage Information
+            </h3>
+            <ul className="list-disc pl-6 space-y-1 mb-4">
+              <li>IP address</li>
+              <li>Browser type and version</li>
+              <li>Device and operating system</li>
+              <li>Log files and timestamps</li>
+              <li>API usage metrics</li>
+            </ul>
+
+            <h3 className="mt-4 mb-2 font-semibold">D. Billing Information</h3>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Payment status</li>
+              <li>Subscription plan</li>
+              <li>Invoices and transaction references</li>
+            </ul>
+            <p className="mt-2">
+              We do not store full credit card details on our servers.
+            </p>
+          </section>
+
+          {/* 3 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">
+              3. How We Use Information
+            </h2>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Provide and operate the Service</li>
+              <li>Deliver email campaigns and analytics</li>
+              <li>Authenticate users and prevent fraud</li>
+              <li>Provide customer support</li>
+              <li>Improve platform reliability and performance</li>
+              <li>Comply with legal obligations</li>
+            </ul>
+            <p className="mt-2 font-medium">We do not sell personal data.</p>
+          </section>
+
+          {/* 4 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">
+              4. Lawful Basis for Processing
+            </h2>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Performance of a contract (providing the Service)</li>
+              <li>
+                Legitimate interests (security, fraud prevention, monitoring)
+              </li>
+              <li>Legal obligations</li>
+              <li>Consent, where applicable</li>
+            </ul>
+            <p className="mt-2">
+              Customers are responsible for ensuring lawful processing of
+              recipient data.
+            </p>
+          </section>
+
+          {/* 5 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">
+              5. Data Storage and International Transfers
+            </h2>
+            <p>
+              Data may be processed in multiple geographic regions, including
+              the United States and other locations where our providers operate.
+              We rely on contractual safeguards and industry-standard
+              protections.
+            </p>
+          </section>
+
+          {/* 6 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">6. Data Security</h2>
+            <ul className="list-disc pl-6 space-y-1 mb-2">
+              <li>Encryption in transit and at rest</li>
+              <li>Access controls and role-based permissions</li>
+              <li>Network monitoring and logging</li>
+              <li>Regular system updates and patching</li>
+            </ul>
+            <p>
+              No system is 100% secure, but we continuously improve safeguards.
+            </p>
+          </section>
+
+          {/* 7 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">7. Data Retention</h2>
+            <p>
+              Data is retained only as long as necessary for service operation
+              and legal obligations. Customers may delete campaigns and contact
+              lists at any time.
+            </p>
+          </section>
+
+          {/* 8 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">8. Your Rights</h2>
+            <ul className="list-disc pl-6 space-y-1 mb-2">
+              <li>Access</li>
+              <li>Correction</li>
+              <li>Deletion</li>
+              <li>Restriction or objection</li>
+              <li>Data portability</li>
+            </ul>
+            <p>
+              Requests: <strong>support@mailpackr.com</strong>
+            </p>
+            <p className="mt-2">
+              Recipients should contact the sender directly.
+            </p>
+          </section>
+
+          {/* 9 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">
+              9. U.S. Privacy Rights (Including California)
+            </h2>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Right to know</li>
+              <li>Right to delete</li>
+              <li>Right to correct</li>
+              <li>Right to non-discrimination</li>
+            </ul>
+            <p className="mt-2">
+              Requests: <strong>support@mailpackr.com</strong>
+            </p>
+          </section>
+
+          {/* 10 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">
+              10. Children’s Privacy
+            </h2>
+            <p>
+              MailPackr is not intended for children under 13. Any discovered
+              data will be deleted promptly.
+            </p>
+          </section>
+
+          {/* 11 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">
+              11. Third-Party Services
+            </h2>
+            <p>
+              We use third-party providers for infrastructure, email delivery,
+              analytics, and billing under strict contractual obligations.
+            </p>
+          </section>
+
+          {/* 12 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">
+              12. Data Breach Response
+            </h2>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Investigate and contain incidents</li>
+              <li>Notify where legally required</li>
+              <li>Prevent recurrence</li>
+            </ul>
+          </section>
+
+          {/* 13 */}
+          <section className="mb-10">
+            <h2 className="mb-3 text-2xl font-semibold">13. Policy Updates</h2>
+            <p>
+              Updates will be posted on this page. Continued use means
+              acceptance of changes.
+            </p>
+          </section>
+
+          {/* 14 */}
+          <section>
+            <h2 className="mb-3 text-2xl font-semibold">
+              14. Contact Information
+            </h2>
+            <p>
+              Email: <strong>support@mailpackr.com</strong>
+            </p>
+            <p>
+              Website:{" "}
+              <a
+                href="https://mailpackr.com"
+                className="text-primary underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://mailpackr.com
+              </a>
+            </p>
+          </section>
         </div>
       </main>
 
