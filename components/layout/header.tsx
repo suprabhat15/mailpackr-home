@@ -104,7 +104,7 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full bg-background border-b border-border shadow-lg animate-in slide-in-from-top-5">
+        <div className="md:hidden absolute top-16 left-0 w-full bg-white border-b border-border shadow-lg animate-in slide-in-from-top-5">
           <div className="px-4 py-6 space-y-4">
             <Link
               href="#features"
