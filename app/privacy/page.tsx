@@ -1,14 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import {
-  Shield,
-  ArrowLeft,
-  Clock,
-  CheckCircle,
-  Mail,
-  Globe,
-} from "lucide-react";
+import { ArrowLeft, Clock } from "lucide-react";
 import Link from "next/link";
 
 export default function PrivacyPage() {
