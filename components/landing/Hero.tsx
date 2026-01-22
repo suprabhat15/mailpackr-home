@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart3, Mail, Users } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -22,18 +23,18 @@ export default function Hero() {
             <span className="">Instead of $100</span>
           </h1>
 
-          <h2 className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-fade-in delay-200">
+          <h3 className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-fade-in delay-200">
             for sending 10,000 emails
-          </h2>
+          </h3>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-fade-in delay-200">
             Create, schedule, and track high-converting email campaigns with
             enterprise-grade deliverability.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 animate-fade-in delay-300">
+          {/* <div className="flex flex-col sm:flex-row items-center gap-4 animate-fade-in delay-300">
             <Button size="xl" variant="primary" className="h-12 px-8">
-              Start Sending Now
+              Start Sending for Free
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             {/* <Button
@@ -43,6 +44,19 @@ export default function Hero() {
             >
               View Documentation
             </Button> */}
+          {/* </div>  */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="xl"
+              variant="primary"
+              className="bg-[#101828] text-white hover:bg-[#101828]/90 h-14 px-8 text-lg font-semibold"
+              asChild
+            >
+              <Link href="https://app.mailpackr.com/auth">
+                Start Sending Now
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
           </div>
         </div>
 
@@ -57,7 +71,7 @@ export default function Hero() {
                 <div className="w-3 h-3 rounded-full bg-green-400/80"></div>
               </div>
               <div className="flex-1 text-center text-xs text-muted-foreground font-mono">
-                dashboard.mailpackr.com
+                app.mailpackr.com/dashboard
               </div>
             </div>
 
@@ -67,19 +81,19 @@ export default function Hero() {
                 {[
                   {
                     title: "Total Subscribers",
-                    value: "12,405",
+                    value: "49,405",
                     change: "+12%",
                     icon: Users,
                   },
                   {
                     title: "Avg. Open Rate",
-                    value: "42.8%",
+                    value: "52.8%",
                     change: "+4.3%",
                     icon: Mail,
                   },
                   {
                     title: "Click Rate",
-                    value: "5.2%",
+                    value: "8.9%",
                     change: "+1.1%",
                     icon: BarChart3,
                   },
@@ -113,10 +127,10 @@ export default function Hero() {
                   {[...Array(24)].map((_, i) => (
                     <div
                       key={i}
-                      className="flex-1 bg-primary rounded-t-sm hover:bg-primary/80 transition-colors"
+                      className="flex-1 bg-primary rounded-t-sm hover:bg-primary/80"
                       style={{ height: `${30 + Math.random() * 60}%` }}
                     ></div>
-                  ))}
+                  ))}{" "}
                 </div>
               </div>
             </div>
