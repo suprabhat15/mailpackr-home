@@ -1,99 +1,155 @@
 import Link from "next/link";
+import { MailsIcon } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="col-span-1 md:col-span-2">
+    <footer className="bg-[#101828] text-white border-t border-white/10 pt-16 pb-8">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+          {/* Brand Column */}
+          <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              {/* <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg">
-                <Mail className="h-6 w-6 text-white" />
-              </div> */}
-              <span className="text-2xl font-bold">MailPackr</span>
+              <div className="bg-white/10 p-1 rounded-lg">
+                <MailsIcon className="w-6 h-6 text-white" />
+              </div>
+              <span className="text-lg font-bold tracking-tight text-white">
+                MailPackr
+              </span>
             </Link>
-            <p className="text-gray-400 mb-4 max-w-md">
-              Reliable, secure, and scalable email services for your business.
-              Manage campaigns, track analytics, and reach your audience easily.
+            <p className="text-sm text-white/60 mb-6 max-w-xs">
+              Reliable and Scalable. <br></br>Modern Email Marketing platform
+              for your teams.
             </p>
-            {/* <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Github className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div> */}
           </div>
 
-          {/* Quick Links */}
+          {/* Product Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h4 className="font-semibold text-white mb-4">Product</h4>
+            <ul className="space-y-3 text-sm">
               <li>
                 <Link
-                  href="/"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  href="#features"
+                  className="text-white/60 hover:text-white transition-colors"
                 >
-                  Home
+                  Features
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/contact"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  href="#pricing"
+                  className="text-white/60 hover:text-white transition-colors"
                 >
-                  Contact
+                  Pricing
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/privacy"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  href="#"
+                  className="text-white/60 hover:text-white transition-colors"
                 >
-                  Privacy Policy
+                  Integrations
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  Changelog
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Resources Links */}
+          <div>
+            <h4 className="font-semibold text-white mb-4">Resources</h4>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <Link
+                  href="#"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  Documentation
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  API Reference
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  Community
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company Links */}
+          <div>
+            <h4 className="font-semibold text-white mb-4">Company</h4>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <Link
+                  href="/about"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  About
                 </Link>
               </li>
               <li>
                 <Link
                   href="/terms"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-white/60 hover:text-white transition-colors"
                 >
-                  Terms of Service
+                  Terms
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  Privacy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  Contact
                 </Link>
               </li>
             </ul>
           </div>
-
-          {/* Support */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Support</h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="mailto:support@mailpackr.com"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  support@mailpackr.com
-                </a>
-              </li>
-              {/* <li>
-                <a href="mailto:hello@mailpackr.com" className="text-gray-400 hover:text-white transition-colors">
-                  hello@mailpackr.com
-                </a>
-              </li> */}
-            </ul>
-          </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400">
-            © {new Date().getFullYear()} MailPackr. All rights reserved.
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-white/60">
+            © {new Date().getFullYear()} MailPackr Inc. All rights reserved.
           </p>
+          <div className="flex items-center gap-2">
+            <div className="h-2 w-2 rounded-full bg-green-500"></div>
+            <span className="text-xs text-white/60">
+              All systems operational
+            </span>
+          </div>
         </div>
       </div>
     </footer>

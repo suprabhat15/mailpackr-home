@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 const inter = Inter({
@@ -8,21 +10,29 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-mono',
+})
+
 export const metadata: Metadata = {
-  title: "MailPackr",
+  title: "MailPackr - The Modern Email Marketing Platform",
   description:
-    "Drive engagement with every send. Reliable, secure, and scalable email services for your business.",
+    "Design beautiful emails, automate your workflows, and grow your audience with MailPackr. The award-winning email marketing platform for modern creators and businesses.",
   keywords:
-    "email sending, email campaigns, email automation, email analytics, email templates",
+    "email marketing, email automation, newsletter platform, email builder, audience segmentation, marketing automation, email deliverability",
   authors: [{ name: "MailPackr" }],
   icons: {
     icon: "/logo.svg",
     shortcut: "/logo.svg",
     apple: "/logo.svg",
   },
+  metadataBase: new URL("https://mailpackr.com"),
   openGraph: {
-    title: "MailPackr",
-    description: "Drive engagement with every send",
+    title: "MailPackr - The Modern Email Marketing Platform",
+    description:
+      "Design beautiful emails, automate your workflows, and grow your audience with MailPackr.",
     type: "website",
     images: [{ url: "/logo.svg" }],
   },
@@ -34,13 +44,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} ${GeistSans.variable} ${GeistMono.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="icon" href="/logo.svg" type="image/svg+xml" />
       </head>
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${GeistSans.className} antialiased min-h-screen bg-background text-foreground selection:bg-primary/20 selection:text-foreground font-medium`}>
         {children}
       </body>
     </html>

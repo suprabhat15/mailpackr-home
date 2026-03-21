@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+# npm run dev -- -p 3001 
 # dependencies
 node_modules
 /.pnp

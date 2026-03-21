@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { CheckCircle, Mail } from "lucide-react"
+import { CheckCircle, ArrowRight, Loader2 } from "lucide-react"
 
 export function WaitlistSignup() {
   const [email, setEmail] = useState("")
@@ -29,7 +29,7 @@ export function WaitlistSignup() {
 
       if (response.ok) {
         setStatus('success')
-        setMessage("Thanks for joining! You'll receive updates from our end.")
+        setMessage("Welcome aboard! Check your inbox soon.")
         setEmail("")
       } else {
         setStatus('error')
@@ -44,7 +44,7 @@ export function WaitlistSignup() {
 
   if (status === 'success') {
     return (
-      <div className="flex items-center justify-center gap-3 text-green-600 mb-6">
+      <div className="flex items-center justify-center lg:justify-start gap-2 text-green-600 bg-green-50 px-4 py-3 rounded-lg border border-green-200 animate-in fade-in slide-in-from-bottom-2">
         <CheckCircle className="w-5 h-5" />
         <span className="font-medium">{message}</span>
       </div>
@@ -52,17 +52,10 @@ export function WaitlistSignup() {
   }
 
   return (
-    <div className="mb-6">
-      <div className="flex items-center justify-center gap-2 mb-4">
-        <Mail className="w-5 h-5 text-muted-foreground" />
-        <span className="text-lg font-semibold text-foreground">
-          Join our waitlist for upcoming updates
-        </span>
-      </div>
-
+    <div className="w-full max-w-md">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+        className="flex flex-col sm:flex-row gap-3"
       >
         <Input
           type="email"
@@ -70,32 +63,31 @@ export function WaitlistSignup() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="flex-1"
+          className="flex-1 h-12 text-base shadow-sm border-muted-foreground/20 focus-visible:ring-primary"
           disabled={status === "loading"}
         />
         <Button
           type="submit"
           disabled={status === "loading" || !email}
-          className="px-6 bg-primary"
+          size="lg"
+          className="h-12 px-8 font-semibold shadow-md transition-all hover:shadow-lg hover:-translate-y-0.5"
         >
-          {status === "loading" ? "Joining..." : "Join Waitlist"}
+          {status === "loading" ? (
+             <Loader2 className="w-4 h-4 animate-spin mr-2" />
+          ) : (
+            <>
+              Get Started <ArrowRight className="w-4 h-4 ml-2" />
+            </>
+          )}
         </Button>
       </form>
 
       {status === "error" && (
-        <p className="text-red-600 text-sm mt-2 text-center">{message}</p>
+        <p className="text-destructive text-sm mt-2 font-medium animate-in fade-in">{message}</p>
       )}
 
-      <p className="text-xs text-muted-foreground mt-3 text-center">
-        You can{" "}
-        <button
-          type="button"
-          onClick={() => window.open("/api/unsubscribe", "_blank")}
-          className="underline hover:no-underline"
-        >
-          unsubscribe
-        </button>{" "}
-        at any time.
+      <p className="text-xs text-muted-foreground mt-3 pl-1">
+        Start your free trial. No credit card required.
       </p>
     </div>
   );

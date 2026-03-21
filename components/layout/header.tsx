@@ -1,130 +1,154 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { useState } from "react"
+import { Menu, X, MailsIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 text-primary-foreground bg-foreground">
-      <div className="container mx-auto px-4">
-        <div className="flex h-18 items-center justify-between">
+    <header
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+        scrolled
+          ? "bg-background/80 backdrop-blur-md border-b border-border shadow-sm"
+          : "bg-transparent border-b border-transparent"
+      }`}
+    >
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center hover:opacity-80 transition-opacity"
+            className="flex items-center space-x-2 font-bold text-xl transition-opacity group"
           >
-            <Image
-              src="/logo.svg"
-              alt="MailPackr"
-              width={300}
-              height={100}
-              className="pt-5 pb-5 mt-7 mb-7"
-              priority
-            />
+            <div className="bg-[#101828] p-1.5 rounded-lg transition-colors">
+              <MailsIcon className="w-6 h-6 text-white" />
+            </div>
+            <span className="text-foreground tracking-tight">MailPackr</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link
-              href="/"
-              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
+              href="#features"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Home
+              Features
             </Link>
             <Link
-              href="/contact"
-              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
+              href="#pricing"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Contact
+              Pricing
             </Link>
             <Link
-              href="/privacy"
-              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
+              href="#"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Privacy
+              Docs
             </Link>
             <Link
-              href="/terms"
-              className="text-muted-foreground-600 hover:text-cyan-600 font-medium transition-colors"
+              href="#"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Terms
+              Blog
             </Link>
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center space-x-4">
             <Button
-              className="bg-primary text-primary-foreground px-10 py-4 text-lg font-semibold"
+              variant="ghost"
+              className="text-muted-foreground hover:text-foreground"
               asChild
             >
               <Link href="https://app.mailpackr.com/auth">Sign In</Link>
+            </Button>
+            <Button
+              size="sm"
+              variant="primary"
+              className="font-semibold bg-[#101828] text-white hover:bg-[#101828]/90"
+              asChild
+            >
+              <Link href="https://app.mailpackr.com/auth">Get Started</Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <Button
             variant="ghost"
-            size="sm"
+            size="icon"
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6" />
+              <X className="h-5 w-5" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-5 w-5" />
             )}
+            <span className="sr-only">Toggle menu</span>
           </Button>
         </div>
+      </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
-              <Link
-                href="/"
-                className="block px-3 py-2 text-gray-600 hover:text-blue-600 font-medium transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+      {/* Mobile Navigation */}
+      {isMenuOpen && (
+        <div className="md:hidden absolute top-16 left-0 w-full bg-white border-b border-border shadow-lg animate-in slide-in-from-top-5">
+          <div className="px-4 py-6 space-y-4">
+            <Link
+              href="#features"
+              className="block text-base font-medium text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Features
+            </Link>
+            <Link
+              href="#pricing"
+              className="block text-base font-medium text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Pricing
+            </Link>
+            <Link
+              href="#"
+              className="block text-base font-medium text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Docs
+            </Link>
+            <Link
+              href="#"
+              className="block text-base font-medium text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blog
+            </Link>
+            <div className="pt-4 flex flex-col space-y-3">
+              <Button variant="ghost" asChild>
+                <Link href="https://app.mailpackr.com/auth">Sign In</Link>
+              </Button>
+              <Button
+                variant="primary"
+                className="w-full font-semibold bg-[#101828] text-white hover:bg-[#101828]/90"
+                asChild
               >
-                Home
-              </Link>
-              <Link
-                href="/contact"
-                className="block px-3 py-2 text-gray-600 hover:text-blue-600 font-medium transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
-              <Link
-                href="/privacy"
-                className="block px-3 py-2 text-gray-600 hover:text-blue-600 font-medium transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Privacy
-              </Link>
-              <Link
-                href="/terms"
-                className="block px-3 py-2 text-gray-600 hover:text-blue-600 font-medium transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Terms
-              </Link>
-              <div className="px-3 py-2">
-                <Button
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white"
-                  asChild
-                >
-                  <Link href="https://app.mailpackr.com/auth">Get Started</Link>
-                </Button>
-              </div>
+                <Link href="https://app.mailpackr.com/auth">Get Started</Link>
+              </Button>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </header>
   );
 }
