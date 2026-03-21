@@ -41,28 +41,22 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link
-              href="#features"
+              href="/"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Home
+            </Link>
+            <Link
+              href="/#features"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Features
             </Link>
             <Link
-              href="#pricing"
+              href="/#pricing"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Pricing
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Docs
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Blog
             </Link>
           </nav>
 
@@ -107,14 +101,14 @@ export function Header() {
         <div className="md:hidden absolute top-16 left-0 w-full bg-white border-b border-border shadow-lg animate-in slide-in-from-top-5">
           <div className="px-4 py-6 space-y-4">
             <Link
-              href="#features"
+              href="/#features"
               className="block text-base font-medium text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Features
             </Link>
             <Link
-              href="#pricing"
+              href="/#pricing"
               className="block text-base font-medium text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -125,15 +119,15 @@ export function Header() {
               className="block text-base font-medium text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Docs
+              Contact
             </Link>
-            <Link
+            {/* <Link
               href="#"
               className="block text-base font-medium text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Blog
-            </Link>
+            </Link> */}
             <div className="pt-4 flex flex-col space-y-3">
               <Button variant="ghost" asChild>
                 <Link href="https://app.mailpackr.com/auth">Sign In</Link>

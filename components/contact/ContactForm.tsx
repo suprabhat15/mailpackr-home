@@ -2,72 +2,24 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, CheckCircle, MessageSquare, ArrowLeft } from "lucide-react"
+import { Card } from "@/components/ui/card"
+import { CheckCircle, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
 export function ContactForm() {
-  const [submitted, setSubmitted] = useState(false)
-  const [formData, setFormData] = useState({
+  const [submitted, _setSubmitted] = useState(false)
+  const [formData, _setFormData] = useState({
     name: '',
     email: '',
     company: '',
     subject: '',
     message: ''
   })
-  const [errors, setErrors] = useState<Record<string, string>>({})
 
-  const validateForm = () => {
-    const newErrors: Record<string, string> = {}
-    
-    if (!formData.name.trim()) {
-      newErrors.name = 'Name is required'
-    }
-    
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required'
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email address'
-    }
-    
-    if (!formData.subject.trim()) {
-      newErrors.subject = 'Subject is required'
-    }
-    
-    if (!formData.message.trim()) {
-      newErrors.message = 'Message is required'
-    } else if (formData.message.trim().length < 10) {
-      newErrors.message = 'Message must be at least 10 characters long'
-    }
-    
-    setErrors(newErrors)
-    return Object.keys(newErrors).length === 0
-  }
+  // Suppress unused variable warnings - these will be used when form is uncommented
+  void _setSubmitted
+  void _setFormData
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    
-    if (validateForm()) {
-      setSubmitted(true)
-    }
-  }
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
-    
-    if (errors[name]) {
-      setErrors(prev => ({
-        ...prev,
-        [name]: ''
-      }))
-    }
-  }
 
   if (submitted) {
     return (
@@ -80,29 +32,34 @@ export function ContactForm() {
             Message Sent Successfully!
           </h1>
           <p className="text-lg text-muted-foreground mb-8">
-            Thank you for contacting us, {formData.name}! We have received your message and will get back to you within 24 hours.
+            Thank you for contacting us, {formData.name}! We have received your
+            message and will get back to you within 24 hours.
           </p>
         </div>
-        
+
         <div className="space-y-4">
-          <Button asChild size="lg" className="bg-primary text-primary-foreground">
+          <Button
+            asChild
+            size="lg"
+            className="bg-primary text-primary-foreground"
+          >
             <Link href="/">
               <ArrowLeft className="mr-2 h-5 w-5" />
               Back to Home
             </Link>
           </Button>
-          
-          <div className="text-sm text-muted-foreground">
+
+          {/* <div className="text-sm text-muted-foreground">
             Need immediate assistance? Call us at (555) 123-4567
-          </div>
+          </div> */}
         </div>
       </div>
-    )
+    );
   }
 
   return (
     <Card className="shadow-lg border-0">
-      <CardHeader>
+      {/* <CardHeader>
         <CardTitle className="text-2xl flex items-center">
           <MessageSquare className="h-6 w-6 mr-2 text-foreground" />
           Send us a message
@@ -272,7 +229,7 @@ export function ContactForm() {
             </p>
           </div>
         </form>
-      </CardContent>
+      </CardContent> */}
     </Card>
-  )
+  );
 }

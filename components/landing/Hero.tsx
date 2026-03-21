@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart3, Mail, Users } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -18,14 +19,14 @@ export default function Hero() {
           </div> */}
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-6 animate-fade-in delay-100">
-            Spend $10
+            Send 10,000
             <br />
-            <span className="">Instead of $100</span>
+            <span className="">Emails for $10</span>
           </h1>
 
-          <h3 className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-fade-in delay-200">
-            for sending 10,000 emails
-          </h3>
+          <h2 className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-fade-in delay-200">
+            The Mailchimp alternative with unlimited contacts and domains,
+          </h2>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-fade-in delay-200">
             Create, schedule, and track high-converting email campaigns with
@@ -121,17 +122,14 @@ export default function Hero() {
               </div>
 
               {/* Chart Placeholder */}
-              <div className="rounded-lg border border-border p-6 bg-card/50 h-[300px] flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent"></div>
-                <div className="flex items-end gap-2 h-full w-full px-4 pb-0 opacity-50">
-                  {[...Array(24)].map((_, i) => (
-                    <div
-                      key={i}
-                      className="flex-1 bg-primary rounded-t-sm hover:bg-primary/80"
-                      style={{ height: `${30 + Math.random() * 60}%` }}
-                    ></div>
-                  ))}{" "}
-                </div>
+              <div className="bg-card/50 flex items-center justify-center relative overflow-hidden">
+                <Image
+                  src="/image.png"
+                  alt="Mailpackr Dashboard Analytics"
+                  width={1200}
+                  height={300}
+                  className="w-full h-auto object-cover"
+                />
               </div>
             </div>
 
