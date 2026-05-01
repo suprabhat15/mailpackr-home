@@ -92,7 +92,7 @@ export default function Pricing() {
               </div>
               <ul className="space-y-3">
                 {[
-                  "Everything in Free plan",
+                  "Everything in Explorer plan",
                   "Pay as you go",
                   "Unlimited contacts",
                   "Unlimited domains",
