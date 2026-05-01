@@ -30,14 +30,14 @@ export default function Pricing() {
           {/* Free Tier */}
           <Card className="flex flex-col border-border bg-background relative overflow-hidden animate-fade-in delay-100">
             <CardHeader>
-              <CardTitle className="text-2xl">Free</CardTitle>
+              <CardTitle className="text-2xl">Explorer</CardTitle>
               <CardDescription>
                 Perfect for side projects and hobbyists.
               </CardDescription>
             </CardHeader>
             <CardContent className="flex-1">
               <div className="text-4xl font-bold mb-6">
-                $0
+                $1
                 <span className="text-lg font-normal text-muted-foreground">
                   /mo
                 </span>
