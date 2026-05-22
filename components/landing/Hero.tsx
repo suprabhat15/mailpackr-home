@@ -1,146 +1,350 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { ArrowRight, BarChart3, Mail, Users } from "lucide-react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Hero() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    let W = 0, H = 0, animId: number;
+
+    function resize() {
+      if (!canvas) return;
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    }
+    window.addEventListener("resize", resize);
+    resize();
+
+    const dots = Array.from({ length: 120 }, () => ({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      vx: (Math.random() - 0.5) * 0.6,
+      vy: (Math.random() - 0.5) * 0.6,
+      r: Math.random() * 2 + 0.5,
+      alpha: Math.random() * 0.35 + 0.08,
+    }));
+
+    function animate() {
+      if (!ctx || !canvas) return;
+      ctx.clearRect(0, 0, W, H);
+      dots.forEach((d) => {
+        d.x += d.vx;
+        d.y += d.vy;
+        if (d.x < -4) d.x = W + 4;
+        if (d.x > W + 4) d.x = -4;
+        if (d.y < -4) d.y = H + 4;
+        if (d.y > H + 4) d.y = -4;
+        ctx.beginPath();
+        ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(13,14,20,${d.alpha})`;
+        ctx.fill();
+      });
+      animId = requestAnimationFrame(animate);
+    }
+    animate();
+
+    return () => {
+      window.removeEventListener("resize", resize);
+      cancelAnimationFrame(animId);
+    };
+  }, []);
+
   return (
-    <section className="relative pt-24 pb-32 overflow-hidden bg-background">
-      {/* Background gradients */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-gradient-radial from-primary/10 to-transparent opacity-50 pointer-events-none" />
+    <>
+      <canvas
+        ref={canvasRef}
+        style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: "none",
+          opacity: 0.35,
+        }}
+      />
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-16">
-          {/* <div className="inline-flex items-center rounded-full border border-border bg-secondary/50 px-3 py-1 text-sm font-medium text-muted-foreground mb-8 animate-fade-in">
-            <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
-            v2.0 is now available
-          </div> */}
+      <section
+        style={{
+          position: "relative",
+          zIndex: 1,
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+          padding: "130px 24px 90px",
+          overflow: "hidden",
+          background: "var(--background)",
+        }}
+      >
+        {/* Glows */}
+        <div
+          style={{
+            position: "absolute",
+            top: -120,
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: 1000,
+            height: 700,
+            background:
+              "radial-gradient(ellipse at 50% 20%, rgba(0,0,0,0.03) 0%, transparent 60%)",
+            pointerEvents: "none",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            bottom: -80,
+            right: -200,
+            width: 600,
+            height: 500,
+            background:
+              "radial-gradient(ellipse, rgba(255,100,60,0.04) 0%, transparent 60%)",
+            pointerEvents: "none",
+          }}
+        />
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-6 animate-fade-in delay-100">
-            Send 10,000
-            <br />
-            <span className="">Emails for $10</span>
-          </h1>
-
-          <h2 className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-fade-in delay-200">
-            The Mailchimp alternative with unlimited contacts and domains,
-          </h2>
-
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-fade-in delay-200">
-            Create, schedule, and track high-converting email campaigns with
-            enterprise-grade deliverability.
-          </p>
-
-          {/* <div className="flex flex-col sm:flex-row items-center gap-4 animate-fade-in delay-300">
-            <Button size="xl" variant="primary" className="h-12 px-8">
-              Start Sending for Free
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            {/* <Button
-              size="xl"
-              variant="outline"
-              className="h-12 px-8 bg-background"
-            >
-              View Documentation
-            </Button> */}
-          {/* </div>  */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="xl"
-              variant="primary"
-              className="bg-[#101828] text-white hover:bg-[#101828]/90 h-14 px-8 text-lg font-semibold"
-              asChild
-            >
-              <Link href="https://app.mailpackr.com/auth">
-                Start Sending Now
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
+        {/* Badge */}
+        <div
+          className="hero-badge"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+            background: "rgba(0,0,0,0.05)",
+            border: "1px solid rgba(0,0,0,0.15)",
+            color: "#0d0e14",
+            fontSize: 13,
+            fontWeight: 600,
+            padding: "7px 18px",
+            borderRadius: 100,
+            marginBottom: 40,
+            letterSpacing: "0.3px",
+            fontFamily: "var(--font-body)",
+            animation: "fadeUp 0.8s ease both",
+          }}
+        >
+          <span
+            className="pulse-dot"
+            style={{
+              width: 7,
+              height: 7,
+              background: "#0d0e14",
+              borderRadius: "50%",
+              display: "block",
+              flexShrink: 0,
+            }}
+          />
+          Email verification is free here — always, forever
         </div>
 
-        {/* 3D Mockup Container */}
-        <div className="relative mx-auto max-w-6xl mt-8 animate-fade-in delay-500 perspective-1000">
-          <div className="relative rounded-xl border border-border bg-background/50 shadow-2xl backdrop-blur-xl transform rotate-x-12 hover:rotate-x-0 transition-transform duration-700 ease-out overflow-hidden group">
-            {/* Mockup Header */}
-            <div className="border-b border-border bg-background/90 p-4 flex items-center gap-4">
-              <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-400/80"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-400/80"></div>
-                <div className="w-3 h-3 rounded-full bg-green-400/80"></div>
-              </div>
-              <div className="flex-1 text-center text-xs text-muted-foreground font-mono">
-                app.mailpackr.com/dashboard
-              </div>
-            </div>
+        {/* Headline */}
+        <h1
+          style={{
+            fontFamily: "var(--font-display)",
+            fontWeight: 800,
+            fontSize: "clamp(54px, 7.5vw, 100px)",
+            lineHeight: 0.97,
+            letterSpacing: "-4px",
+            maxWidth: 1060,
+            marginBottom: 10,
+            color: "#0d0e14",
+            animation: "fadeUp 0.8s 0.08s ease both",
+          }}
+        >
+          Stop Paying
+          <br />
+          <span style={{ color: "#0d0e14" }}>Twice</span> to Send
+          <br />
+          <span style={{ color: "rgba(13,14,20,0.25)" }}>One</span> Email.
+        </h1>
 
-            {/* Dashboard Content Mockup */}
-            <div className="p-8 bg-background min-h-[500px]">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                {[
-                  {
-                    title: "Total Subscribers",
-                    value: "49,405",
-                    change: "+12%",
-                    icon: Users,
-                  },
-                  {
-                    title: "Avg. Open Rate",
-                    value: "52.8%",
-                    change: "+4.3%",
-                    icon: Mail,
-                  },
-                  {
-                    title: "Click Rate",
-                    value: "8.9%",
-                    change: "+1.1%",
-                    icon: BarChart3,
-                  },
-                ].map((stat, i) => (
-                  <div
-                    key={i}
-                    className="rounded-lg border border-border p-6 bg-card/50"
-                  >
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="text-sm font-medium text-muted-foreground">
-                        {stat.title}
-                      </span>
-                      <stat.icon className="h-4 w-4 text-muted-foreground" />
-                    </div>
-                    <div className="flex items-baseline gap-2">
-                      <span className="text-2xl font-bold text-foreground">
-                        {stat.value}
-                      </span>
-                      <span className="text-xs text-green-500 font-medium">
-                        {stat.change}
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+        {/* Tagline */}
+        <p
+          style={{
+            fontFamily: "var(--font-display)",
+            fontSize: "clamp(18px, 2.5vw, 28px)",
+            fontWeight: 600,
+            color: "rgba(13,14,20,0.55)",
+            letterSpacing: "-0.5px",
+            marginBottom: 28,
+            animation: "fadeUp 0.8s 0.16s ease both",
+            maxWidth: 700,
+          }}
+        >
+          <strong style={{ color: "#0d0e14", fontWeight: 700 }}>
+            Free verification. Unlimited contacts. Unlimited domains.
+          </strong>
+          <br />
+          Pay only for what you actually send.
+        </p>
 
-              {/* Chart Placeholder */}
-              <div className="bg-card/50 flex items-center justify-center relative overflow-hidden">
-                <Image
-                  src="/image.png"
-                  alt="Mailpackr Dashboard Analytics"
-                  width={1200}
-                  height={300}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
+        {/* Body */}
+        <p
+          style={{
+            fontSize: 17,
+            color: "rgba(13,14,20,0.5)",
+            maxWidth: 560,
+            marginBottom: 48,
+            animation: "fadeUp 0.8s 0.24s ease both",
+            lineHeight: 1.75,
+            fontFamily: "var(--font-body)",
+          }}
+        >
+          Every other platform charges to verify your list, then charges again
+          per contact just to send. MailPackr kills both bills. One flat rate
+          per send — no hidden fees, no contact tiers, no BS.
+        </p>
 
-            {/* Glossy overlay */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none"></div>
-          </div>
-
-          {/* Shadow/Glow under the mockup */}
-          <div className="absolute -inset-4 bg-primary/20 blur-3xl -z-10 rounded-[20%] opacity-40"></div>
+        {/* CTAs */}
+        <div
+          style={{
+            display: "flex",
+            gap: 14,
+            flexWrap: "wrap",
+            justifyContent: "center",
+            marginBottom: 72,
+            animation: "fadeUp 0.8s 0.32s ease both",
+          }}
+        >
+          <Link
+            href="https://app.mailpackr.com/auth"
+            style={{
+              background: "#0d0e14",
+              color: "#f5f5f2",
+              fontSize: 16,
+              fontWeight: 700,
+              padding: "16px 36px",
+              borderRadius: 10,
+              textDecoration: "none",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 9,
+              transition: "transform 0.2s, box-shadow 0.2s",
+              boxShadow: "0 0 50px rgba(0,0,0,0.15)",
+              fontFamily: "var(--font-body)",
+            }}
+            onMouseEnter={(e) => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.transform = "translateY(-2px)";
+              el.style.boxShadow = "0 4px 20px rgba(0,0,0,0.18)";
+            }}
+            onMouseLeave={(e) => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.transform = "translateY(0)";
+              el.style.boxShadow = "0 0 50px rgba(0,0,0,0.15)";
+            }}
+          >
+            Start Sending Free
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
+          <Link
+            href="#how-it-works"
+            style={{
+              background: "transparent",
+              color: "#0d0e14",
+              fontSize: 16,
+              fontWeight: 600,
+              padding: "16px 36px",
+              borderRadius: 10,
+              border: "1px solid rgba(0,0,0,0.14)",
+              textDecoration: "none",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              transition: "all 0.2s",
+              fontFamily: "var(--font-body)",
+            }}
+            onMouseEnter={(e) => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.borderColor = "rgba(0,0,0,0.25)";
+              el.style.background = "rgba(0,0,0,0.04)";
+              el.style.transform = "translateY(-2px)";
+            }}
+            onMouseLeave={(e) => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.borderColor = "rgba(0,0,0,0.14)";
+              el.style.background = "transparent";
+              el.style.transform = "translateY(0)";
+            }}
+          >
+            See How It Works
+          </Link>
         </div>
-      </div>
-    </section>
+
+        {/* Stats strip */}
+        <div
+          style={{
+            display: "flex",
+            border: "1px solid rgba(0,0,0,0.1)",
+            borderRadius: 16,
+            overflow: "hidden",
+            background: "rgba(255,255,255,0.95)",
+            backdropFilter: "blur(12px)",
+            animation: "fadeUp 0.8s 0.4s ease both",
+            flexWrap: "wrap",
+          }}
+        >
+          {[
+            { num: "$0", label: "Verification cost" },
+            { num: "∞", label: "Contacts stored" },
+            { num: "∞", label: "Domains included" },
+            { num: "$10", label: "Per 10k sends" },
+          ].map((s, i, arr) => (
+            <div
+              key={s.label}
+              style={{
+                padding: "22px 40px",
+                textAlign: "center",
+                borderRight: i < arr.length - 1 ? "1px solid rgba(0,0,0,0.08)" : "none",
+                minWidth: 140,
+              }}
+            >
+              <span
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: 30,
+                  fontWeight: 800,
+                  color: "#0d0e14",
+                  letterSpacing: "-1px",
+                  display: "block",
+                  lineHeight: 1,
+                }}
+              >
+                {s.num}
+              </span>
+              <span
+                style={{
+                  fontSize: 12,
+                  color: "rgba(13,14,20,0.45)",
+                  fontWeight: 500,
+                  display: "block",
+                  marginTop: 5,
+                  fontFamily: "var(--font-body)",
+                }}
+              >
+                {s.label}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <style>{`
+        @keyframes fadeUp {
+          from { opacity: 0; transform: translateY(28px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
+    </>
   );
 }

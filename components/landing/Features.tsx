@@ -1,106 +1,196 @@
 "use client";
 
-import {
-  Layout,
-  ShieldCheck,
-  Users,
-  Zap,
-  Copy,
-  UserPlus,
-  Send,
-} from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { useEffect, useRef } from "react";
+
+const FEATURES = [
+  {
+    icon: "⚡",
+    title: "Enterprise Deliverability",
+    desc: "Dedicated IPs, SPF/DKIM/DMARC auto-setup, and real-time reputation monitoring baked in.",
+  },
+  {
+    icon: "✅",
+    title: "Free Built-in Verification",
+    desc: "Syntax, MX, SMTP, disposable address detection, and catch-all flagging — all running silently, all free, always.",
+  },
+  {
+    icon: "📊",
+    title: "Campaign Analytics",
+    desc: "Open rates, click maps, bounces, heatmaps, and conversion tracking in one clean dashboard. No CSV archaeology.",
+  },
+  {
+    icon: "🔗",
+    title: "Unlimited Domains",
+    desc: "Manage every brand, product, and client under a single account. No per-domain fees. Ever.",
+  },
+];
 
 export default function Features() {
-  const features = [
-    {
-      title: "Unlimited Campaigns",
-      description:
-        "Run as many email marketing campaigns as your business requires without any arbitrary limits.",
-      icon: Send,
-    },
-    {
-      title: "Unlimited Custom Domains",
-      description:
-        "Connect as many domains as you need. DNS verification (DKIM/SPF) ensures your emails hit the inbox, not spam.",
-      icon: ShieldCheck,
-    },
-    {
-      title: "Unlimited Templates",
-      description:
-        "Design, save, and organize an infinite library of email templates for every occasion.",
-      icon: Copy,
-    },
-    {
-      title: "Unlimited Contacts",
-      description:
-        "Grow your audience without fear. We don't charge you more just because your list gets bigger.",
-      icon: UserPlus,
-      className: "mid-span-2",
-    },
-    {
-      title: "Rich Visual Editor",
-      description:
-        "Drag-and-drop to create beautiful emails, or bring your own HTML. We handle the responsiveness.",
-      icon: Layout,
-    },
-    {
-      title: "Real-time Analytics",
-      description:
-        "Track Opens, Clicks, Bounces, and Deliverability in real-time. Make data-driven decisions.",
-      icon: Zap,
-    },
-    {
-      title: "Smart Segmentation",
-      description:
-        "Filter users based on behavior, attributes, or past engagement. Send targeted campaigns that convert.",
-      icon: Users,
-    },
-  ];
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const els = sectionRef.current?.querySelectorAll(".reveal");
+    if (!els) return;
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("visible");
+            obs.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -40px 0px" }
+    );
+    els.forEach((el) => obs.observe(el));
+    return () => obs.disconnect();
+  }, []);
 
   return (
-    <section id="features" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4">
-            Everything you need to send at scale
+    <div
+      ref={sectionRef}
+      id="features"
+      style={{
+        background: "#eeede9",
+        position: "relative",
+        zIndex: 1,
+      }}
+    >
+      {/* top line */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: 1200,
+          height: 1,
+          background: "linear-gradient(90deg, transparent, rgba(0,0,0,0.14), transparent)",
+          pointerEvents: "none",
+        }}
+      />
+      <div
+        style={{
+          maxWidth: 1140,
+          margin: "0 auto",
+          padding: "100px 24px",
+        }}
+      >
+        <div className="reveal">
+          <div
+            style={{
+              fontSize: 11,
+              fontWeight: 700,
+              letterSpacing: "2.5px",
+              textTransform: "uppercase",
+              color: "rgba(13,14,20,0.45)",
+              marginBottom: 14,
+              fontFamily: "var(--font-body)",
+            }}
+          >
+            Everything Included
+          </div>
+          <h2
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(36px, 4.5vw, 62px)",
+              fontWeight: 800,
+              letterSpacing: "-2px",
+              lineHeight: 1.04,
+              color: "#0d0e14",
+            }}
+          >
+            Built for senders
+            <br />
+            who mean business.
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Powerful features built for developers and marketers alike.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {features.map((feature, i) => {
-            const Icon = feature.icon;
-            return (
-              <Card
-                key={i}
-                className="bg-secondary/20 border-border transition-all hover:border-primary/50 hover:bg-secondary/40 animate-fade-in"
-                style={{ animationDelay: `${i * 100}ms` }}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: 20,
+            marginTop: 56,
+          }}
+          className="features-grid"
+        >
+          {FEATURES.map((f, i) => (
+            <div
+              key={f.title}
+              className={`reveal${i > 0 ? ` reveal-d${Math.min(i, 4)}` : ""}`}
+              style={{
+                background: "#ffffff",
+                border: "1px solid rgba(0,0,0,0.08)",
+                borderRadius: 16,
+                padding: 32,
+                transition: "border-color 0.25s, transform 0.25s, box-shadow 0.25s",
+                cursor: "default",
+              }}
+              onMouseEnter={(e) => {
+                const el = e.currentTarget as HTMLElement;
+                el.style.borderColor = "rgba(0,0,0,0.2)";
+                el.style.transform = "translateY(-4px)";
+                el.style.boxShadow = "0 12px 40px rgba(0,0,0,0.08)";
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget as HTMLElement;
+                el.style.borderColor = "rgba(0,0,0,0.08)";
+                el.style.transform = "translateY(0)";
+                el.style.boxShadow = "none";
+              }}
+            >
+              <div
+                style={{
+                  width: 46,
+                  height: 46,
+                  background: "rgba(0,0,0,0.04)",
+                  border: "1px solid rgba(0,0,0,0.1)",
+                  borderRadius: 13,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginBottom: 20,
+                  fontSize: 20,
+                }}
               >
-                <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    {Icon && <Icon className="h-6 w-6 text-primary" />}
-                  </div>
-                  <CardTitle className="text-xl">{feature.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base text-muted-foreground leading-relaxed">
-                    {feature.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            );
-          })}
+                {f.icon}
+              </div>
+              <div
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: 18,
+                  fontWeight: 700,
+                  marginBottom: 8,
+                  letterSpacing: "-0.3px",
+                  color: "#0d0e14",
+                }}
+              >
+                {f.title}
+              </div>
+              <p
+                style={{
+                  fontSize: 14,
+                  color: "rgba(13,14,20,0.55)",
+                  lineHeight: 1.65,
+                  fontFamily: "var(--font-body)",
+                }}
+              >
+                {f.desc}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-    </section>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .features-grid { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 1024px) and (min-width: 769px) {
+          .features-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+      `}</style>
+    </div>
   );
 }

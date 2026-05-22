@@ -1,157 +1,86 @@
+"use client";
+
 import Link from "next/link";
-import { MailsIcon } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-[#101828] text-white border-t border-white/10 pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Brand Column */}
-          <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="bg-white/10 p-1 rounded-lg">
-                <MailsIcon className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-lg font-bold tracking-tight text-white">
-                MailPackr
-              </span>
-            </Link>
-            <p className="text-sm text-white/60 mb-6 max-w-xs">
-              Reliable and Scalable. <br></br>Modern Email Marketing platform
-              for your teams.
-            </p>
-          </div>
+    <footer
+      style={{
+        borderTop: "1px solid rgba(0,0,0,0.08)",
+        padding: "36px 52px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        flexWrap: "wrap",
+        gap: 16,
+        position: "relative",
+        zIndex: 1,
+        background: "var(--background)",
+        fontFamily: "var(--font-body)",
+      }}
+    >
+      <Link href="/" style={{ textDecoration: "none" }}>
+        <svg
+          viewBox="0 0 160 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ height: 24 }}
+        >
+          <rect width="28" height="28" rx="7" fill="#0d0e14" />
+          <path
+            d="M6 21V9l8 6 8-6v12"
+            stroke="#f5f5f2"
+            strokeWidth="2.2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <text
+            x="36"
+            y="20"
+            fontFamily="Syne, sans-serif"
+            fontWeight="800"
+            fontSize="16"
+            fill="#0d0e14"
+            letterSpacing="-0.5"
+          >
+            MAILPACKR
+          </text>
+        </svg>
+      </Link>
 
-          {/* Product Links */}
-          <div>
-            <h4 className="font-semibold text-white mb-4">Product</h4>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link
-                  href="/#features"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#pricing"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#faq"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  FAQs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Support
-                </Link>
-              </li>
-            </ul>
-          </div>
+      <p style={{ fontSize: 13, color: "rgba(13,14,20,0.4)" }}>
+        © {new Date().getFullYear()} MailPackr. All rights reserved.
+      </p>
 
-          {/* Resources Links */}
-          {/* <div>
-            <h4 className="font-semibold text-white mb-4">Resources</h4>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Documentation
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  API Reference
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Community
-                </Link>
-              </li>
-            </ul>
-          </div> */}
-
-          {/* Company Links */}
-          <div>
-            <h4 className="font-semibold text-white mb-4">Company</h4>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link
-                  href="/about"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Terms
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/60">
-            © {new Date().getFullYear()} MailPackr Inc. All rights reserved.
-          </p>
-          {/* <div className="flex items-center gap-2">
-            <div className="h-2 w-2 rounded-full bg-green-500"></div>
-            <span className="text-xs text-white/60">
-              All systems operational
-            </span>
-          </div> */}
-        </div>
-      </div>
+      <nav>
+        {[
+          { label: "Privacy", href: "/privacy" },
+          { label: "Terms", href: "/terms" },
+          { label: "About", href: "/about" },
+          { label: "Contact", href: "/contact" },
+        ].map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            style={{
+              fontSize: 13,
+              color: "rgba(13,14,20,0.4)",
+              textDecoration: "none",
+              marginLeft: 24,
+              transition: "color 0.2s",
+              display: "inline-block",
+            }}
+            onMouseEnter={(e) =>
+              ((e.currentTarget as HTMLElement).style.color = "#0d0e14")
+            }
+            onMouseLeave={(e) =>
+              ((e.currentTarget as HTMLElement).style.color = "rgba(13,14,20,0.4)")
+            }
+          >
+            {link.label}
+          </Link>
+        ))}
+      </nav>
     </footer>
   );
 }
