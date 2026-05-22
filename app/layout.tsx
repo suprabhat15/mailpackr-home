@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, JetBrains_Mono, Syne, DM_Sans } from 'next/font/google'
+import { Inter, JetBrains_Mono, Poppins } from 'next/font/google'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import './globals.css'
@@ -16,18 +16,11 @@ const jetbrainsMono = JetBrains_Mono({
   variable: '--font-mono',
 })
 
-const syne = Syne({
+const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '600', '700', '800'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
   display: 'swap',
-  variable: '--font-syne',
-})
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  display: 'swap',
-  variable: '--font-dm-sans',
+  variable: '--font-poppins',
 })
 
 export const metadata: Metadata = {
@@ -58,13 +51,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} ${GeistSans.variable} ${GeistMono.variable} ${syne.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} ${GeistSans.variable} ${GeistMono.variable} ${poppins.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="icon" href="/logo.svg" type="image/svg+xml" />
       </head>
-      <body className={`antialiased min-h-screen bg-background text-foreground selection:bg-primary/20 selection:text-foreground`} style={{ fontFamily: 'var(--font-dm-sans), DM Sans, system-ui, sans-serif' }}>
+      <body className={`antialiased min-h-screen bg-background text-foreground selection:bg-primary/20 selection:text-foreground`} style={{ fontFamily: 'var(--font-poppins), Poppins, system-ui, sans-serif' }}>
         {children}
       </body>
     </html>

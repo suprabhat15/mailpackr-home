@@ -1,5 +1,4 @@
 import Hero from "@/components/landing/Hero";
-import Ticker from "@/components/landing/Ticker";
 import HowItWorks from "@/components/landing/HowItWorks";
 import ProblemSolution from "@/components/landing/ProblemSolution";
 import Features from "@/components/landing/Features";
@@ -25,7 +24,6 @@ export default function Home() {
 
       <main>
         <Hero />
-        <Ticker />
         <HowItWorks />
         <ProblemSolution />
         <Features />

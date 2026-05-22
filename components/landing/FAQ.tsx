@@ -4,16 +4,16 @@ import { useEffect, useRef, useState } from "react";
 
 const FAQS = [
   {
-    q: "Is email verification really free forever — no catch?",
-    a: "Yes, completely. We run syntax checking, MX lookups, SMTP pings, disposable address detection, and catch-all flagging on every address — at zero cost to you, forever. It's baked into the platform, not an add-on. No trial period, no \"free up to X addresses\" limit.",
+    q: "Is email verification really free forever, with no catch?",
+    a: "Yes, completely. We run syntax checking, MX lookups, SMTP pings, disposable address detection, and catch-all flagging on every address, at zero cost to you, forever. It's baked into the platform, not an add-on. No trial period, no \"free up to X addresses\" limit.",
   },
   {
     q: "What's included in the $10 / 10k sends?",
-    a: "Everything: verification, delivery, analytics, scheduling, unlimited contacts and domains. You're paying for the act of sending — not for storing contacts or running your list through a verifier first. $10 = 10,000 emails delivered. Full stop.",
+    a: "Everything: verification, delivery, analytics, scheduling, unlimited contacts and domains. You're paying for the act of sending, not for storing contacts or running your list through a verifier first. $10 = 10,000 emails delivered. Full stop.",
   },
   {
     q: "How is this different from Mailchimp?",
-    a: "Mailchimp charges you based on the number of contacts in your account — not the number of emails you actually send. So even if you only email 1,000 people in a month, you're paying for all 50,000 contacts you've stored. MailPackr charges only for what you send. And we never charge for verification.",
+    a: "Mailchimp charges you based on the number of contacts in your account, not the number of emails you actually send. So even if you only email 1,000 people in a month, you're paying for all 50,000 contacts you've stored. MailPackr charges only for what you send. And we never charge for verification.",
   },
   {
     q: "What happens to risky and bad emails?",
@@ -21,7 +21,7 @@ const FAQS = [
   },
   {
     q: "Can I send from multiple domains or brands?",
-    a: "Yes — unlimited domains are included on every plan, even free. You can manage campaigns for multiple brands, clients, or products from one account with no per-domain charges.",
+    a: "Yes, unlimited domains are included on every plan, even free. You can manage campaigns for multiple brands, clients, or products from one account with no per-domain charges.",
   },
   {
     q: "Do rates drop if I send more?",

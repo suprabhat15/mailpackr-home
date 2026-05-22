@@ -3,10 +3,10 @@
 import { useEffect, useRef } from "react";
 
 const ROWS = [
-  { feature: "Email Verification", theirs: "$0.008–$0.01 per address", ours: "Free forever", ourGood: true, theirsBad: true },
+  { feature: "Email Verification", theirs: "$0.008 to $0.01 per address", ours: "Free forever", ourGood: true, theirsBad: true },
   { feature: "Pricing model", theirs: "Per-contact (even unsent)", ours: "Per-send only", ourGood: true, theirsBad: true },
-  { feature: "10,000 sends", theirs: "$20–$75/mo (contact tiers)", ours: "$10 flat", ourGood: true, theirsBad: true },
-  { feature: "Contacts limit", theirs: "500 – 50k, then upgrade", ours: "Unlimited", ourGood: true, theirsBad: true },
+  { feature: "10,000 sends", theirs: "$20 to $75/mo (contact tiers)", ours: "$10 flat", ourGood: true, theirsBad: true },
+  { feature: "Contacts limit", theirs: "500 to 50k, then upgrade", ours: "Unlimited", ourGood: true, theirsBad: true },
   { feature: "Domains included", theirs: "1 (extras cost extra)", ours: "Unlimited", ourGood: true, theirsBad: true },
   { feature: "Deliverability tools", theirs: "Basic / add-on", ours: "Enterprise-grade, included", ourGood: true, theirsBad: false },
 ];

@@ -1,27 +1,45 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import {
+  LayoutTemplate,
+  Users,
+  Globe,
+  ShieldCheck,
+  BadgeCheck,
+  BarChart3,
+} from "lucide-react";
 
 const FEATURES = [
   {
-    icon: "⚡",
+    Icon: LayoutTemplate,
+    title: "Unlimited Templates",
+    desc: "Build, save, and reuse as many email templates as you want. No caps, no per-template charges.",
+  },
+  {
+    Icon: Users,
+    title: "Unlimited Contacts",
+    desc: "Import and store every contact you have. We never bill you per contact. Pay only for what you actually send.",
+  },
+  {
+    Icon: Globe,
+    title: "Unlimited Domains",
+    desc: "Manage every brand, product, and client under a single account. No per-domain fees. Ever.",
+  },
+  {
+    Icon: ShieldCheck,
     title: "Enterprise Deliverability",
     desc: "Dedicated IPs, SPF/DKIM/DMARC auto-setup, and real-time reputation monitoring baked in.",
   },
   {
-    icon: "✅",
+    Icon: BadgeCheck,
     title: "Free Built-in Verification",
-    desc: "Syntax, MX, SMTP, disposable address detection, and catch-all flagging — all running silently, all free, always.",
+    desc: "Syntax, MX, SMTP, disposable address detection, and catch-all flagging. All running silently, all free, always.",
   },
   {
-    icon: "📊",
+    Icon: BarChart3,
     title: "Campaign Analytics",
     desc: "Open rates, click maps, bounces, heatmaps, and conversion tracking in one clean dashboard. No CSV archaeology.",
-  },
-  {
-    icon: "🔗",
-    title: "Unlimited Domains",
-    desc: "Manage every brand, product, and client under a single account. No per-domain fees. Ever.",
   },
 ];
 
@@ -151,10 +169,10 @@ export default function Features() {
                   alignItems: "center",
                   justifyContent: "center",
                   marginBottom: 20,
-                  fontSize: 20,
+                  color: "#0d0e14",
                 }}
               >
-                {f.icon}
+                <f.Icon size={22} strokeWidth={1.75} aria-hidden />
               </div>
               <div
                 style={{

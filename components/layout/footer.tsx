@@ -19,36 +19,21 @@ export function Footer() {
         fontFamily: "var(--font-body)",
       }}
     >
-      <Link href="/" style={{ textDecoration: "none" }}>
-        <svg
-          viewBox="0 0 160 28"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{ height: 24 }}
-        >
-          <rect width="28" height="28" rx="7" fill="#0d0e14" />
-          <path
-            d="M6 21V9l8 6 8-6v12"
-            stroke="#f5f5f2"
-            strokeWidth="2.2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <text
-            x="36"
-            y="20"
-            fontFamily="Syne, sans-serif"
-            fontWeight="800"
-            fontSize="16"
-            fill="#0d0e14"
-            letterSpacing="-0.5"
-          >
-            MAILPACKR
-          </text>
-        </svg>
+      <Link
+        href="/"
+        style={{
+          textDecoration: "none",
+          fontFamily: "var(--font-display)",
+          fontWeight: 800,
+          fontSize: 18,
+          letterSpacing: "-0.6px",
+          color: "#0d0e14",
+        }}
+      >
+        MailPackr
       </Link>
 
-      <p style={{ fontSize: 13, color: "rgba(13,14,20,0.4)" }}>
+      <p style={{ fontSize: 13, color: "#0d0e14" }}>
         © {new Date().getFullYear()} MailPackr. All rights reserved.
       </p>
 
@@ -64,17 +49,17 @@ export function Footer() {
             href={link.href}
             style={{
               fontSize: 13,
-              color: "rgba(13,14,20,0.4)",
+              color: "#0d0e14",
               textDecoration: "none",
               marginLeft: 24,
-              transition: "color 0.2s",
+              transition: "opacity 0.2s",
               display: "inline-block",
             }}
             onMouseEnter={(e) =>
-              ((e.currentTarget as HTMLElement).style.color = "#0d0e14")
+              ((e.currentTarget as HTMLElement).style.opacity = "0.6")
             }
             onMouseLeave={(e) =>
-              ((e.currentTarget as HTMLElement).style.color = "rgba(13,14,20,0.4)")
+              ((e.currentTarget as HTMLElement).style.opacity = "1")
             }
           >
             {link.label}

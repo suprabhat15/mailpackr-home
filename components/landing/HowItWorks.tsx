@@ -104,13 +104,13 @@ export default function HowItWorks() {
               fontFamily: "var(--font-body)",
             }}
           >
-            MailPackr scans every address in real time — routing clean emails
+            MailPackr scans every address in real time, routing clean emails
             to delivery, and silently dropping risky and bad addresses before
             they hurt your sender score.
           </p>
         </div>
 
-        {/* Diagram — 3-col on desktop, stacked on mobile */}
+        {/* Diagram: 3-col on desktop, stacked on mobile */}
         <div
           className="reveal"
           style={{
@@ -437,7 +437,7 @@ export default function HowItWorks() {
                   fontFamily: "var(--font-body)",
                 }}
               >
-                ✕ Blocked — Not Sent
+                ✕ Blocked · Not Sent
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                 {BLOCKED.map((addr) => (

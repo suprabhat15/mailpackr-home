@@ -8,8 +8,7 @@ const VOLUME_BTNS = [
   { label: "25k", sends: 25000 },
   { label: "50k", sends: 50000 },
   { label: "100k", sends: 100000 },
-  { label: "250k+", sends: 250000 },
-  { label: "Custom ✎", sends: -1 },
+  { label: "250k", sends: 250000 },
 ];
 
 function fmtSends(n: number) {
@@ -18,22 +17,11 @@ function fmtSends(n: number) {
   return n.toLocaleString();
 }
 
-function getOldPrice(sends: number) {
-  const verifyFee = sends * 0.008;
-  const planCost = sends <= 10000 ? 45 : sends <= 25000 ? 75 : sends <= 50000 ? 130 : 230;
-  return verifyFee + planCost;
-}
-
 export default function Pricing() {
   const [activeSends, setActiveSends] = useState(10000);
-  const [customInput, setCustomInput] = useState("");
-  const [showCustom, setShowCustom] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  const isEnterprise = activeSends >= 250000;
-  const ourPrice = isEnterprise ? 0 : activeSends * 0.001;
-  const oldPrice = isEnterprise ? 0 : getOldPrice(activeSends);
-  const savings = isEnterprise ? 0 : oldPrice - ourPrice;
+  const ourPrice = activeSends * 0.001;
 
   useEffect(() => {
     const els = sectionRef.current?.querySelectorAll(".reveal");
@@ -54,22 +42,10 @@ export default function Pricing() {
   }, []);
 
   const handleVolBtn = (sends: number) => {
-    if (sends === -1) {
-      setShowCustom(true);
-      setActiveSends(-1);
-    } else {
-      setShowCustom(false);
-      setActiveSends(sends);
-    }
+    setActiveSends(sends);
   };
 
-  const handleCustomChange = (val: string) => {
-    setCustomInput(val);
-    const n = parseInt(val);
-    if (n && n > 0) setActiveSends(n);
-  };
-
-  const activeBtn = showCustom ? -1 : activeSends;
+  const activeBtn = activeSends;
 
   const btnStyle = (sends: number): React.CSSProperties => ({
     padding: "12px 22px",
@@ -130,7 +106,7 @@ export default function Pricing() {
             }}
           >
             Verification, contacts, and domains are always free. You only pay
-            for sends — and the rate drops as you scale.
+            for sends, and the rate drops as you scale.
           </p>
         </div>
 
@@ -156,7 +132,6 @@ export default function Pricing() {
               gap: 12,
               flexWrap: "wrap",
               justifyContent: "center",
-              marginBottom: showCustom ? 14 : 0,
             }}
           >
             {VOLUME_BTNS.map((btn) => (
@@ -181,38 +156,13 @@ export default function Pricing() {
               </button>
             ))}
           </div>
-          {showCustom && (
-            <div style={{ textAlign: "center", marginTop: 14 }}>
-              <input
-                type="number"
-                min="1000"
-                step="1000"
-                placeholder="Enter number of emails"
-                value={customInput}
-                onChange={(e) => handleCustomChange(e.target.value)}
-                style={{
-                  background: "#ffffff",
-                  border: "1px solid rgba(0,0,0,0.15)",
-                  color: "#0d0e14",
-                  padding: "12px 18px",
-                  borderRadius: 10,
-                  fontSize: 16,
-                  fontFamily: "var(--font-body)",
-                  width: "100%",
-                  maxWidth: 320,
-                  outline: "none",
-                  textAlign: "center",
-                }}
-              />
-            </div>
-          )}
         </div>
 
         {/* Pricing cards */}
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: isEnterprise ? "1fr 1fr" : "repeat(3, 1fr)",
+            gridTemplateColumns: "repeat(3, 1fr)",
             gap: 20,
             marginTop: 32,
           }}
@@ -245,7 +195,7 @@ export default function Pricing() {
                 letterSpacing: 2,
                 textTransform: "uppercase",
                 color: "rgba(13,14,20,0.4)",
-                marginBottom: 16,
+                marginBottom: 28,
                 fontFamily: "var(--font-body)",
               }}
             >
@@ -277,7 +227,7 @@ export default function Pricing() {
                 fontFamily: "var(--font-body)",
               }}
             >
-              Perfect for getting started — low volume, full features.
+              Perfect for getting started. Low volume, full features.
             </div>
             <ul
               style={{
@@ -335,111 +285,8 @@ export default function Pricing() {
             </Link>
           </div>
 
-          {/* Growth / Enterprise (dynamic) */}
-          {isEnterprise ? (
-            <div
-              className="reveal reveal-d1"
-              style={{
-                background: "#ffffff",
-                border: "1px solid rgba(0,0,0,0.08)",
-                borderRadius: 20,
-                padding: 36,
-                transition: "transform 0.2s, border-color 0.2s",
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
-              }}
-            >
-              <div
-                style={{
-                  fontSize: 12,
-                  fontWeight: 700,
-                  letterSpacing: 2,
-                  textTransform: "uppercase",
-                  color: "rgba(13,14,20,0.4)",
-                  marginBottom: 16,
-                  fontFamily: "var(--font-body)",
-                }}
-              >
-                Enterprise
-              </div>
-              <div
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: 38,
-                  fontWeight: 800,
-                  letterSpacing: "-1.5px",
-                  lineHeight: 1,
-                  marginBottom: 4,
-                  color: "#0d0e14",
-                }}
-              >
-                Custom
-              </div>
-              <div
-                style={{
-                  fontSize: 13,
-                  color: "rgba(13,14,20,0.5)",
-                  marginBottom: 28,
-                  paddingBottom: 28,
-                  borderBottom: "1px solid rgba(0,0,0,0.08)",
-                  lineHeight: 1.6,
-                  fontFamily: "var(--font-body)",
-                }}
-              >
-                Volume pricing tailored to your needs.
-              </div>
-              <ul
-                style={{
-                  listStyle: "none",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: 12,
-                  marginBottom: 32,
-                }}
-              >
-                {["Everything in Growth plan", "Volume discounts", "Dedicated account manager", "Dedicated IP options"].map((f) => (
-                  <li
-                    key={f}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 10,
-                      fontSize: 14,
-                      color: "rgba(13,14,20,0.7)",
-                      fontFamily: "var(--font-body)",
-                    }}
-                  >
-                    <span style={{ color: "#0d0e14", fontSize: 13, fontWeight: 700 }}>✓</span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="mailto:hello@mailpackr.com"
-                style={{
-                  width: "100%",
-                  padding: 14,
-                  borderRadius: 10,
-                  border: "1px solid rgba(0,0,0,0.14)",
-                  background: "transparent",
-                  color: "#0d0e14",
-                  fontSize: 15,
-                  fontWeight: 600,
-                  textDecoration: "none",
-                  display: "block",
-                  textAlign: "center",
-                  fontFamily: "var(--font-body)",
-                }}
-              >
-                Talk to Sales
-              </a>
-            </div>
-          ) : (
-            <div
+          {/* Growth */}
+          <div
               className="reveal reveal-d1"
               style={{
                 background: "linear-gradient(160deg, #edf7f1 0%, #ffffff 100%)",
@@ -485,7 +332,7 @@ export default function Pricing() {
                   letterSpacing: 2,
                   textTransform: "uppercase",
                   color: "#0d0e14",
-                  marginBottom: 16,
+                  marginBottom: 28,
                   fontFamily: "var(--font-body)",
                 }}
               >
@@ -516,25 +363,6 @@ export default function Pricing() {
                   /{fmtSends(activeSends)}
                 </sub>
               </div>
-              {savings > 0 && (
-                <div
-                  style={{
-                    fontSize: 13,
-                    color: "rgba(13,14,20,0.5)",
-                    marginTop: 4,
-                    fontFamily: "var(--font-body)",
-                  }}
-                >
-                  vs{" "}
-                  <span style={{ color: "oklch(65% 0.22 25)", fontWeight: 700, fontSize: 15 }}>
-                    ${Math.round(oldPrice).toLocaleString()}
-                  </span>{" "}
-                  elsewhere —{" "}
-                  <span style={{ color: "#0d0e14", fontWeight: 700 }}>
-                    save ${Math.round(savings).toLocaleString()}
-                  </span>
-                </div>
-              )}
               <div
                 style={{
                   fontSize: 13,
@@ -547,7 +375,7 @@ export default function Pricing() {
                   fontFamily: "var(--font-body)",
                 }}
               >
-                Pay-as-you-go. No contact fees. Scale up or down any time.
+                No contact fees. Scale up or down any time.
               </div>
               <ul
                 style={{
@@ -558,7 +386,7 @@ export default function Pricing() {
                   marginBottom: 32,
                 }}
               >
-                {["Free verification — always", "Unlimited contacts", "Unlimited domains", "Full campaign analytics", "Priority support"].map((f) => (
+                {["Free verification, always", "Unlimited contacts", "Unlimited domains", "Full campaign analytics", "Priority support"].map((f) => (
                   <li
                     key={f}
                     style={{
@@ -607,11 +435,9 @@ export default function Pricing() {
                 Start Sending Now →
               </Link>
             </div>
-          )}
 
-          {/* Enterprise (only shown when not in enterprise mode) */}
-          {!isEnterprise && (
-            <div
+          {/* Enterprise */}
+          <div
               className="reveal reveal-d2"
               style={{
                 background: "#ffffff",
@@ -714,7 +540,6 @@ export default function Pricing() {
                 Talk to Sales
               </a>
             </div>
-          )}
         </div>
 
         <p
@@ -728,7 +553,7 @@ export default function Pricing() {
             fontFamily: "var(--font-body)",
           }}
         >
-          Rates scale down with volume — enterprise customers sending 250k+ emails get custom rates. No verification fees ever included.
+          Rates scale down with volume. Enterprise customers sending 250k+ emails get custom rates. No verification fees ever included.
         </p>
       </div>
 

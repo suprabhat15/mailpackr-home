@@ -49,21 +49,6 @@ export default function CTA() {
         }}
       />
 
-      <div
-        className="reveal"
-        style={{
-          fontSize: 11,
-          fontWeight: 700,
-          letterSpacing: "2.5px",
-          textTransform: "uppercase",
-          color: "rgba(13,14,20,0.45)",
-          marginBottom: 14,
-          fontFamily: "var(--font-body)",
-        }}
-      >
-        No credit card. No contracts.
-      </div>
-
       <h2
         className="reveal"
         style={{
@@ -77,7 +62,8 @@ export default function CTA() {
           color: "#0d0e14",
         }}
       >
-        Stop paying to{" "}
+        Stop paying to
+        <br />
         <span style={{ color: "#0d0e14" }}>verify</span>, start paying
         <br />
         only to <span style={{ color: "#0d0e14" }}>send</span>.
@@ -141,7 +127,7 @@ export default function CTA() {
           style={{
             marginTop: 18,
             fontSize: 13,
-            color: "rgba(13,14,20,0.25)",
+            color: "#0d0e14",
             fontFamily: "var(--font-body)",
           }}
         >

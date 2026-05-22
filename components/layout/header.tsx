@@ -39,34 +39,18 @@ export function Header() {
     >
       <Link
         href="/"
-        style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          textDecoration: "none",
+          fontFamily: "var(--font-display)",
+          fontWeight: 800,
+          fontSize: 22,
+          letterSpacing: "-0.8px",
+          color: "#0d0e14",
+        }}
       >
-        <svg
-          style={{ height: 28 }}
-          viewBox="0 0 180 32"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="32" height="32" rx="8" fill="#0d0e14" />
-          <path
-            d="M7 24V10l9 7 9-7v14"
-            stroke="#f5f5f2"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <text
-            x="40"
-            y="23"
-            fontFamily="Syne, sans-serif"
-            fontWeight="800"
-            fontSize="18"
-            fill="#0d0e14"
-            letterSpacing="-0.5"
-          >
-            MAILPACKR
-          </text>
-        </svg>
+        MailPackr
       </Link>
 
       <div className="hidden md:flex" style={{ alignItems: "center", gap: 32 }}>
@@ -123,7 +107,7 @@ export function Header() {
             el.style.transform = "translateY(0)";
           }}
         >
-          Start Free →
+          Start Now →
         </Link>
       </div>
 
@@ -181,7 +165,7 @@ export function Header() {
               textAlign: "center",
             }}
           >
-            Start Free →
+            Start Now →
           </Link>
         </div>
       )}

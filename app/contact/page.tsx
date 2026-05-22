@@ -5,7 +5,7 @@ import { ContactForm } from "@/components/contact/ContactForm"
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <Header />
 
       {/* Hero Section */}
@@ -23,7 +23,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 py-16 flex-1">
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 max-w-6xl mx-auto">
           {/* Contact Information */}
           <div className="lg:col-span-1">

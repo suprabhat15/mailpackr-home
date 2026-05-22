@@ -6,35 +6,35 @@ const PAINS = [
   {
     icon: "$",
     title: "Step 1: Pay to verify",
-    desc: "$0.008–$0.01 per address before you've sent anything",
+    desc: "$0.008 to $0.01 per address before you've sent anything",
   },
   {
     icon: "$",
     title: "Step 2: Pay to send",
-    desc: "billed on total contacts, even the ones you never email",
+    desc: "Billed on total contacts, even the ones you never email",
   },
   {
     icon: "!",
     title: "Tier up constantly",
-    desc: "hit a contact ceiling and your monthly bill jumps whether you send more or not",
+    desc: "Hit a contact ceiling and your monthly bill jumps whether you send more or not",
   },
   {
     icon: "✕",
     title: "One domain per plan",
-    desc: "running multiple brands means multiple subscriptions",
+    desc: "Running multiple brands means multiple subscriptions",
   },
   {
     icon: "↑",
     title: "100k list = $800+ gone",
-    desc: "before a single email hits an inbox",
+    desc: "Before a single email hits an inbox",
   },
 ];
 
 const GOODS = [
   {
     icon: "$0",
-    title: "Verification is free — always",
-    desc: "validate every address at zero cost, forever",
+    title: "Verification is free, always",
+    desc: "Validate every address at zero cost, forever",
   },
   {
     icon: "→",
@@ -44,16 +44,16 @@ const GOODS = [
   {
     icon: "∞",
     title: "Unlimited contacts",
-    desc: "import them. Store them. We don't charge for that.",
+    desc: "Import them. Store them. We don't charge for that.",
   },
   {
     icon: "∞",
     title: "Unlimited domains",
-    desc: "every brand, every client, one account, no upcharge",
+    desc: "Every brand, every client, one account, no upcharge",
   },
   {
     icon: "↓",
-    title: "100k send = $100 flat.",
+    title: "100k send = $100 flat",
     desc: "No verification bill on top. That's it.",
   },
 ];
@@ -215,7 +215,7 @@ export default function ProblemSolution() {
                 </span>
                 <span style={{ color: "rgba(13,14,20,0.65)", fontFamily: "var(--font-body)" }}>
                   <strong style={{ color: "#0d0e14", fontWeight: 700 }}>{p.title}</strong>
-                  {" — "}
+                  {". "}
                   {p.desc}
                 </span>
               </li>
@@ -305,7 +305,7 @@ export default function ProblemSolution() {
                 </span>
                 <span style={{ color: "rgba(13,14,20,0.65)", fontFamily: "var(--font-body)" }}>
                   <strong style={{ color: "#0d0e14", fontWeight: 700 }}>{g.title}</strong>
-                  {" — "}
+                  {". "}
                   {g.desc}
                 </span>
               </li>
@@ -341,7 +341,7 @@ export default function ProblemSolution() {
               <strong style={{ color: "#0d0e14", display: "block", fontSize: 15 }}>
                 Email Verification
               </strong>
-              Free forever — zero asterisks
+              Free forever, zero asterisks
             </div>
           </div>
         </div>

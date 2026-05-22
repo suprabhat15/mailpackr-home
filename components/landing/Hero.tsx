@@ -142,7 +142,7 @@ export default function Hero() {
               flexShrink: 0,
             }}
           />
-          Email verification is free here — always, forever
+          Email verification is free here, ALWAYS, FOREVER
         </div>
 
         {/* Headline */}
@@ -180,7 +180,7 @@ export default function Hero() {
           }}
         >
           <strong style={{ color: "#0d0e14", fontWeight: 700 }}>
-            Free verification. Unlimited contacts. Unlimited domains.
+            Free verification.
           </strong>
           <br />
           Pay only for what you actually send.
@@ -200,7 +200,7 @@ export default function Hero() {
         >
           Every other platform charges to verify your list, then charges again
           per contact just to send. MailPackr kills both bills. One flat rate
-          per send — no hidden fees, no contact tiers, no BS.
+          per send. No hidden fees, no contact tiers, no BS.
         </p>
 
         {/* CTAs */}
@@ -242,7 +242,7 @@ export default function Hero() {
               el.style.boxShadow = "0 0 50px rgba(0,0,0,0.15)";
             }}
           >
-            Start Sending Free
+            Start Sending
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -296,8 +296,8 @@ export default function Hero() {
         >
           {[
             { num: "$0", label: "Verification cost" },
-            { num: "∞", label: "Contacts stored" },
-            { num: "∞", label: "Domains included" },
+            { num: "Unlimited", label: "Contacts stored" },
+            { num: "Unlimited", label: "Domains included" },
             { num: "$10", label: "Per 10k sends" },
           ].map((s, i, arr) => (
             <div
@@ -312,7 +312,7 @@ export default function Hero() {
               <span
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: 30,
+                  fontSize: s.num.length > 3 ? 22 : 30,
                   fontWeight: 800,
                   color: "#0d0e14",
                   letterSpacing: "-1px",

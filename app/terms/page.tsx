@@ -116,10 +116,27 @@ export default function TermsPage() {
                 <li>Functional unsubscribe mechanisms</li>
               </ul>
             </div>
-            <p className="text-muted-foreground leading-relaxed text-lg">
+            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
               We may immediately suspend accounts and cooperate with hosting
               providers, ISPs, or law enforcement when abuse is detected.
             </p>
+            <div className="bg-secondary border border-border rounded-lg p-6">
+              <h3 className="text-xl font-bold text-foreground mb-3 flex items-center">
+                <AlertCircle className="w-5 h-5 mr-2" />
+                Sending Quality Thresholds
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-0">
+                To protect the deliverability of the wider network, we
+                continuously monitor the health of every account&apos;s traffic.
+                If your bounce rate rises above the{" "}
+                <strong className="text-foreground">3.5% threshold</strong> and
+                your spam-complaint rate exceeds the{" "}
+                <strong className="text-foreground">0.1% threshold</strong>,
+                MailPackr will suspend your account. Normal sending can resume
+                once the
+                underlying list-quality issues have been resolved.
+              </p>
+            </div>
           </section>
 
           <section className="mb-12">
