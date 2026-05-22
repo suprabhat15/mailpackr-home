@@ -112,7 +112,7 @@ export default function HowItWorks() {
 
         {/* Diagram: 3-col on desktop, stacked on mobile */}
         <div
-          className="reveal"
+          className="reveal flow-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "1fr 80px 1fr 80px 1fr",
@@ -196,6 +196,7 @@ export default function HowItWorks() {
 
           {/* Arrow in */}
           <div
+            className="flow-arrow"
             style={{
               display: "flex",
               flexDirection: "column",
@@ -327,6 +328,7 @@ export default function HowItWorks() {
 
           {/* Arrow out */}
           <div
+            className="flow-arrow"
             style={{
               display: "flex",
               flexDirection: "column",
@@ -465,6 +467,16 @@ export default function HowItWorks() {
           </div>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .flow-grid {
+            grid-template-columns: 1fr !important;
+            gap: 18px;
+          }
+          .flow-arrow { display: none !important; }
+        }
+      `}</style>
     </section>
   );
 }

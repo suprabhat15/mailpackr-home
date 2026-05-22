@@ -283,15 +283,19 @@ export default function Hero() {
 
         {/* Stats strip */}
         <div
+          className="stats-strip"
           style={{
-            display: "flex",
+            display: "grid",
+            gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+            width: "100%",
+            maxWidth: 600,
+            margin: "0 auto",
+            gap: 1,
             border: "1px solid rgba(0,0,0,0.1)",
             borderRadius: 16,
             overflow: "hidden",
-            background: "rgba(255,255,255,0.95)",
-            backdropFilter: "blur(12px)",
+            background: "rgba(0,0,0,0.1)",
             animation: "fadeUp 0.8s 0.4s ease both",
-            flexWrap: "wrap",
           }}
         >
           {[
@@ -299,14 +303,14 @@ export default function Hero() {
             { num: "Unlimited", label: "Contacts stored" },
             { num: "Unlimited", label: "Domains included" },
             { num: "$10", label: "Per 10k sends" },
-          ].map((s, i, arr) => (
+          ].map((s) => (
             <div
               key={s.label}
               style={{
-                padding: "22px 40px",
+                padding: "22px 16px",
                 textAlign: "center",
-                borderRight: i < arr.length - 1 ? "1px solid rgba(0,0,0,0.08)" : "none",
-                minWidth: 140,
+                background: "rgba(255,255,255,0.95)",
+                backdropFilter: "blur(12px)",
               }}
             >
               <span

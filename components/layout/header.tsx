@@ -24,7 +24,7 @@ export function Header() {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "18px 52px",
+        padding: "18px clamp(20px, 5vw, 52px)",
         borderBottom: "1px solid transparent",
         transition: "background 0.4s, border-color 0.4s",
         fontFamily: "var(--font-body)",
